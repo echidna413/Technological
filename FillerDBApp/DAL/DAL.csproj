@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF956E03-F42B-4E05-BAA8-CADC211DA3D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.11\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForSMS.cs" />
+    <Compile Include="Bonus\Axes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Axis.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="Bonus\BaseForSMS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\Bases.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseTmpLocation.cs" />
+    <Compile Include="Bonus\BaseTmpLocations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseTmpSize.cs" />
+    <Compile Include="Bonus\BaseTmpSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BDescription.cs" />
+    <Compile Include="Bonus\BDescriptions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\BGeometries.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BGeometry.cs" />
+    <Compile Include="BLocation.cs" />
+    <Compile Include="Bonus\BLocations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BRelationSize.cs" />
+    <Compile Include="Bonus\BRelationSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BSizeSurface.cs" />
+    <Compile Include="Bonus\BSizeSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BSurface.cs" />
+    <Compile Include="Bonus\BSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\CodeDeviationGeometries.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeDeviationGeometry.cs" />
+    <Compile Include="CodeDeviationLocation.cs" />
+    <Compile Include="Bonus\CodeDeviationLocations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeOrientation.cs" />
+    <Compile Include="Bonus\CodeOrientations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSurface.cs" />
+    <Compile Include="Bonus\CodeSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSurfaceSize.cs" />
+    <Compile Include="Bonus\CodeSurfaceSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodeTypeBillet.cs" />
+    <Compile Include="Bonus\CodeTypeBillets.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\Companies.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs" />
+    <Compile Include="CopyBase.cs" />
+    <Compile Include="Bonus\CopyBases.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CopyBaseSurface.cs" />
+    <Compile Include="Bonus\CopyBaseSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\CopySMS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\C__MigrationHistory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CopySMS.cs" />
+    <Compile Include="DDescription.cs" />
+    <Compile Include="Bonus\DDescriptions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\DGeometries.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DGeometry.cs" />
+    <Compile Include="DLocation.cs" />
+    <Compile Include="Bonus\DLocations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DRelationSize.cs" />
+    <Compile Include="Bonus\DRelationSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSizeSurface.cs" />
+    <Compile Include="Bonus\DSizeSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSurface.cs" />
+    <Compile Include="Bonus\DSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EBaseLocation.cs" />
+    <Compile Include="Bonus\EBaseLocations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EBaseScheme.cs" />
+    <Compile Include="Bonus\EBaseSchemes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EBaseSize.cs" />
+    <Compile Include="Bonus\EBaseSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EBaseSurface.cs" />
+    <Compile Include="Bonus\EBaseSurface1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\EBaseSurfaces.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EBaseSurface1.cs" />
+    <Compile Include="EBaseTmp.cs" />
+    <Compile Include="Bonus\EBaseTmps.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECarriage.cs" />
+    <Compile Include="Bonus\ECarriages.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDescription.cs" />
+    <Compile Include="Bonus\EDescriptions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDevice.cs" />
+    <Compile Include="Bonus\EDevices.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EFeed.cs" />
+    <Compile Include="Bonus\EFeeds.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EGeoSTmp.cs" />
+    <Compile Include="Bonus\EGeoSTmps.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EGeoTmp.cs" />
+    <Compile Include="Bonus\EGeoTmps.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EGroup.cs" />
+    <Compile Include="Bonus\EGroups.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ELathe.cs" />
+    <Compile Include="Bonus\ELathes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="Bonus\Employees.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentCatalog.cs" />
+    <Compile Include="Bonus\EquipmentCatalogs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERelationCarriage.cs" />
+    <Compile Include="Bonus\ERelationCarriages.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EResult.cs" />
+    <Compile Include="Bonus\EResults.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ESpeed.cs" />
+    <Compile Include="Bonus\ESpeeds.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ESpindle.cs" />
+    <Compile Include="Bonus\ESpindles.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ETransition.cs" />
+    <Compile Include="ETransitionBase.cs" />
+    <Compile Include="Bonus\ETransitionBases.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ETransitionBaseTolerance.cs" />
+    <Compile Include="Bonus\ETransitionBaseTolerances.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ETransitionGeometryInput.cs" />
+    <Compile Include="Bonus\ETransitionGeometryInputs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ETransitionGeometryOutput.cs" />
+    <Compile Include="Bonus\ETransitionGeometryOutputs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\ETransitions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ETransitionSize.cs" />
+    <Compile Include="Bonus\ETransitionSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangeSize.cs" />
+    <Compile Include="Bonus\ExchangeSizes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FixtureCatalog.cs" />
+    <Compile Include="Bonus\FixtureCatalogs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupOperation.cs" />
+    <Compile Include="Bonus\GroupOperations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904260700205_initial.cs" />
+    <Compile Include="Migrations\201904260700205_initial.Designer.cs">
+      <DependentUpon>201904260700205_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904290459574_ChangeClasses.cs" />
+    <Compile Include="Migrations\201904290459574_ChangeClasses.Designer.cs">
+      <DependentUpon>201904290459574_ChangeClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041103103_initial1.cs" />
+    <Compile Include="Migrations\201905041103103_initial1.Designer.cs">
+      <DependentUpon>201905041103103_initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041347315_AddNullableFieldToRecord.cs" />
+    <Compile Include="Migrations\201905041347315_AddNullableFieldToRecord.Designer.cs">
+      <DependentUpon>201905041347315_AddNullableFieldToRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905070820004_FKChanges.cs" />
+    <Compile Include="Migrations\201905070820004_FKChanges.Designer.cs">
+      <DependentUpon>201905070820004_FKChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Bonus\Model1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Bonus\Model1.Designer.cs">
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Bonus\NewSMS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NewSMS.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="Bonus\Operations.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessCatalog.cs" />
+    <Compile Include="Bonus\ProcessCatalogs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Record.cs" />
+    <Compile Include="MachineDbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bonus\Records.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs" />
+    <Compile Include="Bonus\Roles.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SizeDescription.cs" />
+    <Compile Include="Bonus\SizeDescriptions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\SMS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bonus\Status.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.cs" />
+    <Compile Include="Status1.cs" />
+    <Compile Include="SurfaceCatalog.cs" />
+    <Compile Include="Bonus\SurfaceCatalogs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tree.cs" />
+    <Compile Include="Bonus\Trees.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TypeProcess.cs" />
+    <Compile Include="Bonus\TypeProcesses.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Word.cs" />
+    <Compile Include="Bonus\Words.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="Bonus\Model1.tt">
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2e3080ff-7ccd-4a63-baef-77b2050ec2df}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904260700205_initial.resx">
+      <DependentUpon>201904260700205_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904290459574_ChangeClasses.resx">
+      <DependentUpon>201904290459574_ChangeClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041103103_initial1.resx">
+      <DependentUpon>201905041103103_initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041347315_AddNullableFieldToRecord.resx">
+      <DependentUpon>201905041347315_AddNullableFieldToRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905070820004_FKChanges.resx">
+      <DependentUpon>201905070820004_FKChanges.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Bonus\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

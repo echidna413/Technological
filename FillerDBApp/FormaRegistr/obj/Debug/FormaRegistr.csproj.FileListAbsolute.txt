@@ -1,0 +1,10 @@
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.csprojResolveAssemblyReference.cache
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.csproj.GenerateResource.Cache
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.csproj.CoreCompileInputs.cache
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources

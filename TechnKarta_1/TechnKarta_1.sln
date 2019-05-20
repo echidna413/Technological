@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnKarta_1", "TechnKarta_1\TechnKarta_1.csproj", "{49CE984D-825B-453B-AA30-81337963F01C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49CE984D-825B-453B-AA30-81337963F01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CE984D-825B-453B-AA30-81337963F01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CE984D-825B-453B-AA30-81337963F01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CE984D-825B-453B-AA30-81337963F01C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60F6A9ED-0EE8-4B61-9F43-3B0152D25056}
+	EndGlobalSection
+EndGlobal

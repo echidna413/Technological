@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF5D5099-59DE-429E-93B6-442B463A227E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormaRegistr</RootNamespace>
+    <AssemblyName>FormaRegistr</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MySql.Data\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewUser.Designer.cs">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseSpravoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseSpravoch.Designer.cs">
+      <DependentUpon>ChooseSpravoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlUsers.Designer.cs">
+      <DependentUpon>ControlUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPrivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPrivilege.Designer.cs">
+      <DependentUpon>EditPrivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChooser.Designer.cs">
+      <DependentUpon>FormChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKodOborudov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKodOborudov.Designer.cs">
+      <DependentUpon>FormKodOborudov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKodPrisposobl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKodPrisposobl.Designer.cs">
+      <DependentUpon>FormKodPrisposobl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKodTechnPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKodTechnPer.Designer.cs">
+      <DependentUpon>FormKodTechnPer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport.Designer.cs">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsDB.Designer.cs">
+      <DependentUpon>SettingsDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpravochOborud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpravochOborud.Designer.cs">
+      <DependentUpon>SpravochOborud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpravochObrabPoverch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpravochObrabPoverch.Designer.cs">
+      <DependentUpon>SpravochObrabPoverch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpravochPrisposob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpravochPrisposob.Designer.cs">
+      <DependentUpon>SpravochPrisposob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpravochTechnPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpravochTechnPer.Designer.cs">
+      <DependentUpon>SpravochTechnPer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vsyakoe.cs" />
+    <EmbeddedResource Include="AddNewUser.resx">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseSpravoch.resx">
+      <DependentUpon>ChooseSpravoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsers.resx">
+      <DependentUpon>ControlUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPrivilege.resx">
+      <DependentUpon>EditPrivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChooser.resx">
+      <DependentUpon>FormChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKodOborudov.resx">
+      <DependentUpon>FormKodOborudov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKodPrisposobl.resx">
+      <DependentUpon>FormKodPrisposobl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKodTechnPer.resx">
+      <DependentUpon>FormKodTechnPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport.resx">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsDB.resx">
+      <DependentUpon>SettingsDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpravochOborud.resx">
+      <DependentUpon>SpravochOborud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpravochObrabPoverch.resx">
+      <DependentUpon>SpravochObrabPoverch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpravochPrisposob.resx">
+      <DependentUpon>SpravochPrisposob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpravochTechnPer.resx">
+      <DependentUpon>SpravochTechnPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{a255ca4f-dfe8-485c-894d-7b8332ee0c8d}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2e3080ff-7ccd-4a63-baef-77b2050ec2df}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{ff956e03-f42b-4e05-baa8-cadc211da3d5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

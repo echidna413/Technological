@@ -1,0 +1,18 @@
+﻿@model List<ServerStudio.Models.CompanyModel>
+@{
+    var companies = Model.Select(x => new SelectListItem()
+    {
+        Value = $"{x.id_company}",
+        Text = x.name
+    }).ToList();
+}
+
+<div class="row">
+    <div class="col-md-8 col-sm-4">Предприятие: </div>
+    
+    <div class="col col-md-offset-2 col-sm-offset-2">
+        @Html.DropDownList("company", companies, "Выберите компанию")
+    </div>
+</div>
+
+<script src="~/Scripts/scripts/choose-company.js"></script>

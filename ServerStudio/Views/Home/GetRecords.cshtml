@@ -1,0 +1,17 @@
+﻿@model List<ServerStudio.Models.RecordModel>
+
+<table class="table table-bordered">
+    <tr>
+        <td>Сотрудник</td>
+        <td>Статус</td>
+        <td>Код оборудования</td>
+        <td>Код приспособления</td>
+        <td>Код технологического перехода</td>
+        <td>Код обрабатываемой поверхности</td>
+    </tr>
+
+    @foreach (var record in Model)
+    {
+        @Html.Action("RecordData",new { record = record })
+    }
+</table>

@@ -1,0 +1,240 @@
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.Cache
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+C:\Users\вилкова_АМ\source\repos\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csprojResolveAssemblyReference.cache
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.Cache
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+Z:\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csprojAssemblyReference.cache
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\MySql.Data.DLL
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CopyComplete
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.AddNewUser.resources
+C:\Users\User\Downloads\FormaRegistrNew7\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.EditPrivilege.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csprojAssemblyReference.cache
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.AddNewUser.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.EditPrivilege.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CopyComplete
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+C:\Users\Александра\Documents\моё\универ\Практика\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\MySql.Data.dll
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\Google.Protobuf.dll
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\MySql.Data.xml
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csprojAssemblyReference.cache
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.AddNewUser.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.EditPrivilege.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.cache
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CopyComplete
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+B:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.exe
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\FormaRegistr.pdb
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\MySql.Data.dll
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\Google.Protobuf.dll
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\bin\Debug\MySql.Data.xml
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csprojAssemblyReference.cache
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.AddNewUser.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.EditPrivilege.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.cache
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\Login.csproj.CopyComplete
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.exe
+E:\4 курс\Диплом\FormaRegistrNew2\FormaRegistr\FormaRegistr\obj\Debug\FormaRegistr.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\FormaRegistr.exe
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\FormaRegistr.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\BL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\MySql.Data.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\Google.Protobuf.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\BL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\BL.dll.config
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\MySql.Data.xml
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\Login.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.AddNewUser.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.EditPrivilege.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\Login.csproj.CopyComplete
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.exe
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\FormaRegistr.exe.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\FormaRegistr.exe
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\FormaRegistr.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\BL.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\MySql.Data.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\Google.Protobuf.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\BL.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\BL.dll.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\MySql.Data.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\Login.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.AddNewUser.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.ChooseSpravoch.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.ControlUsers.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.EditPrivilege.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.Entrance.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormChooser.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormKodOborudov.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormKodPrisposobl.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.FormKodTechnPer.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.ImportExport.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.Properties.Resources.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.Settings.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SettingsDB.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochOborud.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochObrabPoverch.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochPrisposob.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.SpravochTechnPer.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\Login.csproj.CopyComplete
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.exe
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\FormaRegistr\obj\Debug\FormaRegistr.pdb

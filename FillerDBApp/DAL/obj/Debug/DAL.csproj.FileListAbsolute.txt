@@ -1,0 +1,86 @@
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.Migrations.Initial.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.Migrations.Add_FK.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.Migrations.RemoveAI_SurfaceCatalog.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.Migrations.addCompany.resources
+C:\Users\diana\OneDrive\Рабочий стол\Учеба\Что касается преддиплома\FillerDBApp\DAL\obj\Debug\DAL.Migrations.Machine.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.ChangeClasses.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial1.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.AddNullableFieldToRecord.resources
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial.resources
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.ChangeClasses.resources
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial1.resources
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.AddNullableFieldToRecord.resources
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.Migrations.FKChanges.resources
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\FillerDBApp\DAL\obj\Debug\DAL.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.Migrations.ChangeClasses.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial1.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.Migrations.AddNullableFieldToRecord.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.Migrations.FKChanges.resources
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.dll
+C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\DAL\obj\Debug\DAL.pdb

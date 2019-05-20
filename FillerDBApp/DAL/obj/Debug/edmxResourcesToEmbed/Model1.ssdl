@@ -1,0 +1,1961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище MachineDbModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Axes">
+    <Key>
+      <PropertyRef Name="axis_id" />
+    </Key>
+    <Property Name="axis_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="BaseForSMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="process_surface_id" Type="int" Nullable="false" />
+    <Property Name="number_base_schema" Type="float" Nullable="false" />
+    <Property Name="base_id" Type="int" Nullable="false" />
+    <Property Name="number_base" Type="float" Nullable="false" />
+    <Property Name="base_surface_id" Type="int" Nullable="false" />
+    <Property Name="number_variant" Type="float" Nullable="false" />
+    <Property Name="number_step" Type="float" Nullable="false" />
+    <Property Name="reverse" Type="bit" Nullable="false" />
+    <Property Name="number_base_surface" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bases">
+    <Key>
+      <PropertyRef Name="device_id" />
+    </Key>
+    <Property Name="device_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_base_surface" Type="int" Nullable="false" />
+    <Property Name="code_surface" Type="float" Nullable="false" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+    <Property Name="com_1_max" Type="float" Nullable="false" />
+    <Property Name="com_1_min" Type="float" Nullable="false" />
+    <Property Name="com_2_max" Type="float" Nullable="false" />
+    <Property Name="com_2_min" Type="float" Nullable="false" />
+    <Property Name="com_3_max" Type="float" Nullable="false" />
+    <Property Name="com_3_min" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BaseTmpLocations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="base_number" Type="float" Nullable="false" />
+    <Property Name="location_number" Type="float" Nullable="false" />
+    <Property Name="size_X_min" Type="float" Nullable="false" />
+    <Property Name="size_X_max" Type="float" Nullable="false" />
+    <Property Name="size_Y_min" Type="float" Nullable="false" />
+    <Property Name="size_Y_max" Type="float" Nullable="false" />
+    <Property Name="size_Z_min" Type="float" Nullable="false" />
+    <Property Name="size_Z_max" Type="float" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="BaseTmpSizes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="base_number" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="float" Nullable="false" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+    <Property Name="size_number" Type="float" Nullable="false" />
+    <Property Name="size_description_id" Type="float" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="max_value" Type="float" Nullable="false" />
+    <Property Name="min_value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BDescriptions">
+    <Key>
+      <PropertyRef Name="billet_id" />
+    </Key>
+    <Property Name="billet_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="code_type_billet_id" Type="int" Nullable="false" />
+    <Property Name="mass_billet" Type="float" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="BGeometries">
+    <Key>
+      <PropertyRef Name="deviation_id" />
+    </Key>
+    <Property Name="deviation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="code_deviation_id" Type="int" Nullable="false" />
+    <Property Name="class_deviation" Type="float" Nullable="false" />
+    <Property Name="value_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BLocations">
+    <Key>
+      <PropertyRef Name="location_id" />
+    </Key>
+    <Property Name="location_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="relation_surface_id" Type="int" Nullable="false" />
+    <Property Name="code_location_id" Type="int" Nullable="false" />
+    <Property Name="limit_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BRelationSizes">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="relation_surface_id" Type="int" Nullable="false" />
+    <Property Name="size" Type="float" Nullable="false" />
+    <Property Name="tolerance" Type="nvarchar(max)" />
+    <Property Name="max_deviation" Type="float" Nullable="false" />
+    <Property Name="min_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BSizeSurfaces">
+    <Key>
+      <PropertyRef Name="size_id" />
+    </Key>
+    <Property Name="size_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="size_description_id" Type="int" Nullable="false" />
+    <Property Name="nominal" Type="float" Nullable="false" />
+    <Property Name="finish" Type="nvarchar(max)" />
+    <Property Name="max_deviation" Type="float" Nullable="false" />
+    <Property Name="min_deviation" Type="float" Nullable="false" />
+    <Property Name="tolerance" Type="float" Nullable="false" />
+    <Property Name="symmetry" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BSurfaces">
+    <Key>
+      <PropertyRef Name="surface_id" />
+    </Key>
+    <Property Name="surface_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="billet_id" Type="int" Nullable="false" />
+    <Property Name="number_surface" Type="float" Nullable="false" />
+    <Property Name="code_surface_id" Type="int" Nullable="false" />
+    <Property Name="zero_point_X" Type="float" Nullable="false" />
+    <Property Name="zero_point_Y" Type="float" Nullable="false" />
+    <Property Name="zero_point_Z" Type="float" Nullable="false" />
+    <Property Name="ra" Type="float" Nullable="false" />
+    <Property Name="rnax" Type="float" Nullable="false" />
+    <Property Name="s" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CodeDeviationGeometries">
+    <Key>
+      <PropertyRef Name="code_geo_deviation_id" />
+    </Key>
+    <Property Name="code_geo_deviation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="image_big" Type="nvarchar(max)" />
+    <Property Name="image_small" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CodeDeviationLocations">
+    <Key>
+      <PropertyRef Name="code_geo_deviation_id" />
+    </Key>
+    <Property Name="code_geo_deviation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="image_big" Type="nvarchar(max)" />
+    <Property Name="image_small" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CodeOrientations">
+    <Key>
+      <PropertyRef Name="orientation_id" />
+    </Key>
+    <Property Name="orientation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_orientation" Type="float" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CodeSurfaces">
+    <Key>
+      <PropertyRef Name="code_surface_id" />
+    </Key>
+    <Property Name="code_surface_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="view_2d" Type="nvarchar(max)" />
+    <Property Name="view_3d_small" Type="nvarchar(max)" />
+    <Property Name="view_3d_big" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CodeSurfaceSizes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_surface_id" Type="int" Nullable="false" />
+    <Property Name="size_number" Type="float" Nullable="false" />
+    <Property Name="size_description_id" Type="float" Nullable="false" />
+    <Property Name="requremeint" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CodeTypeBillets">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_type_billet_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="id_company" />
+    </Key>
+    <Property Name="id_company" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="responsible_employee" Type="int" Nullable="false" />
+    <Property Name="numberof_branch" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="address" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CopyBases">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_equipment" Type="float" Nullable="false" />
+    <Property Name="number_base_surface" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="float" Nullable="false" />
+    <Property Name="com_1_tol" Type="nvarchar(max)" />
+    <Property Name="com_2_tol" Type="nvarchar(max)" />
+    <Property Name="com_3_tol" Type="nvarchar(max)" />
+    <Property Name="com_4_tol" Type="nvarchar(max)" />
+    <Property Name="com_5_tol" Type="nvarchar(max)" />
+    <Property Name="com_6_tol" Type="nvarchar(max)" />
+    <Property Name="com_7_tol" Type="nvarchar(max)" />
+    <Property Name="com_8_tol" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="CopyBaseSurfaces">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_equipment" Type="float" Nullable="false" />
+    <Property Name="number_base_surface" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="float" Nullable="false" />
+    <Property Name="com_1_max" Type="float" Nullable="false" />
+    <Property Name="com_1_min" Type="float" Nullable="false" />
+    <Property Name="com_1_tol" Type="float" Nullable="false" />
+    <Property Name="com_2_max" Type="float" Nullable="false" />
+    <Property Name="com_2_min" Type="float" Nullable="false" />
+    <Property Name="com_2_tol" Type="float" Nullable="false" />
+    <Property Name="com_3_max" Type="float" Nullable="false" />
+    <Property Name="com_3_min" Type="float" Nullable="false" />
+    <Property Name="com_3_tol" Type="float" Nullable="false" />
+    <Property Name="com_4_max" Type="float" Nullable="false" />
+    <Property Name="com_4_min" Type="float" Nullable="false" />
+    <Property Name="com_4_tol" Type="float" Nullable="false" />
+    <Property Name="com_5_max" Type="float" Nullable="false" />
+    <Property Name="com_5_min" Type="float" Nullable="false" />
+    <Property Name="com_5_tol" Type="float" Nullable="false" />
+    <Property Name="com_6_max" Type="float" Nullable="false" />
+    <Property Name="com_6_min" Type="float" Nullable="false" />
+    <Property Name="com_6_tol" Type="float" Nullable="false" />
+    <Property Name="com_7_max" Type="float" Nullable="false" />
+    <Property Name="com_7_min" Type="float" Nullable="false" />
+    <Property Name="com_7_tol" Type="float" Nullable="false" />
+    <Property Name="com_8_max" Type="float" Nullable="false" />
+    <Property Name="com_8_min" Type="float" Nullable="false" />
+    <Property Name="com_8_tol" Type="float" Nullable="false" />
+    <Property Name="locprocess_base_max" Type="float" Nullable="false" />
+    <Property Name="locprocess_base_min" Type="float" Nullable="false" />
+    <Property Name="loc_first_base_max" Type="float" Nullable="false" />
+    <Property Name="loc_first_base_min" Type="float" Nullable="false" />
+    <Property Name="loc_second_base_max" Type="float" Nullable="false" />
+    <Property Name="loc_second_base_min" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CopySMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="number_variant" Type="float" Nullable="false" />
+    <Property Name="number_step" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+    <Property Name="finish" Type="nvarchar(max)" />
+    <Property Name="tolerance" Type="float" Nullable="false" />
+    <Property Name="symmetry" Type="bit" Nullable="false" />
+    <Property Name="zero_point_x" Type="float" Nullable="false" />
+    <Property Name="zero_point_y" Type="float" Nullable="false" />
+    <Property Name="zero_point_z" Type="float" Nullable="false" />
+    <Property Name="surface_size_1" Type="float" Nullable="false" />
+    <Property Name="surface_size_2" Type="float" Nullable="false" />
+    <Property Name="surface_size_3" Type="float" Nullable="false" />
+    <Property Name="surface_size_4" Type="float" Nullable="false" />
+    <Property Name="surface_size_5" Type="float" Nullable="false" />
+    <Property Name="surface_size_6" Type="float" Nullable="false" />
+    <Property Name="surface_size_7" Type="float" Nullable="false" />
+    <Property Name="surface_size_8" Type="float" Nullable="false" />
+    <Property Name="ra" Type="float" Nullable="false" />
+    <Property Name="rmax" Type="float" Nullable="false" />
+    <Property Name="s" Type="float" Nullable="false" />
+    <Property Name="tp" Type="float" Nullable="false" />
+    <Property Name="hrc" Type="float" Nullable="false" />
+    <Property Name="depth" Type="float" Nullable="false" />
+    <Property Name="base_code" Type="float" Nullable="false" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+    <Property Name="device_id" Type="int" Nullable="false" />
+    <Property Name="view_process" Type="float" Nullable="false" />
+    <Property Name="number_machining_step" Type="float" Nullable="false" />
+    <Property Name="not_base" Type="bit" Nullable="false" />
+    <Property Name="number_surface" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DDescriptions">
+    <Key>
+      <PropertyRef Name="detail_id" />
+    </Key>
+    <Property Name="detail_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_detail" Type="nvarchar(max)" />
+    <Property Name="name_detail" Type="nvarchar(max)" />
+    <Property Name="mark_material" Type="nvarchar(max)" />
+    <Property Name="size_production" Type="float" Nullable="false" />
+    <Property Name="size_transmission" Type="float" Nullable="false" />
+    <Property Name="mass_detail" Type="float" Nullable="false" />
+    <Property Name="length" Type="float" Nullable="false" />
+    <Property Name="central_hole" Type="bit" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DGeometries">
+    <Key>
+      <PropertyRef Name="deviation_id" />
+    </Key>
+    <Property Name="deviation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="code_deviation_id" Type="int" Nullable="false" />
+    <Property Name="class_deviation" Type="float" Nullable="false" />
+    <Property Name="value_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DLocations">
+    <Key>
+      <PropertyRef Name="location_id" />
+    </Key>
+    <Property Name="location_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="relation_surface_id" Type="int" Nullable="false" />
+    <Property Name="code_location_id" Type="int" Nullable="false" />
+    <Property Name="limit_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DRelationSizes">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="relation_surface_id" Type="int" Nullable="false" />
+    <Property Name="size" Type="float" Nullable="false" />
+    <Property Name="tolerance" Type="nvarchar(max)" />
+    <Property Name="min_deviation" Type="float" Nullable="false" />
+    <Property Name="max_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DSizeSurfaces">
+    <Key>
+      <PropertyRef Name="size_id" />
+    </Key>
+    <Property Name="size_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="size_description_id" Type="int" Nullable="false" />
+    <Property Name="nominal" Type="float" Nullable="false" />
+    <Property Name="finish" Type="nvarchar(max)" />
+    <Property Name="max_deviation" Type="float" Nullable="false" />
+    <Property Name="min_deviation" Type="float" Nullable="false" />
+    <Property Name="tolerance" Type="float" Nullable="false" />
+    <Property Name="symmetry" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DSurfaces">
+    <Key>
+      <PropertyRef Name="surface_id" />
+    </Key>
+    <Property Name="surface_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="number_surface" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+    <Property Name="zero_point_X" Type="float" Nullable="false" />
+    <Property Name="zero_point_Y" Type="float" Nullable="false" />
+    <Property Name="zero_point_Z" Type="float" Nullable="false" />
+    <Property Name="ra" Type="float" Nullable="false" />
+    <Property Name="rmax" Type="float" Nullable="false" />
+    <Property Name="s" Type="float" Nullable="false" />
+    <Property Name="tp" Type="float" Nullable="false" />
+    <Property Name="hrc" Type="float" Nullable="false" />
+    <Property Name="depth" Type="float" Nullable="false" />
+    <Property Name="internal_stress_1" Type="float" Nullable="false" />
+    <Property Name="internal_stress_2" Type="float" Nullable="false" />
+    <Property Name="internal_stress_3" Type="float" Nullable="false" />
+    <Property Name="constructor_base" Type="bit" Nullable="false" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+    <Property Name="requirement" Type="bit" Nullable="false" />
+    <Property Name="image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EBaseLocations">
+    <Key>
+      <PropertyRef Name="base_requirement_id" />
+      <PropertyRef Name="location_number" />
+    </Key>
+    <Property Name="base_requirement_id" Type="int" Nullable="false" />
+    <Property Name="location_number" Type="float" Nullable="false" />
+    <Property Name="size_x_min" Type="float" Nullable="false" />
+    <Property Name="size_x_max" Type="float" Nullable="false" />
+    <Property Name="size_y_min" Type="float" Nullable="false" />
+    <Property Name="size_y_max" Type="float" Nullable="false" />
+    <Property Name="size_z_min" Type="float" Nullable="false" />
+    <Property Name="size_z_max" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EBaseSchemes">
+    <Key>
+      <PropertyRef Name="base_scheme_id" />
+    </Key>
+    <Property Name="base_scheme_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lathe_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="enabled" Type="bit" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EBaseSizes">
+    <Key>
+      <PropertyRef Name="base_requirement_id" />
+      <PropertyRef Name="size_number" />
+    </Key>
+    <Property Name="base_requirement_id" Type="int" Nullable="false" />
+    <Property Name="size_number" Type="float" Nullable="false" />
+    <Property Name="min_value" Type="float" Nullable="false" />
+    <Property Name="max_value" Type="float" Nullable="false" />
+    <Property Name="size_description_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EBaseSurface1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_equipment" Type="float" Nullable="false" />
+    <Property Name="number_base_surface" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="float" Nullable="false" />
+    <Property Name="com_1_tol" Type="nvarchar(max)" />
+    <Property Name="com_2_tol" Type="nvarchar(max)" />
+    <Property Name="com_3_tol" Type="nvarchar(max)" />
+    <Property Name="com_4_tol" Type="nvarchar(max)" />
+    <Property Name="com_5_tol" Type="nvarchar(max)" />
+    <Property Name="com_6_tol" Type="nvarchar(max)" />
+    <Property Name="com_7_tol" Type="nvarchar(max)" />
+    <Property Name="com_8_tol" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EBaseSurfaces">
+    <Key>
+      <PropertyRef Name="base_requirement_id" />
+    </Key>
+    <Property Name="base_requirement_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="base_scheme_id" Type="int" Nullable="false" />
+    <Property Name="base_number" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EBaseTmps">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="record_id" Type="int" Nullable="false" />
+    <Property Name="number_base_surface" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="float" Nullable="false" />
+    <Property Name="com_1_max" Type="float" Nullable="false" />
+    <Property Name="com_1_min" Type="float" Nullable="false" />
+    <Property Name="com_1_tol" Type="nvarchar(max)" />
+    <Property Name="com_2_max" Type="float" Nullable="false" />
+    <Property Name="com_2_min" Type="float" Nullable="false" />
+    <Property Name="com_2_tol" Type="nvarchar(max)" />
+    <Property Name="com_3_max" Type="float" Nullable="false" />
+    <Property Name="com_3_min" Type="float" Nullable="false" />
+    <Property Name="com_3_tol" Type="nvarchar(max)" />
+    <Property Name="com_4_max" Type="float" Nullable="false" />
+    <Property Name="com_4_min" Type="float" Nullable="false" />
+    <Property Name="com_4_tol" Type="nvarchar(max)" />
+    <Property Name="loc_processbase_min" Type="float" Nullable="false" />
+    <Property Name="loc_processbase_max" Type="float" Nullable="false" />
+    <Property Name="loc_firstbase_min" Type="float" Nullable="false" />
+    <Property Name="loc_firstbase_max" Type="float" Nullable="false" />
+    <Property Name="loc_secondbase_min" Type="float" Nullable="false" />
+    <Property Name="loc_secondbase_max" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ECarriages">
+    <Key>
+      <PropertyRef Name="carriage_id" />
+    </Key>
+    <Property Name="carriage_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lathe_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="position_count" Type="float" Nullable="false" />
+    <Property Name="synchronization" Type="bit" Nullable="false" />
+    <Property Name="parallel_processing" Type="bit" Nullable="false" />
+    <Property Name="move_x_value" Type="float" Nullable="false" />
+    <Property Name="move_y_value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EDescriptions">
+    <Key>
+      <PropertyRef Name="number_equipment" />
+    </Key>
+    <Property Name="number_equipment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="device_id" Type="int" Nullable="false" />
+    <Property Name="view_process" Type="float" Nullable="false" />
+    <Property Name="code_surface_output" Type="float" Nullable="false" />
+    <Property Name="sizesurface_1_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_1_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_2_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_2_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_3_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_3_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_4_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_4_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_5_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_5_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_6_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_6_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_7_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_7_min" Type="float" Nullable="false" />
+    <Property Name="sizesurface_8_max" Type="float" Nullable="false" />
+    <Property Name="sizesurface_8_min" Type="float" Nullable="false" />
+    <Property Name="output_tolerance" Type="float" Nullable="false" />
+    <Property Name="output_ra" Type="float" Nullable="false" />
+    <Property Name="output_rmax" Type="float" Nullable="false" />
+    <Property Name="output_s" Type="float" Nullable="false" />
+    <Property Name="output_tp" Type="float" Nullable="false" />
+    <Property Name="output_hrc" Type="float" Nullable="false" />
+    <Property Name="output_depth" Type="float" Nullable="false" />
+    <Property Name="output_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="output_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="output_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="code_surface_stock" Type="nvarchar(max)" />
+    <Property Name="input_tolerance" Type="float" Nullable="false" />
+    <Property Name="input_ra" Type="float" Nullable="false" />
+    <Property Name="input_rmax" Type="float" Nullable="false" />
+    <Property Name="input_s" Type="float" Nullable="false" />
+    <Property Name="input_tp" Type="float" Nullable="false" />
+    <Property Name="input_hrc" Type="float" Nullable="false" />
+    <Property Name="input_depth" Type="float" Nullable="false" />
+    <Property Name="input_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="input_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="input_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="mark_material" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EDevices">
+    <Key>
+      <PropertyRef Name="device_id" />
+    </Key>
+    <Property Name="device_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="base_scheme_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="code" Type="nvarchar(max)" />
+    <Property Name="enabled" Type="bit" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EFeeds">
+    <Key>
+      <PropertyRef Name="feed_id" />
+    </Key>
+    <Property Name="feed_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="carriage_id" Type="int" Nullable="false" />
+    <Property Name="axis" Type="int" Nullable="false" />
+    <Property Name="value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EGeoSTmps">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="deviation_id" Type="int" Nullable="false" />
+    <Property Name="code_deviation" Type="float" Nullable="false" />
+    <Property Name="value_deviation" Type="float" Nullable="false" />
+    <Property Name="class_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EGeoTmps">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="deviation_id" Type="int" Nullable="false" />
+    <Property Name="code_deviation" Type="float" Nullable="false" />
+    <Property Name="value_deviation" Type="float" Nullable="false" />
+    <Property Name="class_deviation" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EGroups">
+    <Key>
+      <PropertyRef Name="group_id" />
+    </Key>
+    <Property Name="group_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ELathes">
+    <Key>
+      <PropertyRef Name="lathe_id" />
+    </Key>
+    <Property Name="lathe_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="group_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="code" Type="nvarchar(max)" />
+    <Property Name="enabled" Type="bit" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="id_employee" />
+    </Key>
+    <Property Name="id_employee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_role" Type="int" Nullable="false" />
+    <Property Name="id_company" Type="int" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar(max)" />
+    <Property Name="second_name" Type="nvarchar(max)" />
+    <Property Name="patronymic" Type="nvarchar(max)" />
+    <Property Name="login" Type="nvarchar(max)" />
+    <Property Name="password" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EquipmentCatalogs">
+    <Key>
+      <PropertyRef Name="equipment_code" />
+    </Key>
+    <Property Name="equipment_code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="model" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ERelationCarriages">
+    <Key>
+      <PropertyRef Name="relation_id" />
+    </Key>
+    <Property Name="relation_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="carriage_id" Type="int" Nullable="false" />
+    <Property Name="relation_carriage_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EResults">
+    <Key>
+      <PropertyRef Name="record_id" />
+    </Key>
+    <Property Name="record_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="device_id" Type="int" Nullable="false" />
+    <Property Name="view_process" Type="float" Nullable="false" />
+    <Property Name="code_surface_output" Type="float" Nullable="false" />
+    <Property Name="code_surface_input" Type="float" Nullable="false" />
+    <Property Name="mark_material" Type="nvarchar(max)" />
+    <Property Name="size_surface_1_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_1_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_2_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_2_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_3_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_3_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_4_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_4_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_5_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_5_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_6_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_6_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_7_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_7_min" Type="float" Nullable="false" />
+    <Property Name="size_surface_8_max" Type="float" Nullable="false" />
+    <Property Name="size_surface_8_min" Type="float" Nullable="false" />
+    <Property Name="max_output_tolerance" Type="float" Nullable="false" />
+    <Property Name="min_output_tolerance" Type="float" Nullable="false" />
+    <Property Name="max_output_ra" Type="float" Nullable="false" />
+    <Property Name="min_output_ra" Type="float" Nullable="false" />
+    <Property Name="max_output_rmax" Type="float" Nullable="false" />
+    <Property Name="min_output_rmax" Type="float" Nullable="false" />
+    <Property Name="max_output_s" Type="float" Nullable="false" />
+    <Property Name="min_output_s" Type="float" Nullable="false" />
+    <Property Name="max_output_tp" Type="float" Nullable="false" />
+    <Property Name="min_output_tp" Type="float" Nullable="false" />
+    <Property Name="max_output_hrc" Type="float" Nullable="false" />
+    <Property Name="min_output_hrc" Type="float" Nullable="false" />
+    <Property Name="max_output_depth" Type="float" Nullable="false" />
+    <Property Name="min_output_depth" Type="float" Nullable="false" />
+    <Property Name="max_output_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="min_output_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="max_output_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="min_output_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="max_output_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="min_output_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="max_input_tolerance" Type="float" Nullable="false" />
+    <Property Name="min_input_tolerance" Type="float" Nullable="false" />
+    <Property Name="max_input_ra" Type="float" Nullable="false" />
+    <Property Name="min_input_ra" Type="float" Nullable="false" />
+    <Property Name="max_input_rmax" Type="float" Nullable="false" />
+    <Property Name="min_input_rmax" Type="float" Nullable="false" />
+    <Property Name="max_input_s" Type="float" Nullable="false" />
+    <Property Name="min_input_s" Type="float" Nullable="false" />
+    <Property Name="max_input_tp" Type="float" Nullable="false" />
+    <Property Name="min_input_tp" Type="float" Nullable="false" />
+    <Property Name="max_input_hrc" Type="float" Nullable="false" />
+    <Property Name="min_input_hrc" Type="float" Nullable="false" />
+    <Property Name="max_input_depth" Type="float" Nullable="false" />
+    <Property Name="min_input_depth" Type="float" Nullable="false" />
+    <Property Name="max_input_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="min_input_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="max_input_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="min_input_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="max_input_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="min_input_internalstress_3" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ESpeeds">
+    <Key>
+      <PropertyRef Name="speed_id" />
+    </Key>
+    <Property Name="speed_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="spindle_id" Type="int" Nullable="false" />
+    <Property Name="reverse" Type="bit" Nullable="false" />
+    <Property Name="value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ESpindles">
+    <Key>
+      <PropertyRef Name="spindle_id" />
+    </Key>
+    <Property Name="spindle_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lathe_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="step_feed" Type="bit" Nullable="false" />
+    <Property Name="min_value" Type="float" Nullable="false" />
+    <Property Name="max_value" Type="float" Nullable="false" />
+    <Property Name="reverse_feed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ETransitionBases">
+    <Key>
+      <PropertyRef Name="base_requirement_id" />
+    </Key>
+    <Property Name="base_requirement_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transition_id" Type="int" Nullable="false" />
+    <Property Name="base_number" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ETransitionBaseTolerances">
+    <Key>
+      <PropertyRef Name="base_requirement_id" />
+      <PropertyRef Name="size_number" />
+    </Key>
+    <Property Name="base_requirement_id" Type="int" Nullable="false" />
+    <Property Name="size_number" Type="float" Nullable="false" />
+    <Property Name="tolerance" Type="float" Nullable="false" />
+    <Property Name="size_description_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ETransitionGeometryInputs">
+    <Key>
+      <PropertyRef Name="transition_id" />
+      <PropertyRef Name="code_deviation_id" />
+    </Key>
+    <Property Name="transition_id" Type="int" Nullable="false" />
+    <Property Name="code_deviation_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="float" Nullable="false" />
+    <Property Name="class_" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ETransitionGeometryOutputs">
+    <Key>
+      <PropertyRef Name="transition_id" />
+      <PropertyRef Name="code_deviation_id" />
+    </Key>
+    <Property Name="transition_id" Type="int" Nullable="false" />
+    <Property Name="code_deviation_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="float" Nullable="false" />
+    <Property Name="class_" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ETransitions">
+    <Key>
+      <PropertyRef Name="transition_id" />
+    </Key>
+    <Property Name="transition_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="base_scheme_id" Type="int" Nullable="false" />
+    <Property Name="type_process_id" Type="int" Nullable="false" />
+    <Property Name="code_output_surface" Type="nvarchar(max)" />
+    <Property Name="output_tolerance" Type="float" Nullable="false" />
+    <Property Name="output_ra" Type="float" Nullable="false" />
+    <Property Name="output_rmax" Type="float" Nullable="false" />
+    <Property Name="output_tp" Type="float" Nullable="false" />
+    <Property Name="output_s" Type="float" Nullable="false" />
+    <Property Name="output_hrc" Type="float" Nullable="false" />
+    <Property Name="output_depth" Type="float" Nullable="false" />
+    <Property Name="output_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="output_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="output_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="code_input_surface" Type="nvarchar(max)" />
+    <Property Name="input_tolerance" Type="float" Nullable="false" />
+    <Property Name="input_ra" Type="float" Nullable="false" />
+    <Property Name="input_rmax" Type="float" Nullable="false" />
+    <Property Name="input_tp" Type="float" Nullable="false" />
+    <Property Name="input_s" Type="float" Nullable="false" />
+    <Property Name="input_hrc" Type="float" Nullable="false" />
+    <Property Name="input_depth" Type="float" Nullable="false" />
+    <Property Name="input_internalstress_1" Type="float" Nullable="false" />
+    <Property Name="input_internalstress_2" Type="float" Nullable="false" />
+    <Property Name="input_internalstress_3" Type="float" Nullable="false" />
+    <Property Name="mark_material" Type="nvarchar(max)" />
+    <Property Name="enabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ETransitionSizes">
+    <Key>
+      <PropertyRef Name="transition_id" />
+      <PropertyRef Name="size_number" />
+    </Key>
+    <Property Name="transition_id" Type="int" Nullable="false" />
+    <Property Name="size_number" Type="float" Nullable="false" />
+    <Property Name="min_value" Type="float" Nullable="false" />
+    <Property Name="max_value" Type="float" Nullable="false" />
+    <Property Name="size_description_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExchangeSizes">
+    <Key>
+      <PropertyRef Name="record_id" />
+    </Key>
+    <Property Name="record_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_surface_input" Type="nvarchar(max)" />
+    <Property Name="code_surface_output" Type="nvarchar(max)" />
+    <Property Name="size_1" Type="float" Nullable="false" />
+    <Property Name="size_2" Type="float" Nullable="false" />
+    <Property Name="size_3" Type="float" Nullable="false" />
+    <Property Name="size_4" Type="float" Nullable="false" />
+    <Property Name="size_5" Type="float" Nullable="false" />
+    <Property Name="size_6" Type="float" Nullable="false" />
+    <Property Name="size_7" Type="float" Nullable="false" />
+    <Property Name="size_8" Type="float" Nullable="false" />
+    <Property Name="size_9" Type="float" Nullable="false" />
+    <Property Name="size_10" Type="float" Nullable="false" />
+    <Property Name="size_11" Type="float" Nullable="false" />
+    <Property Name="size_12" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FixtureCatalogs">
+    <Key>
+      <PropertyRef Name="fixture_code" />
+    </Key>
+    <Property Name="fixture_code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fixture_value" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GroupOperations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_group" Type="float" Nullable="false" />
+    <Property Name="name_group" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="NewSMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="number_variant" Type="float" Nullable="false" />
+    <Property Name="number_step" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+    <Property Name="finish" Type="nvarchar(max)" />
+    <Property Name="tolerance" Type="float" Nullable="false" />
+    <Property Name="symmetry" Type="bit" Nullable="false" />
+    <Property Name="zero_point_x" Type="float" Nullable="false" />
+    <Property Name="zero_point_y" Type="float" Nullable="false" />
+    <Property Name="zero_point_z" Type="float" Nullable="false" />
+    <Property Name="surface_size_1" Type="float" Nullable="false" />
+    <Property Name="surface_size_2" Type="float" Nullable="false" />
+    <Property Name="surface_size_3" Type="float" Nullable="false" />
+    <Property Name="surface_size_4" Type="float" Nullable="false" />
+    <Property Name="surface_size_5" Type="float" Nullable="false" />
+    <Property Name="surface_size_6" Type="float" Nullable="false" />
+    <Property Name="surface_size_7" Type="float" Nullable="false" />
+    <Property Name="surface_size_8" Type="float" Nullable="false" />
+    <Property Name="ra" Type="float" Nullable="false" />
+    <Property Name="rmax" Type="float" Nullable="false" />
+    <Property Name="s" Type="float" Nullable="false" />
+    <Property Name="tp" Type="float" Nullable="false" />
+    <Property Name="hrc" Type="float" Nullable="false" />
+    <Property Name="depth" Type="float" Nullable="false" />
+    <Property Name="base_code" Type="float" Nullable="false" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+    <Property Name="device_id" Type="int" Nullable="false" />
+    <Property Name="number_machining_step" Type="float" Nullable="false" />
+    <Property Name="not_base" Type="bit" Nullable="false" />
+    <Property Name="number_surface" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Operations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_operation" Type="float" Nullable="false" />
+    <Property Name="number_group" Type="float" Nullable="false" />
+    <Property Name="name_operation" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ProcessCatalogs">
+    <Key>
+      <PropertyRef Name="process_code" />
+    </Key>
+    <Property Name="process_code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Records">
+    <Key>
+      <PropertyRef Name="id_record" />
+    </Key>
+    <Property Name="id_record" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_company" Type="int" Nullable="false" />
+    <Property Name="id_employee" Type="int" Nullable="false" />
+    <Property Name="id_status" Type="int" Nullable="false" />
+    <Property Name="equipment_code" Type="int" Nullable="false" />
+    <Property Name="fixture_code" Type="int" Nullable="false" />
+    <Property Name="process_code" Type="int" Nullable="false" />
+    <Property Name="surface_code" Type="int" Nullable="false" />
+    <Property Name="surf_min_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_min_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_max_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_complexSurface_code" Type="int" Nullable="false" />
+    <Property Name="surf_qualification" Type="int" Nullable="false" />
+    <Property Name="surf_Ra" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_Rmax" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_S" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_tp" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_hardnessHRC" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_voltage1" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_voltage2" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_voltage3" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_straightness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_flatness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_roundness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_cylindricity" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_longitudinalSectionProfile" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_radialBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_faceBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_fullRadialBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_fullFaceBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_formProfile" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surf_formSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_surfaceCode" Type="int" Nullable="false" />
+    <Property Name="bil_min_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_min_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_max_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_complexSurface_code" Type="int" Nullable="false" />
+    <Property Name="bil_qualification" Type="int" Nullable="false" />
+    <Property Name="bil_Ra" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_Rmax" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_S" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_tp" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_hardnessHRC" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_voltage1" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_voltage2" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_voltage3" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_straightness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_flatness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_roundness" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_cylindricity" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_longitudinalSectionProfile" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_radialBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_faceBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_fullRadialBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_fullFaceBeat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_formProfile" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="bil_formSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_surfaceCode" Type="int" Nullable="false" />
+    <Property Name="fbs_min_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_min_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_complexSurface_code" Type="int" Nullable="false" />
+    <Property Name="fbs_min_toSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fbs_max_toSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_surfaceCode" Type="int" Nullable="false" />
+    <Property Name="sbs_min_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_complexSurface_code" Type="int" Nullable="false" />
+    <Property Name="sbs_min_toSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_toSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_min_toFbs" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sbs_max_toFbs" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_surfaceCode" Type="int" Nullable="false" />
+    <Property Name="tbs_min_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_sd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_ld" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_length" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_width" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_angleX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_angleY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_angleZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_distPlaneX" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_distPlaneY" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_distPlaneZ" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_complexSurface_code" Type="int" Nullable="false" />
+    <Property Name="tbs_min_toSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_toSurface" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_toFbs" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_toFbs" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_min_toSbs" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="tbs_max_toSbs" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="id_role" />
+    </Key>
+    <Property Name="id_role" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="canEnter" Type="bit" Nullable="false" />
+    <Property Name="canGetData" Type="bit" Nullable="false" />
+    <Property Name="canEdit" Type="bit" Nullable="false" />
+    <Property Name="canEditCatalog" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SizeDescriptions">
+    <Key>
+      <PropertyRef Name="size_description_id" />
+    </Key>
+    <Property Name="size_description_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="size_number" Type="float" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="surface_id" Type="int" Nullable="false" />
+    <Property Name="number_variant" Type="float" Nullable="false" />
+    <Property Name="number_step" Type="float" Nullable="false" />
+    <Property Name="code_surface" Type="nvarchar(max)" />
+    <Property Name="finish" Type="nvarchar(max)" />
+    <Property Name="tolerance" Type="float" Nullable="false" />
+    <Property Name="symmetry" Type="bit" Nullable="false" />
+    <Property Name="zero_point_x" Type="float" Nullable="false" />
+    <Property Name="zero_point_y" Type="float" Nullable="false" />
+    <Property Name="zero_point_z" Type="float" Nullable="false" />
+    <Property Name="surface_size_1" Type="float" Nullable="false" />
+    <Property Name="surface_size_2" Type="float" Nullable="false" />
+    <Property Name="surface_size_3" Type="float" Nullable="false" />
+    <Property Name="surface_size_4" Type="float" Nullable="false" />
+    <Property Name="surface_size_5" Type="float" Nullable="false" />
+    <Property Name="surface_size_6" Type="float" Nullable="false" />
+    <Property Name="surface_size_7" Type="float" Nullable="false" />
+    <Property Name="surface_size_8" Type="float" Nullable="false" />
+    <Property Name="ra" Type="float" Nullable="false" />
+    <Property Name="rmax" Type="float" Nullable="false" />
+    <Property Name="s" Type="float" Nullable="false" />
+    <Property Name="tp" Type="float" Nullable="false" />
+    <Property Name="hrc" Type="float" Nullable="false" />
+    <Property Name="depth" Type="float" Nullable="false" />
+    <Property Name="base_code" Type="float" Nullable="false" />
+    <Property Name="orientation" Type="float" Nullable="false" />
+    <Property Name="device_id" Type="int" Nullable="false" />
+    <Property Name="view_process" Type="float" Nullable="false" />
+    <Property Name="number_machining_step" Type="float" Nullable="false" />
+    <Property Name="not_base" Type="bit" Nullable="false" />
+    <Property Name="number_surface" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SurfaceCatalogs">
+    <Key>
+      <PropertyRef Name="surface_code" />
+    </Key>
+    <Property Name="surface_code" Type="int" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Trees">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="variant_tp" Type="nvarchar(max)" />
+    <Property Name="detail" Type="float" Nullable="false" />
+    <Property Name="surface" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeProcesses">
+    <Key>
+      <PropertyRef Name="type_process_id" />
+    </Key>
+    <Property Name="type_process_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Words">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="number_word" Type="float" Nullable="false" />
+    <Property Name="word" Type="nvarchar(max)" />
+    <Property Name="group_operation" Type="float" Nullable="false" />
+    <Property Name="operation" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_BGeometries_dbo_BSurfaces_surface_id">
+    <End Role="BSurfaces" Type="Self.BSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BGeometries" Type="Self.BGeometries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="BGeometries">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_BLocations_dbo_BSurfaces_surface_id">
+    <End Role="BSurfaces" Type="Self.BSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BLocations" Type="Self.BLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="BLocations">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_BRelationSizes_dbo_BSurfaces_surface_id">
+    <End Role="BSurfaces" Type="Self.BSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BRelationSizes" Type="Self.BRelationSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="BRelationSizes">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_BSizeSurfaces_dbo_BSurfaces_surface_id">
+    <End Role="BSurfaces" Type="Self.BSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BSizeSurfaces" Type="Self.BSizeSurfaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="BSizeSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_BSurfaces_dbo_BDescriptions_billet_id">
+    <End Role="BDescriptions" Type="Self.BDescriptions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BSurfaces" Type="Self.BSurfaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BDescriptions">
+        <PropertyRef Name="billet_id" />
+      </Principal>
+      <Dependent Role="BSurfaces">
+        <PropertyRef Name="billet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_CodeSurfaceSizes_dbo_CodeSurfaces_code_surface_id">
+    <End Role="CodeSurfaces" Type="Self.CodeSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CodeSurfaceSizes" Type="Self.CodeSurfaceSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CodeSurfaces">
+        <PropertyRef Name="code_surface_id" />
+      </Principal>
+      <Dependent Role="CodeSurfaceSizes">
+        <PropertyRef Name="code_surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_DGeometries_dbo_DSurfaces_surface_id">
+    <End Role="DSurfaces" Type="Self.DSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DGeometries" Type="Self.DGeometries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="DGeometries">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_DLocations_dbo_DSurfaces_surface_id">
+    <End Role="DSurfaces" Type="Self.DSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DLocations" Type="Self.DLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="DLocations">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_DRelationSizes_dbo_DSurfaces_surface_id">
+    <End Role="DSurfaces" Type="Self.DSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DRelationSizes" Type="Self.DRelationSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="DRelationSizes">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_DSizeSurfaces_dbo_DSurfaces_surface_id">
+    <End Role="DSurfaces" Type="Self.DSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DSizeSurfaces" Type="Self.DSizeSurfaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Principal>
+      <Dependent Role="DSizeSurfaces">
+        <PropertyRef Name="surface_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_DSurfaces_dbo_DDescriptions_detail_id">
+    <End Role="DDescriptions" Type="Self.DDescriptions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DSurfaces" Type="Self.DSurfaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DDescriptions">
+        <PropertyRef Name="detail_id" />
+      </Principal>
+      <Dependent Role="DSurfaces">
+        <PropertyRef Name="detail_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EBaseLocations_dbo_EBaseSurfaces_base_requirement_id">
+    <End Role="EBaseSurfaces" Type="Self.EBaseSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EBaseLocations" Type="Self.EBaseLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBaseSurfaces">
+        <PropertyRef Name="base_requirement_id" />
+      </Principal>
+      <Dependent Role="EBaseLocations">
+        <PropertyRef Name="base_requirement_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EBaseSchemes_dbo_ELathes_lathe_id">
+    <End Role="ELathes" Type="Self.ELathes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EBaseSchemes" Type="Self.EBaseSchemes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ELathes">
+        <PropertyRef Name="lathe_id" />
+      </Principal>
+      <Dependent Role="EBaseSchemes">
+        <PropertyRef Name="lathe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EBaseSizes_dbo_EBaseSurfaces_base_requirement_id">
+    <End Role="EBaseSurfaces" Type="Self.EBaseSurfaces" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EBaseSizes" Type="Self.EBaseSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBaseSurfaces">
+        <PropertyRef Name="base_requirement_id" />
+      </Principal>
+      <Dependent Role="EBaseSizes">
+        <PropertyRef Name="base_requirement_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EBaseSurfaces_dbo_EBaseSchemes_base_scheme_id">
+    <End Role="EBaseSchemes" Type="Self.EBaseSchemes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EBaseSurfaces" Type="Self.EBaseSurfaces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBaseSchemes">
+        <PropertyRef Name="base_scheme_id" />
+      </Principal>
+      <Dependent Role="EBaseSurfaces">
+        <PropertyRef Name="base_scheme_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ECarriages_dbo_ELathes_lathe_id">
+    <End Role="ELathes" Type="Self.ELathes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ECarriages" Type="Self.ECarriages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ELathes">
+        <PropertyRef Name="lathe_id" />
+      </Principal>
+      <Dependent Role="ECarriages">
+        <PropertyRef Name="lathe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EDevices_dbo_EBaseSchemes_base_scheme_id">
+    <End Role="EBaseSchemes" Type="Self.EBaseSchemes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EDevices" Type="Self.EDevices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBaseSchemes">
+        <PropertyRef Name="base_scheme_id" />
+      </Principal>
+      <Dependent Role="EDevices">
+        <PropertyRef Name="base_scheme_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EFeeds_dbo_ECarriages_carriage_id">
+    <End Role="ECarriages" Type="Self.ECarriages" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EFeeds" Type="Self.EFeeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ECarriages">
+        <PropertyRef Name="carriage_id" />
+      </Principal>
+      <Dependent Role="EFeeds">
+        <PropertyRef Name="carriage_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ELathes_dbo_EGroups_group_id">
+    <End Role="EGroups" Type="Self.EGroups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ELathes" Type="Self.ELathes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EGroups">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="ELathes">
+        <PropertyRef Name="group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Employees_dbo_Companies_id_company">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="id_company" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="id_company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Employees_dbo_Roles_id_role">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="id_role" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="id_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ERelationCarriages_dbo_ECarriages_carriage_id">
+    <End Role="ECarriages" Type="Self.ECarriages" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ERelationCarriages" Type="Self.ERelationCarriages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ECarriages">
+        <PropertyRef Name="carriage_id" />
+      </Principal>
+      <Dependent Role="ERelationCarriages">
+        <PropertyRef Name="carriage_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ESpeeds_dbo_ESpindles_spindle_id">
+    <End Role="ESpindles" Type="Self.ESpindles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ESpeeds" Type="Self.ESpeeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESpindles">
+        <PropertyRef Name="spindle_id" />
+      </Principal>
+      <Dependent Role="ESpeeds">
+        <PropertyRef Name="spindle_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ESpindles_dbo_ELathes_lathe_id">
+    <End Role="ELathes" Type="Self.ELathes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ESpindles" Type="Self.ESpindles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ELathes">
+        <PropertyRef Name="lathe_id" />
+      </Principal>
+      <Dependent Role="ESpindles">
+        <PropertyRef Name="lathe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ETransitionBases_dbo_ETransitions_transition_id">
+    <End Role="ETransitions" Type="Self.ETransitions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ETransitionBases" Type="Self.ETransitionBases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ETransitions">
+        <PropertyRef Name="transition_id" />
+      </Principal>
+      <Dependent Role="ETransitionBases">
+        <PropertyRef Name="transition_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ETransitionBaseTolerances_dbo_ETransitionBases_base_requirement_id">
+    <End Role="ETransitionBases" Type="Self.ETransitionBases" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ETransitionBaseTolerances" Type="Self.ETransitionBaseTolerances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ETransitionBases">
+        <PropertyRef Name="base_requirement_id" />
+      </Principal>
+      <Dependent Role="ETransitionBaseTolerances">
+        <PropertyRef Name="base_requirement_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ETransitionGeometryInputs_dbo_ETransitions_transition_id">
+    <End Role="ETransitions" Type="Self.ETransitions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ETransitionGeometryInputs" Type="Self.ETransitionGeometryInputs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ETransitions">
+        <PropertyRef Name="transition_id" />
+      </Principal>
+      <Dependent Role="ETransitionGeometryInputs">
+        <PropertyRef Name="transition_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ETransitionGeometryOutputs_dbo_ETransitions_transition_id">
+    <End Role="ETransitions" Type="Self.ETransitions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ETransitionGeometryOutputs" Type="Self.ETransitionGeometryOutputs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ETransitions">
+        <PropertyRef Name="transition_id" />
+      </Principal>
+      <Dependent Role="ETransitionGeometryOutputs">
+        <PropertyRef Name="transition_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ETransitions_dbo_EBaseSchemes_base_scheme_id">
+    <End Role="EBaseSchemes" Type="Self.EBaseSchemes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ETransitions" Type="Self.ETransitions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EBaseSchemes">
+        <PropertyRef Name="base_scheme_id" />
+      </Principal>
+      <Dependent Role="ETransitions">
+        <PropertyRef Name="base_scheme_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ETransitionSizes_dbo_ETransitions_transition_id">
+    <End Role="ETransitions" Type="Self.ETransitions" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ETransitionSizes" Type="Self.ETransitionSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ETransitions">
+        <PropertyRef Name="transition_id" />
+      </Principal>
+      <Dependent Role="ETransitionSizes">
+        <PropertyRef Name="transition_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_Companies_id_company">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="id_company" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="id_company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_Employees_id_employee">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="id_employee" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="id_employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_EquipmentCatalogs_equipment_code">
+    <End Role="EquipmentCatalogs" Type="Self.EquipmentCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipmentCatalogs">
+        <PropertyRef Name="equipment_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="equipment_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_FixtureCatalogs_fixture_code">
+    <End Role="FixtureCatalogs" Type="Self.FixtureCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FixtureCatalogs">
+        <PropertyRef Name="fixture_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="fixture_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_ProcessCatalogs_process_code">
+    <End Role="ProcessCatalogs" Type="Self.ProcessCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProcessCatalogs">
+        <PropertyRef Name="process_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="process_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_Status_id_status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="id_status" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="id_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_SurfaceCatalogs_bil_surfaceCode">
+    <End Role="SurfaceCatalogs" Type="Self.SurfaceCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurfaceCatalogs">
+        <PropertyRef Name="surface_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="bil_surfaceCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_SurfaceCatalogs_fbs_surfaceCode">
+    <End Role="SurfaceCatalogs" Type="Self.SurfaceCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurfaceCatalogs">
+        <PropertyRef Name="surface_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="fbs_surfaceCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_SurfaceCatalogs_sbs_surfaceCode">
+    <End Role="SurfaceCatalogs" Type="Self.SurfaceCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurfaceCatalogs">
+        <PropertyRef Name="surface_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="sbs_surfaceCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_SurfaceCatalogs_surface_code">
+    <End Role="SurfaceCatalogs" Type="Self.SurfaceCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurfaceCatalogs">
+        <PropertyRef Name="surface_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="surface_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Records_dbo_SurfaceCatalogs_tbs_surfaceCode">
+    <End Role="SurfaceCatalogs" Type="Self.SurfaceCatalogs" Multiplicity="1" />
+    <End Role="Records" Type="Self.Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SurfaceCatalogs">
+        <PropertyRef Name="surface_code" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="tbs_surfaceCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище MachineDbModelContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Axes" EntityType="Self.Axes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseForSMS" EntityType="Self.BaseForSMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bases" EntityType="Self.Bases" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseTmpLocations" EntityType="Self.BaseTmpLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseTmpSizes" EntityType="Self.BaseTmpSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BDescriptions" EntityType="Self.BDescriptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BGeometries" EntityType="Self.BGeometries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BLocations" EntityType="Self.BLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BRelationSizes" EntityType="Self.BRelationSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BSizeSurfaces" EntityType="Self.BSizeSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BSurfaces" EntityType="Self.BSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CodeDeviationGeometries" EntityType="Self.CodeDeviationGeometries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CodeDeviationLocations" EntityType="Self.CodeDeviationLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CodeOrientations" EntityType="Self.CodeOrientations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CodeSurfaces" EntityType="Self.CodeSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CodeSurfaceSizes" EntityType="Self.CodeSurfaceSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CodeTypeBillets" EntityType="Self.CodeTypeBillets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CopyBases" EntityType="Self.CopyBases" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CopyBaseSurfaces" EntityType="Self.CopyBaseSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CopySMS" EntityType="Self.CopySMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DDescriptions" EntityType="Self.DDescriptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DGeometries" EntityType="Self.DGeometries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DLocations" EntityType="Self.DLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DRelationSizes" EntityType="Self.DRelationSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DSizeSurfaces" EntityType="Self.DSizeSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DSurfaces" EntityType="Self.DSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBaseLocations" EntityType="Self.EBaseLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBaseSchemes" EntityType="Self.EBaseSchemes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBaseSizes" EntityType="Self.EBaseSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBaseSurface1" EntityType="Self.EBaseSurface1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBaseSurfaces" EntityType="Self.EBaseSurfaces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EBaseTmps" EntityType="Self.EBaseTmps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ECarriages" EntityType="Self.ECarriages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EDescriptions" EntityType="Self.EDescriptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EDevices" EntityType="Self.EDevices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EFeeds" EntityType="Self.EFeeds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EGeoSTmps" EntityType="Self.EGeoSTmps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EGeoTmps" EntityType="Self.EGeoTmps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EGroups" EntityType="Self.EGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ELathes" EntityType="Self.ELathes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EquipmentCatalogs" EntityType="Self.EquipmentCatalogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ERelationCarriages" EntityType="Self.ERelationCarriages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EResults" EntityType="Self.EResults" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESpeeds" EntityType="Self.ESpeeds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESpindles" EntityType="Self.ESpindles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETransitionBases" EntityType="Self.ETransitionBases" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETransitionBaseTolerances" EntityType="Self.ETransitionBaseTolerances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETransitionGeometryInputs" EntityType="Self.ETransitionGeometryInputs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETransitionGeometryOutputs" EntityType="Self.ETransitionGeometryOutputs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETransitions" EntityType="Self.ETransitions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETransitionSizes" EntityType="Self.ETransitionSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExchangeSizes" EntityType="Self.ExchangeSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FixtureCatalogs" EntityType="Self.FixtureCatalogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupOperations" EntityType="Self.GroupOperations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewSMS" EntityType="Self.NewSMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Operations" EntityType="Self.Operations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProcessCatalogs" EntityType="Self.ProcessCatalogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Records" EntityType="Self.Records" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SizeDescriptions" EntityType="Self.SizeDescriptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SMS" EntityType="Self.SMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SurfaceCatalogs" EntityType="Self.SurfaceCatalogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trees" EntityType="Self.Trees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeProcesses" EntityType="Self.TypeProcesses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Words" EntityType="Self.Words" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_BGeometries_dbo_BSurfaces_surface_id" Association="Self.FK_dbo_BGeometries_dbo_BSurfaces_surface_id">
+      <End Role="BSurfaces" EntitySet="BSurfaces" />
+      <End Role="BGeometries" EntitySet="BGeometries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_BLocations_dbo_BSurfaces_surface_id" Association="Self.FK_dbo_BLocations_dbo_BSurfaces_surface_id">
+      <End Role="BSurfaces" EntitySet="BSurfaces" />
+      <End Role="BLocations" EntitySet="BLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_BRelationSizes_dbo_BSurfaces_surface_id" Association="Self.FK_dbo_BRelationSizes_dbo_BSurfaces_surface_id">
+      <End Role="BSurfaces" EntitySet="BSurfaces" />
+      <End Role="BRelationSizes" EntitySet="BRelationSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_BSizeSurfaces_dbo_BSurfaces_surface_id" Association="Self.FK_dbo_BSizeSurfaces_dbo_BSurfaces_surface_id">
+      <End Role="BSurfaces" EntitySet="BSurfaces" />
+      <End Role="BSizeSurfaces" EntitySet="BSizeSurfaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_BSurfaces_dbo_BDescriptions_billet_id" Association="Self.FK_dbo_BSurfaces_dbo_BDescriptions_billet_id">
+      <End Role="BDescriptions" EntitySet="BDescriptions" />
+      <End Role="BSurfaces" EntitySet="BSurfaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_CodeSurfaceSizes_dbo_CodeSurfaces_code_surface_id" Association="Self.FK_dbo_CodeSurfaceSizes_dbo_CodeSurfaces_code_surface_id">
+      <End Role="CodeSurfaces" EntitySet="CodeSurfaces" />
+      <End Role="CodeSurfaceSizes" EntitySet="CodeSurfaceSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_DGeometries_dbo_DSurfaces_surface_id" Association="Self.FK_dbo_DGeometries_dbo_DSurfaces_surface_id">
+      <End Role="DSurfaces" EntitySet="DSurfaces" />
+      <End Role="DGeometries" EntitySet="DGeometries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_DLocations_dbo_DSurfaces_surface_id" Association="Self.FK_dbo_DLocations_dbo_DSurfaces_surface_id">
+      <End Role="DSurfaces" EntitySet="DSurfaces" />
+      <End Role="DLocations" EntitySet="DLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_DRelationSizes_dbo_DSurfaces_surface_id" Association="Self.FK_dbo_DRelationSizes_dbo_DSurfaces_surface_id">
+      <End Role="DSurfaces" EntitySet="DSurfaces" />
+      <End Role="DRelationSizes" EntitySet="DRelationSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_DSizeSurfaces_dbo_DSurfaces_surface_id" Association="Self.FK_dbo_DSizeSurfaces_dbo_DSurfaces_surface_id">
+      <End Role="DSurfaces" EntitySet="DSurfaces" />
+      <End Role="DSizeSurfaces" EntitySet="DSizeSurfaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_DSurfaces_dbo_DDescriptions_detail_id" Association="Self.FK_dbo_DSurfaces_dbo_DDescriptions_detail_id">
+      <End Role="DDescriptions" EntitySet="DDescriptions" />
+      <End Role="DSurfaces" EntitySet="DSurfaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EBaseLocations_dbo_EBaseSurfaces_base_requirement_id" Association="Self.FK_dbo_EBaseLocations_dbo_EBaseSurfaces_base_requirement_id">
+      <End Role="EBaseSurfaces" EntitySet="EBaseSurfaces" />
+      <End Role="EBaseLocations" EntitySet="EBaseLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EBaseSchemes_dbo_ELathes_lathe_id" Association="Self.FK_dbo_EBaseSchemes_dbo_ELathes_lathe_id">
+      <End Role="ELathes" EntitySet="ELathes" />
+      <End Role="EBaseSchemes" EntitySet="EBaseSchemes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EBaseSizes_dbo_EBaseSurfaces_base_requirement_id" Association="Self.FK_dbo_EBaseSizes_dbo_EBaseSurfaces_base_requirement_id">
+      <End Role="EBaseSurfaces" EntitySet="EBaseSurfaces" />
+      <End Role="EBaseSizes" EntitySet="EBaseSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EBaseSurfaces_dbo_EBaseSchemes_base_scheme_id" Association="Self.FK_dbo_EBaseSurfaces_dbo_EBaseSchemes_base_scheme_id">
+      <End Role="EBaseSchemes" EntitySet="EBaseSchemes" />
+      <End Role="EBaseSurfaces" EntitySet="EBaseSurfaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ECarriages_dbo_ELathes_lathe_id" Association="Self.FK_dbo_ECarriages_dbo_ELathes_lathe_id">
+      <End Role="ELathes" EntitySet="ELathes" />
+      <End Role="ECarriages" EntitySet="ECarriages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EDevices_dbo_EBaseSchemes_base_scheme_id" Association="Self.FK_dbo_EDevices_dbo_EBaseSchemes_base_scheme_id">
+      <End Role="EBaseSchemes" EntitySet="EBaseSchemes" />
+      <End Role="EDevices" EntitySet="EDevices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EFeeds_dbo_ECarriages_carriage_id" Association="Self.FK_dbo_EFeeds_dbo_ECarriages_carriage_id">
+      <End Role="ECarriages" EntitySet="ECarriages" />
+      <End Role="EFeeds" EntitySet="EFeeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ELathes_dbo_EGroups_group_id" Association="Self.FK_dbo_ELathes_dbo_EGroups_group_id">
+      <End Role="EGroups" EntitySet="EGroups" />
+      <End Role="ELathes" EntitySet="ELathes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Employees_dbo_Companies_id_company" Association="Self.FK_dbo_Employees_dbo_Companies_id_company">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Employees_dbo_Roles_id_role" Association="Self.FK_dbo_Employees_dbo_Roles_id_role">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ERelationCarriages_dbo_ECarriages_carriage_id" Association="Self.FK_dbo_ERelationCarriages_dbo_ECarriages_carriage_id">
+      <End Role="ECarriages" EntitySet="ECarriages" />
+      <End Role="ERelationCarriages" EntitySet="ERelationCarriages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ESpeeds_dbo_ESpindles_spindle_id" Association="Self.FK_dbo_ESpeeds_dbo_ESpindles_spindle_id">
+      <End Role="ESpindles" EntitySet="ESpindles" />
+      <End Role="ESpeeds" EntitySet="ESpeeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ESpindles_dbo_ELathes_lathe_id" Association="Self.FK_dbo_ESpindles_dbo_ELathes_lathe_id">
+      <End Role="ELathes" EntitySet="ELathes" />
+      <End Role="ESpindles" EntitySet="ESpindles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ETransitionBases_dbo_ETransitions_transition_id" Association="Self.FK_dbo_ETransitionBases_dbo_ETransitions_transition_id">
+      <End Role="ETransitions" EntitySet="ETransitions" />
+      <End Role="ETransitionBases" EntitySet="ETransitionBases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ETransitionBaseTolerances_dbo_ETransitionBases_base_requirement_id" Association="Self.FK_dbo_ETransitionBaseTolerances_dbo_ETransitionBases_base_requirement_id">
+      <End Role="ETransitionBases" EntitySet="ETransitionBases" />
+      <End Role="ETransitionBaseTolerances" EntitySet="ETransitionBaseTolerances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ETransitionGeometryInputs_dbo_ETransitions_transition_id" Association="Self.FK_dbo_ETransitionGeometryInputs_dbo_ETransitions_transition_id">
+      <End Role="ETransitions" EntitySet="ETransitions" />
+      <End Role="ETransitionGeometryInputs" EntitySet="ETransitionGeometryInputs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ETransitionGeometryOutputs_dbo_ETransitions_transition_id" Association="Self.FK_dbo_ETransitionGeometryOutputs_dbo_ETransitions_transition_id">
+      <End Role="ETransitions" EntitySet="ETransitions" />
+      <End Role="ETransitionGeometryOutputs" EntitySet="ETransitionGeometryOutputs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ETransitions_dbo_EBaseSchemes_base_scheme_id" Association="Self.FK_dbo_ETransitions_dbo_EBaseSchemes_base_scheme_id">
+      <End Role="EBaseSchemes" EntitySet="EBaseSchemes" />
+      <End Role="ETransitions" EntitySet="ETransitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ETransitionSizes_dbo_ETransitions_transition_id" Association="Self.FK_dbo_ETransitionSizes_dbo_ETransitions_transition_id">
+      <End Role="ETransitions" EntitySet="ETransitions" />
+      <End Role="ETransitionSizes" EntitySet="ETransitionSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_Companies_id_company" Association="Self.FK_dbo_Records_dbo_Companies_id_company">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_Employees_id_employee" Association="Self.FK_dbo_Records_dbo_Employees_id_employee">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_EquipmentCatalogs_equipment_code" Association="Self.FK_dbo_Records_dbo_EquipmentCatalogs_equipment_code">
+      <End Role="EquipmentCatalogs" EntitySet="EquipmentCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_FixtureCatalogs_fixture_code" Association="Self.FK_dbo_Records_dbo_FixtureCatalogs_fixture_code">
+      <End Role="FixtureCatalogs" EntitySet="FixtureCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_ProcessCatalogs_process_code" Association="Self.FK_dbo_Records_dbo_ProcessCatalogs_process_code">
+      <End Role="ProcessCatalogs" EntitySet="ProcessCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_Status_id_status" Association="Self.FK_dbo_Records_dbo_Status_id_status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_SurfaceCatalogs_bil_surfaceCode" Association="Self.FK_dbo_Records_dbo_SurfaceCatalogs_bil_surfaceCode">
+      <End Role="SurfaceCatalogs" EntitySet="SurfaceCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_SurfaceCatalogs_fbs_surfaceCode" Association="Self.FK_dbo_Records_dbo_SurfaceCatalogs_fbs_surfaceCode">
+      <End Role="SurfaceCatalogs" EntitySet="SurfaceCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_SurfaceCatalogs_sbs_surfaceCode" Association="Self.FK_dbo_Records_dbo_SurfaceCatalogs_sbs_surfaceCode">
+      <End Role="SurfaceCatalogs" EntitySet="SurfaceCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_SurfaceCatalogs_surface_code" Association="Self.FK_dbo_Records_dbo_SurfaceCatalogs_surface_code">
+      <End Role="SurfaceCatalogs" EntitySet="SurfaceCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Records_dbo_SurfaceCatalogs_tbs_surfaceCode" Association="Self.FK_dbo_Records_dbo_SurfaceCatalogs_tbs_surfaceCode">
+      <End Role="SurfaceCatalogs" EntitySet="SurfaceCatalogs" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
