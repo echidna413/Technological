@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.1.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.8.1.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -91,15 +94,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BDescriptionsController.cs" />
+    <Compile Include="Controllers\BGeometriesController.cs" />
+    <Compile Include="Controllers\BLocationsController.cs" />
+    <Compile Include="Controllers\BRelationSizesController.cs" />
+    <Compile Include="Controllers\BSizeSurfacesController.cs" />
+    <Compile Include="Controllers\BSurfacesController.cs" />
+    <Compile Include="Controllers\CodeSurfacesController.cs" />
+    <Compile Include="Controllers\CodeSurfaceSizesController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\DDescriptionsController.cs" />
+    <Compile Include="Controllers\DGeometriesController.cs" />
+    <Compile Include="Controllers\DLocationsController.cs" />
+    <Compile Include="Controllers\DRelationSizesController.cs" />
+    <Compile Include="Controllers\DSizeSurfacesController.cs" />
+    <Compile Include="Controllers\DSurfacesController.cs" />
+    <Compile Include="Controllers\EBaseLocationsController.cs" />
+    <Compile Include="Controllers\EBaseSchemesController.cs" />
+    <Compile Include="Controllers\EBaseSizesController.cs" />
+    <Compile Include="Controllers\EBaseSurfacesController.cs" />
+    <Compile Include="Controllers\ECarriagesController.cs" />
+    <Compile Include="Controllers\EDevicesController.cs" />
+    <Compile Include="Controllers\EFeedsController.cs" />
+    <Compile Include="Controllers\EGroupsController.cs" />
+    <Compile Include="Controllers\ELathesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\EquipmentCatalogsController.cs" />
+    <Compile Include="Controllers\ERelationCarriagesController.cs" />
+    <Compile Include="Controllers\ESpeedsController.cs" />
+    <Compile Include="Controllers\ESpindlesController.cs" />
+    <Compile Include="Controllers\ETransitionBasesController.cs" />
+    <Compile Include="Controllers\ETransitionBaseTolerancesController.cs" />
+    <Compile Include="Controllers\ETransitionGeometryInputsController.cs" />
+    <Compile Include="Controllers\ETransitionGeometryOutputsController.cs" />
+    <Compile Include="Controllers\ETransitionsController.cs" />
+    <Compile Include="Controllers\ETransitionSizesController.cs" />
+    <Compile Include="Controllers\FixtureCatalogsController.cs" />
+    <Compile Include="Controllers\LoginModelsController.cs" />
+    <Compile Include="Controllers\ProcessCatalogsController.cs" />
     <Compile Include="Controllers\RecordsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\SurfaceCatalogsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CompanyModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\WebApiContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +156,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FillerDBApp\BL\BL.csproj">
+      <Project>{A255CA4F-DFE8-485C-894D-7B8332EE0C8D}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FillerDBApp\DAL\DAL.csproj">
       <Project>{ff956e03-f42b-4e05-baa8-cadc211da3d5}</Project>
       <Name>DAL</Name>

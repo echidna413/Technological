@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace BL
 {
     public class AutorizationService
-    {   
+    {
 
         string HashPassword(string password)
         {
@@ -44,7 +44,7 @@ namespace BL
                 }
             }
 
-            bool isEqual = foundUser.password.Equals(hashedPassword);
+            bool isEqual = foundUser.password.ToUpper().Equals(hashedPassword.ToUpper());
             if (!isEqual)
             {
                 throw new Exception("Неверный пароль");
@@ -79,6 +79,33 @@ namespace BL
                 context.Employees.Add(newUser);
                 context.SaveChanges();
             }
+        }
+
+        public Employee GetEmployeeByLoginPassword(string login, string password)
+        {
+            string hashedPassword = this.HashPassword(password);
+
+            Employee foundEmployee = null;
+            string role;
+            using (MachineDbContext context = new MachineDbContext())
+            {
+                foundEmployee = context.Employees
+                    .Include("Role")
+                    .FirstOrDefault(x => x.login.Equals(login));
+                role = foundEmployee.Role.name;
+                if (foundEmployee is null)
+                {
+                    throw new Exception("Пользователя с таким логином не существует");
+                }
+            }
+
+            bool isEqual = foundEmployee.password.ToUpper().Equals(hashedPassword.ToUpper());
+            if (!isEqual)
+            {
+                throw new Exception("Неверный пароль");
+            }
+
+            return foundEmployee;
         }
     }
 }

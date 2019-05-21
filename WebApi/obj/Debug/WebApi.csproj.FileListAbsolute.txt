@@ -298,3 +298,13 @@ C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\We
 C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.csproj.CopyComplete
 C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.dll
 C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.pdb
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\AutoMapper.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\BL.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Common.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\NLog.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\BL.pdb
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\BL.dll.config
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\AutoMapper.pdb
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\AutoMapper.xml
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Common.pdb
+C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\NLog.xml
