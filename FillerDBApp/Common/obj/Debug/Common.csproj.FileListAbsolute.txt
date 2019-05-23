@@ -27,3 +27,13 @@ C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\Co
 C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\Common\obj\Debug\Common.dll
 C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\FillerDBApp\Common\obj\Debug\Common.pdb
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.dll
+C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.pdb

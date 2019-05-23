@@ -9,8 +9,7 @@ namespace WebApi.Models
     public class LoginModel
     {
         [Key]
-        public int id_employee { get; set; }
+
         public int id_role { get; set; }
-        public int id_company { get; set; }
     }
 }
