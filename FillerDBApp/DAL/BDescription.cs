@@ -20,6 +20,8 @@ namespace DAL
 
         public int detail_id { get; set; }
 
+        public string name { get; set; }
+
         public int code_type_billet_id { get; set; }
 
         public double mass_billet { get; set; }

@@ -30,9 +30,9 @@ namespace DAL
         }
 
         [Key]
-        public int id_employee { get; set; }
-        public int id_role { get; set; }
-        public int id_company { get; set; }
+        public int? id_employee { get; set; }
+        public int? id_role { get; set; }
+        public int? id_company { get; set; }
         public string first_name { get; set; }
         public string second_name { get; set; }
         public string patronymic { get; set; }

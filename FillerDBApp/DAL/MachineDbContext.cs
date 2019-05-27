@@ -86,6 +86,8 @@ namespace DAL
         public DbSet<Tree> Trees { get; set; }
         public DbSet<TypeProcess> TypesProcess { get; set; }
         public DbSet<Word> Words { get; set; }
+        public DbSet<RouteCard> RouteCards { get; set; }
+        public DbSet<Route> Routes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -146,6 +148,11 @@ namespace DAL
 
             modelBuilder.Entity<Record>()
                 .HasRequired(x => x.TBSSurfaceCode)
+                .WithMany()
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<RouteCard>()
+                .HasOptional<Employee>(s => s.Employee)
                 .WithMany()
                 .WillCascadeOnDelete(false);
         }

@@ -337,6 +337,8 @@
     <Compile Include="Bonus\Roles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Route.cs" />
+    <Compile Include="RouteCard.cs" />
     <Compile Include="SizeDescription.cs" />
     <Compile Include="Bonus\SizeDescriptions.cs">
       <DependentUpon>Model1.tt</DependentUpon>

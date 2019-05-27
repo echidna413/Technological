@@ -11,7 +11,7 @@ namespace BL
     {
         public void AddRecord(Record r)
         {
-            List<Record> records;
+           // List<Record> records;
 
             using (MachineDbContext context = new MachineDbContext())
             {
