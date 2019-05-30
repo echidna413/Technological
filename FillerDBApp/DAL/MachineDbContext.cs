@@ -155,6 +155,11 @@ namespace DAL
                 .HasOptional<Employee>(s => s.Employee)
                 .WithMany()
                 .WillCascadeOnDelete(false);
+
+            //modelBuilder.Entity<BDescription>()
+            //    .HasOptional<Employee>(s => s.Employee)
+            //    .WithMany()
+            //    .WillCascadeOnDelete(false);
         }
     }
 }
