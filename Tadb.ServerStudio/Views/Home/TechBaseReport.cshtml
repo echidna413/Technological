@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "TechBase Report";
+}
+
+<div class="container-fluid">
+    <h1>Отчет по базе технологических возможностей</h1>
+
+    @Html.Action("ChooseCompany")
+
+    <section class="record-table"></section>
+</div>
+
+<script>
+    var urls = {
+        getData : '@Url.Action("GetRecords", "Home")'
+    };
+</script>
