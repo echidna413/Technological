@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Tadb.BL;
 using Tadb.DAL;
+using Tadb.WebApi.Models;
 
 namespace Tadb.WebApi.Controllers
 {
@@ -72,7 +73,7 @@ namespace Tadb.WebApi.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ResponseType(typeof(Employee))]
-        public IHttpActionResult Post(Employee employee)
+        public IHttpActionResult Post(EmployeeModel employee)
         {
             if (!ModelState.IsValid)
             {
@@ -85,7 +86,7 @@ namespace Tadb.WebApi.Controllers
                                   employee.second_name,
                                   employee.patronymic,
                                   employee.login,
-                                  employee.passwordHash);
+                                  employee.password);
             //db.Employees.Add(employee);
             //db.SaveChanges();
 
