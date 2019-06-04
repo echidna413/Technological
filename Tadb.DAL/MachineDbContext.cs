@@ -5,13 +5,9 @@ namespace Tadb.DAL
 {
     public class MachineDbContext : DbContext
     {
-        public MachineDbContext() //: base("MachineDb")
+        public MachineDbContext() : base("name=MachineDb")
         {
         }
-
-        //public MachineDbContext() : base(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MachineDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
-        //{
-        //}
 
         public MachineDbContext(string connectionString)
             : base(connectionString)
