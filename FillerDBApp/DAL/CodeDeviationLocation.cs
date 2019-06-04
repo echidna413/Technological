@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
+    //Данный класс описывает сущность "Справочник отклонений от взаимного расположения"
     public class CodeDeviationLocation
     {
         [Key]
         public int code_geo_deviation_id { get; set; }
-        public string description { get; set; }
-        public string image_big { get; set; }
-        public string image_small { get; set; }
+        public string type { get; set; } //Вид отклонения
+        public string image { get; set; } //Изображение
     }
 }

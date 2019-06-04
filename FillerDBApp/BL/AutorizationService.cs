@@ -56,14 +56,20 @@ namespace BL
 
         }
 
-        public void CreateNewUser(string user, string password, Role role)
+        public void CreateNewUser(Role role,
+                                  Company company,
+                                  string first_name,
+                                  string second_name,
+                                  string patronymic,
+                                  string login,
+                                  string password)
         {
             string hashedPassword = this.HashPassword(password);
 
             Employee foundUser = null;
             using (MachineDbContext context = new MachineDbContext())
             {
-                foundUser = context.Employees.FirstOrDefault(x => x.login.Equals(user));
+                foundUser = context.Employees.FirstOrDefault(x => x.login.Equals(login));
                 if (!(foundUser is null))
                 {
                     throw new Exception("Пользователь с таким логином существует");
@@ -71,9 +77,13 @@ namespace BL
 
                 Employee newUser = new Employee()
                 {
-                    login = user,
-                    password = hashedPassword,
-                    Role = role,
+                    Role=role,
+                    Company = company,
+                    first_name = first_name,
+                    second_name = second_name,
+                    patronymic = patronymic,
+                    login = login,
+                    password = password
                 };
 
                 context.Employees.Add(newUser);

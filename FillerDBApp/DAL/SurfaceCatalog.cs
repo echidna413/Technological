@@ -11,18 +11,9 @@ namespace DAL
     {
         [Key]
         public int surface_code { get; set; }
-        public string description { get; set; }
-
-        public override bool Equals(object obj)
-        {
-            var catalog = obj as SurfaceCatalog;
-            return catalog != null &&
-                   description == catalog.description;
-        }
-
-        public override int GetHashCode()
-        {
-            return -1150852911 + EqualityComparer<string>.Default.GetHashCode(description);
-        }
+        public string model { get; set; } //Код элементарной поверхности
+        public string name { get; set; } //Название вида элементарной поверхности
+        public string view_small { get; set; } //Малое изображение
+        public string view_big { get; set; } //Большое изображение
     }
 }

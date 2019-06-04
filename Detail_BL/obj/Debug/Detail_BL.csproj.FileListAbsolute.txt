@@ -3,3 +3,8 @@ C:\Users\diana\OneDrive\бреднота\tadb\tadb\Detail_BL\bin\Debug\Detail_BL
 C:\Users\diana\OneDrive\бреднота\tadb\tadb\Detail_BL\obj\Debug\Detail_BL.csproj.CoreCompileInputs.cache
 C:\Users\diana\OneDrive\бреднота\tadb\tadb\Detail_BL\obj\Debug\Detail_BL.dll
 C:\Users\diana\OneDrive\бреднота\tadb\tadb\Detail_BL\obj\Debug\Detail_BL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\Detail_BL\bin\Debug\Detail_BL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\Detail_BL\bin\Debug\Detail_BL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\Detail_BL\obj\Debug\Detail_BL.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\Detail_BL\obj\Debug\Detail_BL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\Detail_BL\obj\Debug\Detail_BL.pdb

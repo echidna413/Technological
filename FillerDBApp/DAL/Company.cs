@@ -3,18 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DAL
 {
+    //Данный класс описывает сущность "Предприятие"
     public class Company
     {
         [Key]
         public int id_company { get; set; }
-
-        public int responsible_employee { get; set; }
-
-        public int numberof_branch { get; set; }
-
-        public string name { get; set; }
-
-        public string address { get; set; }
+        public int responsible_employee { get; set; } //Представитель компании
+        public int numberof_branch { get; set; } //Номер филиала
+        public string name { get; set; } //Название компании
+        public string address { get; set; } //Адрес комапнии
 
         public override bool Equals(object obj)
         {

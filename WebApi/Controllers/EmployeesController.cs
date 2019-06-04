@@ -8,17 +8,19 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using BL;
 using DAL;
 
 namespace WebApi.Controllers
 {
     public class EmployeesController : ApiController
     {
+        AutorizationService service = new AutorizationService();
         private MachineDbContext db = new MachineDbContext();
 
         // GET: api/Employees
         public IQueryable<Employee> Get()
-        { 
+        {
             return db.Employees;
         }
 
@@ -37,6 +39,7 @@ namespace WebApi.Controllers
 
         // PUT: api/Employees/5
         [ResponseType(typeof(void))]
+        
         public IHttpActionResult Put(int id, Employee employee)
         {
             if (!ModelState.IsValid)
@@ -71,6 +74,8 @@ namespace WebApi.Controllers
         }
 
         // POST: api/Employees
+        [HttpPost]
+        [AllowAnonymous]
         [ResponseType(typeof(Employee))]
         public IHttpActionResult Post(Employee employee)
         {
@@ -78,9 +83,15 @@ namespace WebApi.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            db.Employees.Add(employee);
-            db.SaveChanges();
+            service.CreateNewUser(employee.Role,
+                                  employee.Company,
+                                  employee.first_name,
+                                  employee.second_name,
+                                  employee.patronymic,
+                                  employee.login,
+                                  employee.password);
+            //db.Employees.Add(employee);
+            //db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = employee.id_employee }, employee);
         }

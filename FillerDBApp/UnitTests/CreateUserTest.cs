@@ -16,7 +16,7 @@ namespace UnitTests
         {
             AutorizationService service = new AutorizationService();
             string login = "echiidna";
-            string password = "1414";
+            //string password = "1414";
 
             Role adminRole = new Role()
             {
@@ -42,7 +42,7 @@ namespace UnitTests
                 context.SaveChanges();
             }
 
-            service.CreateNewUser(login, password, adminRole);
+            //service.CreateNewUser(login, password, adminRole);
 
             using (MachineDbContext context = new MachineDbContext())
             {

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
+    //Данный класс описывает сущность "Размерные связи"
     public class DRelationSize
     {
         [ForeignKey("surface_id")]
@@ -15,11 +16,11 @@ namespace DAL
 
         [Key]
         public int relation_id { get; set; }
-        public int surface_id { get; set; }
-        public int relation_surface_id { get; set; }
-        public double size { get; set; }
-        public string tolerance { get; set; }
-        public double min_deviation { get; set; }
-        public double max_deviation { get; set; }
-    }
+        public int surface_id { get; set; } //Базовая поверхность
+        public int relation_number { get; set; } //Номер связанной поверхности
+        public double size { get; set; } //Номинальный размер
+        public string tolerance { get; set; } //Квалитет
+        public double min_deviation { get; set; } //Верхнее предельное отклонение
+        public double max_deviation { get; set; } //Нижнее предельное отклонение
+    } 
 }

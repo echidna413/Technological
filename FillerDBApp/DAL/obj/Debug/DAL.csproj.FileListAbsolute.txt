@@ -107,3 +107,41 @@ C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\DAL\obj
 C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\DAL\obj\Debug\DAL.dll
 C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\DAL\obj\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\DAL.dll.config
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.ChangeClasses.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initial1.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.AddNullableFieldToRecord.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.FKChanges.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initializator.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initializator1.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initializator11.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initialnew.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initialnew1.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initialize100.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initialize101.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initialize110.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.initialize1101.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.passwordNullable.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.passwordNullable1.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.newww.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.newww1.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.stable.resources
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\DAL\obj\Debug\DAL.Migrations.stable1.resources

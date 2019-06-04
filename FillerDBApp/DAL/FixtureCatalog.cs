@@ -5,10 +5,11 @@ namespace DAL
 {
     public class FixtureCatalog
     {
+        //Данный класс описывает сущность "Справочник приспособлений"
         [Key]
         public int fixture_code { get; set; }
-        public string fixture_value { get; set; }
-        public string description { get; set; }
+        public string fixture_value { get; set; } //Номер приспособления
+        public string description { get; set; } //Описание
 
         public override bool Equals(object obj)
         {

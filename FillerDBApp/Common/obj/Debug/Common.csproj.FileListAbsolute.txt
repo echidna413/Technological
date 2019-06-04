@@ -37,3 +37,12 @@ C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\
 C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.dll
 C:\Users\diana\OneDrive\бреднота\repos\Technological\FillerDBApp\Common\obj\Debug\Common.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\bin\Debug\NLog.config
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\bin\Debug\Common.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\bin\Debug\Common.pdb
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\bin\Debug\NLog.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\bin\Debug\NLog.xml
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\obj\Debug\Common.dll
+C:\Users\diana\OneDrive\Рабочий стол\Technological\Technological\FillerDBApp\Common\obj\Debug\Common.pdb

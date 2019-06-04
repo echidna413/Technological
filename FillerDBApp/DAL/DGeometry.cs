@@ -15,9 +15,9 @@ namespace DAL
 
         [Key]
         public int deviation_id { get; set; }
-        public int surface_id { get; set; }
-        public int code_deviation_id { get; set; }
-        public double class_deviation { get; set; }
-        public double value_deviation { get; set; }
+        public int surface_id { get; set; } //Базовая поверхность
+        public int type_deviation { get; set; } //Вид отклонения
+        public double class_deviation { get; set; } //Класс
+        public double value_deviation { get; set; } //Значение
     }
 }

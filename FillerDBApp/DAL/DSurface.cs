@@ -10,6 +10,7 @@ namespace DAL
 {
     public class DSurface
     {
+        //Данный класс описывает общую информацию сущности "Базовая поверхность"
         public DSurface()
         {
 
@@ -20,24 +21,28 @@ namespace DAL
 
         [Key]
         public int surface_id { get; set; }
-        public int detail_id { get; set; }
-        public double number_surface { get; set; }
-        public string code_surface { get; set; }
-        public double zero_point_X { get; set; }
-        public double zero_point_Y { get; set; }
-        public double zero_point_Z { get; set; }
-        public double ra { get; set; }
-        public double rmax { get; set; }
-        public double s { get; set; }
-        public double tp { get; set; }
-        public double hrc { get; set; }
-        public double depth { get; set; }
-        public double internal_stress_1 { get; set; }
-        public double internal_stress_2 { get; set; }
-        public double internal_stress_3 { get; set; }
-        public bool constructor_base { get; set; }
-        public double orientation { get; set; }
-        public bool requirement { get; set; }
-        public string image { get; set; }
+        public int detail_id { get; set; } //Деталь
+        public double number_surface { get; set; } //Номер элементарной поверхности
+        public string name_surface { get; set; } //Название элементарной поверхности
+        public string code_surface { get; set; } //Вид элементарной поверхности
+        //Координаты нулевой точки
+        public double zero_point_X { get; set; } //Координата X
+        public double zero_point_Y { get; set; } //Координата Y
+        public double zero_point_Z { get; set; } //Координата Z
+        //Шероховатость
+        public double ra { get; set; } //Ra
+        public double rmax { get; set; } //Rmax
+        public double s { get; set; } //S
+        public double tp { get; set; } //tp
+        //Твердость
+        public double hrc { get; set; } //HRC
+        public double depth { get; set; } //Глубина наклепаного слоя 
+        //Внутренние напряжения
+        public double internal_stress_1 { get; set; } //Внутреннее напряжение X
+        public double internal_stress_2 { get; set; } //Внутреннее напряжение Y
+        public double internal_stress_3 { get; set; } //Внутреннее напряжение Z
+        public bool constructor_base { get; set; } //Использование в качестве конструкторской базы
+        public double orientation { get; set; } //ориентация поверхности 
+        public string image { get; set; } //Иконка
     }
 }
