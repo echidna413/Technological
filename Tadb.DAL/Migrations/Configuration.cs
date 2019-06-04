@@ -1,6 +1,8 @@
 namespace Tadb.DAL.Migrations
 {
     using System.Data.Entity.Migrations;
+    using System.Security.Cryptography;
+    using System.Text;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Tadb.DAL.MachineDbContext>
     {
@@ -9,32 +11,50 @@ namespace Tadb.DAL.Migrations
             AutomaticMigrationsEnabled = true;
         }
 
+        private string HashPassword(string password)
+        {
+            StringBuilder hashedPasswordStringBuilder;
+            using (SHA512 m = new SHA512Managed())
+            {
+                var passwordBytes = Encoding.UTF8.GetBytes(password);
+                var hashedPasswordBytes = m.ComputeHash(passwordBytes);
+
+                hashedPasswordStringBuilder = new StringBuilder(128);
+                foreach (var b in hashedPasswordBytes)
+                    hashedPasswordStringBuilder.Append(b.ToString("X2"));
+            }
+            return hashedPasswordStringBuilder.ToString();
+        }
+
         protected override void Seed(Tadb.DAL.MachineDbContext context)
         {
-            Role role1 = new Role
+            SeedRoles(context);
+            SeedCompanies(context);
+            SeedEmployees(context);
+            context.SaveChanges();
+
+        }
+
+        private void SeedEmployees(MachineDbContext context)
+        {
+            string adminPassword = "12345";
+
+            Employee rootAdmin = new Employee
             {
-                name = "Администратор",
-                canEnter = true,
-                canGetData = true,
-                canEdit = true,
-                canEditCatalog = true
+                id_role = 1,
+                id_company = 1,
+                first_name = "Иван",
+                second_name = "Иванов",
+                patronymic = "Иванович",
+                login = "admin",
+                passwordHash = HashPassword(adminPassword),
             };
-            Role role2 = new Role
-            {
-                name = "Технолог по базе возможностей",
-                canEnter = true,
-                canGetData = true,
-                canEdit = false,
-                canEditCatalog = false
-            };
-            Role role3 = new Role
-            {
-                name = "Технолог по базе деталей",
-                canEnter = false,
-                canGetData = false,
-                canEdit = false,
-                canEditCatalog = true
-            };
+
+            context.Employees.AddOrUpdate(rootAdmin);
+        }
+
+        private static void SeedCompanies(MachineDbContext context)
+        {
             Company devCompany = new Company
             {
                 id_company = 1,
@@ -43,17 +63,10 @@ namespace Tadb.DAL.Migrations
                 name = "СГТУ",
                 address = "Саратов, Политехническая, 77"
             };
-            //Employee rootAdmin = new Employee
-            //{
-            //    id_role = 1,
-            //    id_company = 8,
-            //    first_name = "Иван",
-            //    second_name = "Иванов",
-            //    patronymic = "Иванович",
-            //    login = "admin",
-            //    password = "30bb8411dd0cbf96b10a52371f7b3be1690f7afa16c3bd7bc7d02c0e2854768d",
-            //};
 
+            context.Companies.AddOrUpdate(devCompany);
+
+            #region Место для добавление компаний
             //Company[] companies = new Company[]
             //{
             //    new Company()
@@ -82,13 +95,44 @@ namespace Tadb.DAL.Migrations
             //    }
             //};
 
-            //context.Companies.AddOrUpdate(companies);
-            context.Roles.Add(role1);
-            context.Roles.Add(role2);
-            context.Roles.Add(role3);
-            context.Companies.AddOrUpdate(devCompany);
-            //context.Employees.AddOrUpdate(rootAdmin);
-            context.SaveChanges();
+            //context.Companies.AddOrUpdate(companies); 
+            #endregion
+        }
+
+        private static void SeedRoles(MachineDbContext context)
+        {
+            Role[] roles = new[]
+                        {
+                new Role
+                {
+                    id_role = 1,
+                    name = "Администратор",
+                    canEnter = true,
+                    canGetData = true,
+                    canEdit = true,
+                    canEditCatalog = true
+                },
+                new Role
+                {
+                    id_role = 2,
+                    name = "Технолог по базе возможностей",
+                    canEnter = true,
+                    canGetData = true,
+                    canEdit = false,
+                    canEditCatalog = false
+                },
+                new Role
+                {
+                    id_role = 3,
+                    name = "Технолог по базе деталей",
+                    canEnter = false,
+                    canGetData = false,
+                    canEdit = false,
+                    canEditCatalog = true
+                }
+            };
+
+            context.Roles.AddOrUpdate(roles);
         }
     }
 }
