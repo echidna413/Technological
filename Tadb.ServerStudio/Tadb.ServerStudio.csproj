@@ -199,12 +199,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\TechBaseReport.cshtml" />
-    <Content Include="Views\Home\ChooseCompany.cshtml" />
-    <Content Include="Views\Home\GetRecords.cshtml" />
-    <Content Include="Views\Home\RecordData.cshtml" />
+    <Content Include="Views\Home\_ChooseCompany.cshtml" />
+    <Content Include="Views\Home\_GetRecords.cshtml" />
+    <Content Include="Views\Home\_RecordData.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\DetailReport.cshtml" />
-    <Content Include="Views\Home\GetDetails.cshtml" />
+    <Content Include="Views\Home\_GetDetails.cshtml" />
     <Content Include="Views\Home\Autorization.cshtml" />
   </ItemGroup>
   <ItemGroup>

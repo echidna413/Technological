@@ -34,7 +34,7 @@ namespace Tadb.ServerStudio.Controllers
         {
             var request = new RestRequest("api/Companies");
             var companies = Client.Get<List<CompanyModel>>(request).Data;
-            return PartialView(companies);
+            return PartialView("_ChooseCompany", companies);
         }
 
         public ActionResult GetRecords(int id_company)
@@ -42,7 +42,7 @@ namespace Tadb.ServerStudio.Controllers
             var request = new RestRequest("api/Records");
             var records = Client.Get<List<RecordModel>>(request).Data;
             var required_data = records.Where(r => r.id_company == id_company).ToList();
-            return PartialView(required_data);
+            return PartialView("_GetRecords", required_data);
         }
 
         public ActionResult GetDetails(int id_company)
@@ -52,12 +52,12 @@ namespace Tadb.ServerStudio.Controllers
             var required_data = datails.Where(r => r.id_company == id_company).ToList();
 
             // нужна вьюшка, принимающая в качестве модели данных List<DetailModel>
-            return PartialView(required_data);
+            return PartialView("_GetDetails", required_data);
         }
 
         public ActionResult RecordData(RecordModel record)
         {
-            return PartialView(record);
+            return PartialView("_RecordData", record);
         }
     }
 }
