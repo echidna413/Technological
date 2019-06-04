@@ -156,6 +156,10 @@
     <Compile Include="Migrations\201906011530579_stable.Designer.cs">
       <DependentUpon>201906011530579_stable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906040845405_AddPasswordHashField.cs" />
+    <Compile Include="Migrations\201906040845405_AddPasswordHashField.Designer.cs">
+      <DependentUpon>201906040845405_AddPasswordHashField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DTO\Operation.cs" />
     <Compile Include="DTO\ProcessCatalog.cs" />
@@ -242,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906011928275_stable1.resx">
       <DependentUpon>201906011928275_stable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906040845405_AddPasswordHashField.resx">
+      <DependentUpon>201906040845405_AddPasswordHashField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

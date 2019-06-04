@@ -40,7 +40,7 @@ namespace Tadb.BL
                 }
             }
 
-            bool isEqual = foundUser.password.ToUpper().Equals(hashedPassword.ToUpper());
+            bool isEqual = foundUser.passwordHash.ToUpper().Equals(hashedPassword.ToUpper());
             if (!isEqual)
             {
                 throw new Exception("Неверный пароль");
@@ -78,7 +78,7 @@ namespace Tadb.BL
                     second_name = second_name,
                     patronymic = patronymic,
                     login = login,
-                    password = password
+                    passwordHash = hashedPassword
                 };
 
                 context.Employees.Add(newUser);
@@ -104,7 +104,7 @@ namespace Tadb.BL
                 }
             }
 
-            bool isEqual = foundEmployee.password.ToUpper().Equals(hashedPassword.ToUpper());
+            bool isEqual = foundEmployee.passwordHash.ToUpper().Equals(hashedPassword.ToUpper());
             if (!isEqual)
             {
                 throw new Exception("Неверный пароль");

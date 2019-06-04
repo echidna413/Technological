@@ -19,7 +19,7 @@ namespace Tadb.DAL
             this.second_name = second_name;
             this.patronymic = patronymic;
             this.login = login;
-            this.password = password;
+            this.passwordHash = password;
             Role = role;
             Company = company;
         }
@@ -33,7 +33,7 @@ namespace Tadb.DAL
         public string second_name { get; set; }
         public string patronymic { get; set; }
         public string login { get; set; }
-        public virtual string password { get; set; }
+        public virtual string passwordHash { get; set; }
 
         [ForeignKey("id_role")]
         public Role Role { get; set; }
@@ -52,7 +52,7 @@ namespace Tadb.DAL
                    second_name == employee.second_name &&
                    patronymic == employee.patronymic &&
                    login == employee.login &&
-                   password == employee.password &&
+                   passwordHash == employee.passwordHash &&
                    EqualityComparer<Role>.Default.Equals(Role, employee.Role) &&
                    EqualityComparer<Company>.Default.Equals(Company, employee.Company);
         }
@@ -67,7 +67,7 @@ namespace Tadb.DAL
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(second_name);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(patronymic);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(login);
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(password);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(passwordHash);
             hashCode = hashCode * -1521134295 + EqualityComparer<Role>.Default.GetHashCode(Role);
             hashCode = hashCode * -1521134295 + EqualityComparer<Company>.Default.GetHashCode(Company);
             return hashCode;

@@ -85,7 +85,7 @@ namespace Tadb.WebApi.Controllers
                                   employee.second_name,
                                   employee.patronymic,
                                   employee.login,
-                                  employee.password);
+                                  employee.passwordHash);
             //db.Employees.Add(employee);
             //db.SaveChanges();
 
