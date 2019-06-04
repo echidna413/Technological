@@ -10,6 +10,7 @@ namespace DAL
 {
     public class Employee
     {
+
         public Employee()
         {
 
@@ -30,14 +31,14 @@ namespace DAL
         }
 
         [Key]
-        public int? id_employee { get; set; }
-        public int? id_role { get; set; }
-        public int? id_company { get; set; }
+        public int id_employee { get; set; }
+        public int id_role { get; set; }
+        public int id_company { get; set; }
         public string first_name { get; set; }
         public string second_name { get; set; }
         public string patronymic { get; set; }
         public string login { get; set; }
-        public string password { get; set; }
+        public virtual string password { get; set; }
 
         [ForeignKey("id_role")]
         public Role Role { get; set; }

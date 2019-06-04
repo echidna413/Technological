@@ -213,7 +213,7 @@ namespace DAL
         public ProcessCatalog ProcessCode { get; set; }
 
         [ForeignKey("surface_code")]
-        public SurfaceCatalog SurfaceCode { get; set; }
+        public SurfaceCatalog CodeSurface { get; set; }
 
         [ForeignKey("bil_surfaceCode")]
         public SurfaceCatalog BILSurfaceCode { get; set; }
@@ -427,7 +427,7 @@ namespace DAL
                    EqualityComparer<EquipmentCatalog>.Default.Equals(EquipmentCatalog, record.EquipmentCatalog) &&
                    EqualityComparer<FixtureCatalog>.Default.Equals(FixtureCode, record.FixtureCode) &&
                    EqualityComparer<ProcessCatalog>.Default.Equals(ProcessCode, record.ProcessCode) &&
-                   EqualityComparer<SurfaceCatalog>.Default.Equals(SurfaceCode, record.SurfaceCode) &&
+                   EqualityComparer<SurfaceCatalog>.Default.Equals(CodeSurface, record.CodeSurface) &&
                    EqualityComparer<SurfaceCatalog>.Default.Equals(BILSurfaceCode, record.BILSurfaceCode) &&
                    EqualityComparer<SurfaceCatalog>.Default.Equals(FBSSurfaceCode, record.FBSSurfaceCode) &&
                    EqualityComparer<SurfaceCatalog>.Default.Equals(SBSSurfaceCode, record.SBSSurfaceCode) &&
@@ -615,7 +615,7 @@ namespace DAL
             hashCode = hashCode * -1521134295 + EqualityComparer<EquipmentCatalog>.Default.GetHashCode(EquipmentCatalog);
             hashCode = hashCode * -1521134295 + EqualityComparer<FixtureCatalog>.Default.GetHashCode(FixtureCode);
             hashCode = hashCode * -1521134295 + EqualityComparer<ProcessCatalog>.Default.GetHashCode(ProcessCode);
-            hashCode = hashCode * -1521134295 + EqualityComparer<SurfaceCatalog>.Default.GetHashCode(SurfaceCode);
+            hashCode = hashCode * -1521134295 + EqualityComparer<SurfaceCatalog>.Default.GetHashCode(CodeSurface);
             hashCode = hashCode * -1521134295 + EqualityComparer<SurfaceCatalog>.Default.GetHashCode(BILSurfaceCode);
             hashCode = hashCode * -1521134295 + EqualityComparer<SurfaceCatalog>.Default.GetHashCode(FBSSurfaceCode);
             hashCode = hashCode * -1521134295 + EqualityComparer<SurfaceCatalog>.Default.GetHashCode(SBSSurfaceCode);

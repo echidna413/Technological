@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
+    //Данный класс описывает сущность "Справочник оборудования"
     public class EquipmentCatalog
     {
         [Key]
         public int equipment_code { get; set; }
-        public string model { get; set; }
-        public string description { get; set; }
+        public string model { get; set; } //Модель
+        public string description { get; set; } //Описание
 
         public override bool Equals(object obj)
         {

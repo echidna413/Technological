@@ -1,310 +1,479 @@
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\WebApi.dll.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\WebApi.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\csc.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\csc.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\csc.rsp
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\csi.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\csi.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\csi.rsp
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.AppContext.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Console.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.IO.Compression.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.IO.Pipes.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.Claims.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.ValueTuple.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Xml.XPath.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\vbc.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\vbc.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\vbc.rsp
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\VBCSCompiler.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\Newtonsoft.Json.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\System.Net.Http.Formatting.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\System.Web.Http.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\System.Web.Http.WebHost.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\Newtonsoft.Json.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\System.Net.Http.Formatting.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\System.Web.Http.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\System.Web.Http.WebHost.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\ru\System.Net.Http.Formatting.resources.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\ru\System.Web.Http.resources.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\ru\System.Web.Http.WebHost.resources.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\obj\Debug\WebApi.csproj.CopyComplete
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\obj\Debug\WebApi.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\obj\Debug\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\NLog.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\DAL.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\EntityFramework.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\EntityFramework.SqlServer.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\DAL.pdb
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\DAL.dll.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\EntityFramework.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb\WebApi\bin\EntityFramework.SqlServer.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\NLog.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\WebApi.dll.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\WebApi.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\WebApi.pdb
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\csc.exe
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\csc.exe.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\csc.rsp
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\csi.exe
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\csi.exe.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\csi.rsp
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.AppContext.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Console.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.IO.Compression.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.IO.Pipes.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.Claims.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.ValueTuple.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Xml.XPath.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\vbc.exe
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\vbc.exe.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\vbc.rsp
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\VBCSCompiler.exe
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\DAL.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\EntityFramework.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\EntityFramework.SqlServer.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\Newtonsoft.Json.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\System.Net.Http.Formatting.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\System.Web.Http.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\System.Web.Http.WebHost.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\DAL.pdb
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\DAL.dll.config
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\EntityFramework.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\EntityFramework.SqlServer.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\Newtonsoft.Json.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\System.Net.Http.Formatting.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\System.Web.Http.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\System.Web.Http.WebHost.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\ru\System.Net.Http.Formatting.resources.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\ru\System.Web.Http.resources.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\bin\ru\System.Web.Http.WebHost.resources.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\obj\Debug\WebApi.csproj.CopyComplete
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\obj\Debug\WebApi.dll
-C:\Users\diana\OneDrive\Рабочий стол\tadb\tadb\WebApi\obj\Debug\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\NLog.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\WebApi.dll.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\WebApi.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\csc.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\csc.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\csc.rsp
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\csi.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\csi.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\csi.rsp
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.AppContext.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Console.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.IO.Compression.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.IO.Pipes.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.Claims.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.ValueTuple.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Xml.XPath.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\vbc.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\vbc.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\vbc.rsp
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\VBCSCompiler.exe
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\DAL.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\EntityFramework.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\EntityFramework.SqlServer.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\Newtonsoft.Json.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\System.Net.Http.Formatting.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\System.Web.Http.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\System.Web.Http.WebHost.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\DAL.pdb
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\DAL.dll.config
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\EntityFramework.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\EntityFramework.SqlServer.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\Newtonsoft.Json.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\System.Net.Http.Formatting.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\System.Web.Http.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\System.Web.Http.WebHost.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\ru\System.Net.Http.Formatting.resources.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\ru\System.Web.Http.resources.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\bin\ru\System.Web.Http.WebHost.resources.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\obj\Debug\WebApi.csproj.CopyComplete
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\obj\Debug\WebApi.dll
-C:\Users\diana\OneDrive\бреднота\tadb\tadb — копия\WebApi\obj\Debug\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\NLog.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\WebApi.dll.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\WebApi.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\csc.exe
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\csc.exe.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\csc.rsp
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\csi.exe
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\csi.exe.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\csi.rsp
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.AppContext.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Console.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.IO.Compression.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.IO.Pipes.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.Claims.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.ValueTuple.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Xml.XPath.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\vbc.exe
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\vbc.exe.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\vbc.rsp
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\VBCSCompiler.exe
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\DAL.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\EntityFramework.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\EntityFramework.SqlServer.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Newtonsoft.Json.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\System.Net.Http.Formatting.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\System.Web.Http.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\System.Web.Http.WebHost.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\DAL.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\DAL.dll.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\EntityFramework.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\EntityFramework.SqlServer.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Newtonsoft.Json.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\System.Net.Http.Formatting.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\System.Web.Http.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\System.Web.Http.WebHost.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\ru\System.Net.Http.Formatting.resources.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\ru\System.Web.Http.resources.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\ru\System.Web.Http.WebHost.resources.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.csproj.CopyComplete
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\obj\Debug\WebApi.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\AutoMapper.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\BL.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Common.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\NLog.dll
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\BL.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\BL.dll.config
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\AutoMapper.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\AutoMapper.xml
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\Common.pdb
-C:\Users\diana\OneDrive\бреднота\repos\Technological\WebApi\bin\NLog.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/WebApi.dll.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/WebApi.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/csc.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/csc.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/csc.rsp
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/csi.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/csi.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/csi.rsp
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.AppContext.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Console.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.IO.Compression.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.IO.Pipes.AccessControl.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.IO.Pipes.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.AccessControl.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.Claims.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Security.Principal.Windows.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.ValueTuple.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Xml.XPath.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/vbc.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/vbc.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/vbc.rsp
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/VBCSCompiler.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/Newtonsoft.Json.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/System.Net.Http.Formatting.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/System.Web.Http.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/System.Web.Http.WebHost.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/Newtonsoft.Json.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/System.Net.Http.Formatting.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/System.Web.Http.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/System.Web.Http.WebHost.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/ru/System.Net.Http.Formatting.resources.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/ru/System.Web.Http.resources.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/ru/System.Web.Http.WebHost.resources.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/obj/Debug/WebApi.csprojAssemblyReference.cache
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/obj/Debug/WebApi.csproj.CoreCompileInputs.cache
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/obj/Debug/WebApi.csproj.CopyComplete
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/obj/Debug/WebApi.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/obj/Debug/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/NLog.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/DAL.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/EntityFramework.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/EntityFramework.SqlServer.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/DAL.pdb
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/DAL.dll.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/EntityFramework.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb/WebApi/bin/EntityFramework.SqlServer.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/NLog.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/WebApi.dll.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/WebApi.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/WebApi.pdb
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/csc.exe
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/csc.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/csc.rsp
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/csi.exe
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/csi.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/csi.rsp
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.AppContext.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Console.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.IO.Compression.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.IO.Pipes.AccessControl.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.IO.Pipes.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.AccessControl.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.Claims.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Security.Principal.Windows.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.ValueTuple.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Xml.XPath.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/vbc.exe
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/vbc.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/vbc.rsp
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/VBCSCompiler.exe
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/DAL.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/EntityFramework.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/EntityFramework.SqlServer.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/Newtonsoft.Json.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/System.Net.Http.Formatting.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/System.Web.Http.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/System.Web.Http.WebHost.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/DAL.pdb
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/DAL.dll.config
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/EntityFramework.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/EntityFramework.SqlServer.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/Newtonsoft.Json.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/System.Net.Http.Formatting.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/System.Web.Http.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/System.Web.Http.WebHost.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/ru/System.Net.Http.Formatting.resources.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/ru/System.Web.Http.resources.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/bin/ru/System.Web.Http.WebHost.resources.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/obj/Debug/WebApi.csprojAssemblyReference.cache
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/obj/Debug/WebApi.csproj.CoreCompileInputs.cache
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/obj/Debug/WebApi.csproj.CopyComplete
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/obj/Debug/WebApi.dll
+C:/Users/diana/OneDrive/Рабочий стол/tadb/tadb/WebApi/obj/Debug/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/NLog.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/WebApi.dll.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/WebApi.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/csc.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/csc.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/csc.rsp
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/csi.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/csi.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/csi.rsp
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.AppContext.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Console.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.IO.Compression.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.IO.Pipes.AccessControl.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.IO.Pipes.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.AccessControl.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.Claims.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Security.Principal.Windows.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.ValueTuple.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Xml.XPath.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/vbc.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/vbc.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/vbc.rsp
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/VBCSCompiler.exe
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/DAL.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/EntityFramework.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/EntityFramework.SqlServer.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/Newtonsoft.Json.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/System.Net.Http.Formatting.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/System.Web.Http.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/System.Web.Http.WebHost.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/DAL.pdb
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/DAL.dll.config
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/EntityFramework.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/EntityFramework.SqlServer.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/Newtonsoft.Json.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/System.Net.Http.Formatting.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/System.Web.Http.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/System.Web.Http.WebHost.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/ru/System.Net.Http.Formatting.resources.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/ru/System.Web.Http.resources.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/bin/ru/System.Web.Http.WebHost.resources.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/obj/Debug/WebApi.csprojAssemblyReference.cache
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/obj/Debug/WebApi.csproj.CoreCompileInputs.cache
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/obj/Debug/WebApi.csproj.CopyComplete
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/obj/Debug/WebApi.dll
+C:/Users/diana/OneDrive/бреднота/tadb/tadb — копия/WebApi/obj/Debug/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/NLog.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/WebApi.dll.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/WebApi.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/csc.exe
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/csc.exe.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/csc.rsp
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/csi.exe
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/csi.exe.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/csi.rsp
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.AppContext.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Console.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.IO.Compression.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.IO.Pipes.AccessControl.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.IO.Pipes.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.AccessControl.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.Claims.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Security.Principal.Windows.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.ValueTuple.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Xml.XPath.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/vbc.exe
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/vbc.exe.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/vbc.rsp
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/VBCSCompiler.exe
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/DAL.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/EntityFramework.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/EntityFramework.SqlServer.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/Newtonsoft.Json.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/System.Net.Http.Formatting.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/System.Web.Http.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/System.Web.Http.WebHost.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/DAL.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/DAL.dll.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/EntityFramework.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/EntityFramework.SqlServer.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/Newtonsoft.Json.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/System.Net.Http.Formatting.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/System.Web.Http.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/System.Web.Http.WebHost.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/ru/System.Net.Http.Formatting.resources.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/ru/System.Web.Http.resources.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/ru/System.Web.Http.WebHost.resources.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/obj/Debug/WebApi.csprojAssemblyReference.cache
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/obj/Debug/WebApi.csproj.CoreCompileInputs.cache
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/obj/Debug/WebApi.csproj.CopyComplete
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/obj/Debug/WebApi.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/obj/Debug/WebApi.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/AutoMapper.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/BL.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/Common.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/NLog.dll
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/BL.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/BL.dll.config
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/AutoMapper.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/AutoMapper.xml
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/Common.pdb
+C:/Users/diana/OneDrive/бреднота/repos/Technological/WebApi/bin/NLog.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/NLog.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/WebApi.dll.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/WebApi.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/WebApi.pdb
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/csc.exe
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/csc.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/csc.rsp
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/csi.exe
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/csi.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/csi.rsp
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.Managed.Core.targets
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.AppContext.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Console.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Diagnostics.StackTrace.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.IO.Compression.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.IO.FileSystem.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.IO.FileSystem.Primitives.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.IO.Pipes.AccessControl.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.IO.Pipes.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.AccessControl.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.Claims.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Encoding.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Primitives.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Security.Principal.Windows.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Text.Encoding.CodePages.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.ValueTuple.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Xml.ReaderWriter.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Xml.XmlDocument.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Xml.XPath.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/System.Xml.XPath.XDocument.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/vbc.exe
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/vbc.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/vbc.rsp
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/VBCSCompiler.exe
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/AutoMapper.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/BL.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/DAL.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/EntityFramework.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/EntityFramework.SqlServer.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/Newtonsoft.Json.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/System.Net.Http.Formatting.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/System.Web.Http.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/System.Web.Http.WebHost.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/Common.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/NLog.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/BL.pdb
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/BL.dll.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/DAL.pdb
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/DAL.dll.config
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/AutoMapper.pdb
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/AutoMapper.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/EntityFramework.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/EntityFramework.SqlServer.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/Newtonsoft.Json.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/System.Net.Http.Formatting.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/System.Web.Http.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/System.Web.Http.WebHost.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/Common.pdb
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/NLog.xml
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/ru/System.Net.Http.Formatting.resources.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/ru/System.Web.Http.resources.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/bin/ru/System.Web.Http.WebHost.resources.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/obj/Debug/WebApi.csprojAssemblyReference.cache
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/obj/Debug/WebApi.csproj.CoreCompileInputs.cache
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/obj/Debug/WebApi.csproj.CopyComplete
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/obj/Debug/WebApi.dll
+C:/Users/diana/OneDrive/Рабочий стол/Technological/Technological/WebApi/obj/Debug/WebApi.pdb
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/NLog.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/WebApi.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/WebApi.pdb
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/csc.exe
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/csc.exe.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/csc.rsp
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/csi.exe
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/csi.exe.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/csi.rsp
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.CSharp.Core.targets
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.Managed.Core.targets
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.AppContext.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Collections.Immutable.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Console.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Diagnostics.FileVersionInfo.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Diagnostics.StackTrace.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.IO.Compression.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.IO.FileSystem.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.IO.FileSystem.Primitives.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.IO.Pipes.AccessControl.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.IO.Pipes.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Reflection.Metadata.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.AccessControl.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.Claims.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Algorithms.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Encoding.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.Primitives.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.Cryptography.X509Certificates.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Security.Principal.Windows.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Text.Encoding.CodePages.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.ValueTuple.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Xml.ReaderWriter.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Xml.XmlDocument.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Xml.XPath.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/System.Xml.XPath.XDocument.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/vbc.exe
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/vbc.exe.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/vbc.rsp
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/VBCSCompiler.exe
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/roslyn/VBCSCompiler.exe.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/AutoMapper.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/BL.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/DAL.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/EntityFramework.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/EntityFramework.SqlServer.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/Newtonsoft.Json.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/System.Net.Http.Formatting.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/System.Web.Http.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/System.Web.Http.WebHost.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/Common.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/NLog.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/BL.pdb
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/BL.dll.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/DAL.pdb
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/DAL.dll.config
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/AutoMapper.pdb
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/AutoMapper.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/EntityFramework.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/EntityFramework.SqlServer.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/Newtonsoft.Json.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/System.Net.Http.Formatting.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/System.Web.Http.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/System.Web.Http.WebHost.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/Common.pdb
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/NLog.xml
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/ru/System.Net.Http.Formatting.resources.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/ru/System.Web.Http.resources.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/bin/ru/System.Web.Http.WebHost.resources.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/obj/Debug/WebApi.csprojAssemblyReference.cache
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/obj/Debug/WebApi.csproj.CoreCompileInputs.cache
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/obj/Debug/WebApi.csproj.CopyComplete
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/obj/Debug/WebApi.dll
+/home/cloud_detergent/Projects/Help/Technological/Technological/WebApi/obj/Debug/WebApi.pdb

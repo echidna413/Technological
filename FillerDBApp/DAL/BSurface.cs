@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
+    //Данный класс описывает сущность "Базовая поверхность заготовки"
     public class BSurface
     {
         [ForeignKey("billet_id")]
@@ -15,14 +16,26 @@ namespace DAL
 
         [Key]
         public int surface_id { get; set; }
-        public int billet_id { get; set; }
-        public double number_surface { get; set; }
-        public int code_surface_id { get; set; }
-        public double zero_point_X { get; set; }
-        public double zero_point_Y { get; set; }
-        public double zero_point_Z { get; set; }
-        public double ra { get; set; }
-        public double rnax { get; set; }
-        public double s { get; set; }
+        public int billet_id { get; set; } //Заготовка
+        public double number_surface { get; set; } //Номер поверхности на заготовке
+        public int type_surface { get; set; } //Вид элементарной поверхности
+        public int orientation { get; set; } //Ориентация поверхности
+        //Координаты нулевой точки
+        public double zero_point_X { get; set; } //Координата X
+        public double zero_point_Y { get; set; } //Координата Y
+        public double zero_point_Z { get; set; } //Координата Z
+        //Шероховатость
+        public double ra { get; set; } //Ra
+        public double rmax { get; set; } //Rmax
+        public double s { get; set; } //S
+        public double tp { get; set; } //tp
+        //Твердость
+        public double hrc { get; set; } //HRC
+        public double depth { get; set; } //Глубина наклепаного слоя 
+        //Внутренние напряжения
+        public double internal_stress_1 { get; set; } //Внутреннее напряжение X
+        public double internal_stress_2 { get; set; } //Внутреннее напряжение Y
+        public double internal_stress_3 { get; set; } //Внутреннее напряжение Z
+        public bool constructor_base { get; set; } //Использование в качестве конструкторской базы
     }
 }

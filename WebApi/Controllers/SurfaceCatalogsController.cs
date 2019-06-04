@@ -19,14 +19,14 @@ namespace WebApi.Controllers
         // GET: api/SurfaceCatalogs
         public IQueryable<SurfaceCatalog> Get()
         {
-            return db.SurfaceCatalogs;
+            return db.CodesSurfaces;
         }
 
         // GET: api/SurfaceCatalogs/5
         [ResponseType(typeof(SurfaceCatalog))]
         public IHttpActionResult Get(int id)
         {
-            SurfaceCatalog surfaceCatalog = db.SurfaceCatalogs.Find(id);
+            SurfaceCatalog surfaceCatalog = db.CodesSurfaces.Find(id);
             if (surfaceCatalog == null)
             {
                 return NotFound();
@@ -79,7 +79,7 @@ namespace WebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.SurfaceCatalogs.Add(surfaceCatalog);
+            db.CodesSurfaces.Add(surfaceCatalog);
 
             try
             {
@@ -104,13 +104,13 @@ namespace WebApi.Controllers
         [ResponseType(typeof(SurfaceCatalog))]
         public IHttpActionResult Delete(int id)
         {
-            SurfaceCatalog surfaceCatalog = db.SurfaceCatalogs.Find(id);
+            SurfaceCatalog surfaceCatalog = db.CodesSurfaces.Find(id);
             if (surfaceCatalog == null)
             {
                 return NotFound();
             }
 
-            db.SurfaceCatalogs.Remove(surfaceCatalog);
+            db.CodesSurfaces.Remove(surfaceCatalog);
             db.SaveChanges();
 
             return Ok(surfaceCatalog);
@@ -127,7 +127,7 @@ namespace WebApi.Controllers
 
         private bool SurfaceCatalogExists(int id)
         {
-            return db.SurfaceCatalogs.Count(e => e.surface_code == id) > 0;
+            return db.CodesSurfaces.Count(e => e.surface_code == id) > 0;
         }
     }
 }

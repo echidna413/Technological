@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
+    //Данный класс описывает сущность "Справочник обработки"
     public class ProcessCatalog
     {
         [Key]
         public int process_code { get; set; }
-        public string description { get; set; }
+        public string description { get; set; } //Описание
 
         public override bool Equals(object obj)
         {
