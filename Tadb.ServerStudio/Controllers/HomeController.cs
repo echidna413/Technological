@@ -48,8 +48,8 @@ namespace Tadb.ServerStudio.Controllers
         public ActionResult GetDetails(int id_company)
         {
             var request = new RestRequest("api/DDescriptions");
-            var datails = Client.Get<List<DetailModel>>(request).Data;
-            var required_data = datails.Where(r => r.id_company == id_company).ToList();
+            var details = Client.Get<List<DetailModel>>(request).Data;
+            var required_data = details.Where(r => r.id_company == id_company).ToList();
 
             // нужна вьюшка, принимающая в качестве модели данных List<DetailModel>
             return PartialView("_GetDetails", required_data);
