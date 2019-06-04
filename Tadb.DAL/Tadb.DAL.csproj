@@ -57,28 +57,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDescription.cs" />
-    <Compile Include="BSurface.cs" />
-    <Compile Include="CodeDeviationGeometry.cs" />
-    <Compile Include="CodeDeviationLocation.cs" />
+    <Compile Include="DTO\BDescription.cs" />
+    <Compile Include="DTO\BSurface.cs" />
+    <Compile Include="DTO\CodeDeviationGeometry.cs" />
+    <Compile Include="DTO\CodeDeviationLocation.cs" />
     <Compile Include="Migrations\201906011928275_stable1.cs" />
     <Compile Include="Migrations\201906011928275_stable1.Designer.cs">
       <DependentUpon>201906011928275_stable1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SurfaceCatalog.cs" />
-    <Compile Include="Company.cs" />
-    <Compile Include="DDescription.cs" />
-    <Compile Include="DGeometry.cs" />
-    <Compile Include="DLocation.cs" />
-    <Compile Include="DRelationSize.cs" />
-    <Compile Include="DSizeSurface.cs" />
-    <Compile Include="DSurface.cs" />
-    <Compile Include="EBaseScheme.cs" />
-    <Compile Include="EGroup.cs" />
-    <Compile Include="ELathe.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="EquipmentCatalog.cs" />
-    <Compile Include="FixtureCatalog.cs" />
+    <Compile Include="DTO\SurfaceCatalog.cs" />
+    <Compile Include="DTO\Company.cs" />
+    <Compile Include="DTO\DDescription.cs" />
+    <Compile Include="DTO\DGeometry.cs" />
+    <Compile Include="DTO\DLocation.cs" />
+    <Compile Include="DTO\DRelationSize.cs" />
+    <Compile Include="DTO\DSizeSurface.cs" />
+    <Compile Include="DTO\DSurface.cs" />
+    <Compile Include="DTO\EBaseScheme.cs" />
+    <Compile Include="DTO\EGroup.cs" />
+    <Compile Include="DTO\ELathe.cs" />
+    <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\EquipmentCatalog.cs" />
+    <Compile Include="DTO\FixtureCatalog.cs" />
     <Compile Include="MachineDbContext.cs" />
     <Compile Include="Migrations\201904260700205_initial.cs" />
     <Compile Include="Migrations\201904260700205_initial.Designer.cs">
@@ -157,14 +157,14 @@
       <DependentUpon>201906011530579_stable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Operation.cs" />
-    <Compile Include="ProcessCatalog.cs" />
-    <Compile Include="Record.cs" />
+    <Compile Include="DTO\Operation.cs" />
+    <Compile Include="DTO\ProcessCatalog.cs" />
+    <Compile Include="DTO\Record.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Role.cs" />
-    <Compile Include="Route.cs" />
-    <Compile Include="RouteCard.cs" />
-    <Compile Include="Status.cs" />
+    <Compile Include="DTO\Role.cs" />
+    <Compile Include="DTO\Route.cs" />
+    <Compile Include="DTO\RouteCard.cs" />
+    <Compile Include="DTO\Status.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
