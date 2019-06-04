@@ -5,9 +5,9 @@ using Tadb.ServerStudio.Models.CatalogModels;
 
 namespace Tadb.ServerStudio.Controllers
 {
-    public class CatalogController : Controller
+    public class CatalogsController : Controller
     {
-        public CatalogController()
+        public CatalogsController()
         {
             this.Client = new RestClient("http://localhost:64449");
         }

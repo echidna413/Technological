@@ -150,11 +150,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CatalogController.cs" />
+    <Compile Include="Controllers\CatalogsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CatalogModels\EquipmentCatalogModel.cs" />
+    <Compile Include="Models\CatalogModels\FixtureCatalogModel.cs" />
+    <Compile Include="Models\CatalogModels\ProcessCatalogModel.cs" />
+    <Compile Include="Models\CatalogModels\SurfaceCatalogModel.cs" />
     <Compile Include="Models\CompanyModel.cs" />
     <Compile Include="Models\DetailModel.cs" />
     <Compile Include="Models\RecordModel.cs" />
@@ -207,10 +211,13 @@
     <Content Include="Views\Home\DetailReport.cshtml" />
     <Content Include="Views\Home\_GetDetails.cshtml" />
     <Content Include="Views\Home\Autorization.cshtml" />
+    <Content Include="Views\Catalogs\SurfaceCatalogs.cshtml" />
+    <Content Include="Views\Catalogs\FixtureCatalogs.cshtml" />
+    <Content Include="Views\Catalogs\ProcessCatalogs.cshtml" />
+    <Content Include="Views\Catalogs\EquipmentCatalogs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Catalog\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -8,5 +8,25 @@
 
 @if (false)
 {
-@Html.ActionLink("Отчет по деталям", "DetailReport", null, new { @class = "btn btn-info" })
+    @Html.ActionLink("Отчет по деталям", "DetailReport", null, new { @class = "btn btn-info" })
 }
+
+<section>
+    Справочники
+
+    <div>
+        @Html.ActionLink("Справочник поверхностей", "SurfaceCatalogs", "Catalogs", null, new { @class = "" })
+    </div>
+
+    <div>
+        @Html.ActionLink("Справочник оборудования", "EquipmentCatalogs", "Catalogs", null, new { @class = "" })
+    </div>
+
+    <div>
+        @Html.ActionLink("Справочник технологических переходов", "ProcessCatalogs", "Catalogs", null, new { @class = "" })
+    </div>
+
+    <div>
+        @Html.ActionLink("Справочник приспособлений", "FixtureCatalogs", "Catalogs", null, new { @class = "" })
+    </div>
+</section>

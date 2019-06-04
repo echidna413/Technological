@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Tadb.ServerStudio.Models.CatalogModels.SurfaceCatalogModel>
+
+@{
+    ViewBag.Title = "SurfaceCatalogs";
+}
+
+<h2>SurfaceCatalogs</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.surface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.view_small)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.view_big)
+        </th>
+        @*<th></th>*@
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.surface_code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.view_small)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.view_big)
+            </td>
+            @*<td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>*@
+        </tr>
+    }
+
+</table>
+
+
+@Html.ActionLink("Назад", "Index", "Home", null, new { @class = "btn" })
