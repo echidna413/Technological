@@ -48,6 +48,7 @@ namespace Tadb.DAL.Migrations
 
             Employee rootAdmin = new Employee
             {
+                id_employee = 1,
                 id_role = 1,
                 id_company = 1,
                 first_name = "Иван",

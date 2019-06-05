@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tadb.DAL
 {
@@ -7,6 +8,7 @@ namespace Tadb.DAL
     public class EquipmentCatalog
     {
         [Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int equipment_code { get; set; }
 
         public string model { get; set; } //Модель

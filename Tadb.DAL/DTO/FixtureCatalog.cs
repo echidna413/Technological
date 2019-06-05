@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tadb.DAL
 {
@@ -7,6 +8,7 @@ namespace Tadb.DAL
     {
         //Данный класс описывает сущность "Справочник приспособлений"
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int fixture_code { get; set; }
 
         public string fixture_value { get; set; } //Номер приспособления

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tadb.DAL
 {
@@ -7,6 +8,7 @@ namespace Tadb.DAL
     public class ProcessCatalog
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int process_code { get; set; }
 
         public string description { get; set; } //Описание
