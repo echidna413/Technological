@@ -17,7 +17,6 @@
         <th>
             @Html.DisplayNameFor(model => model.description)
         </th>
-        @*<th></th>*@
     </tr>
 
     @foreach (var item in Model)
@@ -32,33 +31,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.description)
             </td>
-            @*<td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>*@
         </tr>
     }
 </table>
 
-@*<button class="btn-append">Добавить</button>*@
-
-<div id="dialog"></div>
-
 @Html.ActionLink("Добавить", "FixtureCatalog_Append", "Catalogs", null, new { @class = "btn btn-primary" })
-
 @Html.ActionLink("Назад", "Index", "Home", null, new { @class = "btn" })
-
-
-<link href="~/Content/jquery-ui.theme.css" rel="stylesheet" />
-<link href="~/Content/jquery-ui.css" rel="stylesheet" />
-
-<script src="~/Scripts/jquery-3.3.1.slim.js"></script>
-<script src="~/Scripts/jquery-ui.js"></script>
-@*<script src="~/Scripts/scripts/catalog-append.js"></script>*@
-
-<script>
-        var urls = {
-            appendCatalogItem: '@Url.Action("FixtureCatalog_Append", "Catalogs")'
-        };
-</script>
