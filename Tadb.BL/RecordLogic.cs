@@ -6,24 +6,24 @@ namespace Tadb.BL
 {
     public class RecordLogic
     {
-        public void AddRecord(Record r)
-        {
-            // List<Record> records;
+        //public void AddRecord(Record r)
+        //{
+        //    // List<Record> records;
 
-            using (MachineDbContext context = new MachineDbContext())
-            {
-                if (!context.Records.Contains(r))
-                {
-                    context.Records.Add(r);
-                    context.SaveChanges();
-                }
-            }
-        }
+        //    using (MachineDbContext context = new MachineDbContext())
+        //    {
+        //        if (!context.Records.Contains(r))
+        //        {
+        //            context.Records.Add(r);
+        //            context.SaveChanges();
+        //        }
+        //    }
+        //}
 
-        public void RefreshStatus(int id_record, int id_status)
-        {
-            //
-        }
+        //public void RefreshStatus(int id_record, int id_status)
+        //{
+        //    //
+        //}
 
         public IEnumerable<Record> GetRecordsByCompany(int id_company)
         {
@@ -38,16 +38,23 @@ namespace Tadb.BL
             return records;
         }
 
-        public void GetRecordsByEmployee(int id_employee)
+        public IEnumerable<Record> GetRecordsByEmployee(int id_employee)
         {
-        }
+            List<Record> records;
 
-        public void GetRecordsByStatus(int id_status)
-        {
-        }
+            using (MachineDbContext context = new MachineDbContext())
+            {
+                records = context.Records.Where(x => x.id_employee == id_employee).ToList();
+                //из всех записей мы отбираем только те, чьи ид равны заданному ид
+            }
 
-        public void DeleteRecord(int id_record)
-        {
+            return records;
         }
     }
+
+    //public void GetRecordsByStatus(int id_status)
+    //{
+    //}
+
 }
+

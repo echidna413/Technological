@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Tadb.Common;
 using Tadb.DAL;
 
 namespace Tadb.BL
 {
     public class ImportService
+
     {
+        LogHelper log = new LogHelper();
+
+
         public Record ParseRecordString(string[] args)
         {
             if (args.Length != 176)
@@ -217,6 +222,7 @@ namespace Tadb.BL
                 context.Records.AddRange(records);
                 context.SaveChanges();
             }
+            log.ImportNaming("Import File");
         }
     }
 }
