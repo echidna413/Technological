@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Tadb.ServerStudio.Models.CatalogModels.SurfaceCatalogModel>
 
 @{
-    ViewBag.Title = "SurfaceCatalogs";
+    ViewBag.Title = "Справочник поверхностей";
 }
 
-<h2>SurfaceCatalogs</h2>
+<h2>Справочник поверхностей</h2>
 
 <table class="table">
     <tr>
@@ -18,11 +18,11 @@
             @Html.DisplayNameFor(model => model.name)
         </th>
         @*<th>
-            @Html.DisplayNameFor(model => model.view_small)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.view_big)
-        </th>*@
+                @Html.DisplayNameFor(model => model.view_small)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.view_big)
+            </th>*@
         @*<th></th>*@
     </tr>
 
@@ -39,20 +39,15 @@
                 @Html.DisplayFor(modelItem => item.name)
             </td>
             @*<td>
-                @Html.DisplayFor(modelItem => item.view_small)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.view_big)
-            </td>*@
-            @*<td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.DisplayFor(modelItem => item.view_small)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.view_big)
                 </td>*@
         </tr>
     }
 
 </table>
 
-
+@Html.ActionLink("Добавить", "SurfaceCatalog_Append", "Catalogs", null, new { @class = "btn btn-primary" })
 @Html.ActionLink("Назад", "Index", "Home", null, new { @class = "btn" })

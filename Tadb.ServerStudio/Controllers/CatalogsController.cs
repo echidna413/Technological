@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using RestSharp;
+using System.Collections.Generic;
 using System.Web.Mvc;
-using RestSharp;
 using Tadb.ServerStudio.Models.CatalogModels;
 
 namespace Tadb.ServerStudio.Controllers
@@ -23,13 +23,34 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpGet]
+        public ActionResult SurfaceCatalog_Append()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SurfaceCatalog_Append(FormCollection form, SurfaceCatalogModel model)
+        {
+            // TODO модель почему-то не строится
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var request = new RestRequest("api/SurfaceCatalogs", Method.POST);
+            request.AddJsonBody(model);
+
+            var data = Client.Post(request);
+            return RedirectToAction("SurfaceCatalogs");
+        }
+
+        [HttpGet]
         public ActionResult FixtureCatalogs()
         {
             var request = new RestRequest("api/FixtureCatalogs");
             var data = Client.Get<List<FixtureCatalogModel>>(request).Data;
             return View(data);
         }
-
 
         [HttpGet]
         public ActionResult FixtureCatalog_Append()
@@ -42,7 +63,7 @@ namespace Tadb.ServerStudio.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return Json(false);
+                return View(model);
             }
 
             var request = new RestRequest("api/FixtureCatalogs", Method.POST);
@@ -59,7 +80,7 @@ namespace Tadb.ServerStudio.Controllers
             var data = Client.Get<List<ProcessCatalogModel>>(request).Data;
             return View(data);
         }
-        
+
         [HttpGet]
         public ActionResult ProcessCatalog_Append()
         {
@@ -71,7 +92,7 @@ namespace Tadb.ServerStudio.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return Json(false);
+                return View(model);
             }
 
             var request = new RestRequest("api/ProcessCatalogs", Method.POST);
@@ -80,6 +101,7 @@ namespace Tadb.ServerStudio.Controllers
             var data = Client.Post(request);
             return RedirectToAction("ProcessCatalogs");
         }
+
         [HttpGet]
         public ActionResult EquipmentCatalogs()
         {
@@ -87,5 +109,28 @@ namespace Tadb.ServerStudio.Controllers
             var data = Client.Get<List<EquipmentCatalogModel>>(request).Data;
             return View(data);
         }
+
+        [HttpGet]
+        public ActionResult EquipmentCatalog_Append()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult EquipmentCatalog_Append(EquipmentCatalogModel model)
+        {
+            // TODO схожая проблема
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
+            request.AddJsonBody(model);
+
+            var data = Client.Post(request);
+            return RedirectToAction("EquipmentCatalogs");
+        }
+
     }
 }

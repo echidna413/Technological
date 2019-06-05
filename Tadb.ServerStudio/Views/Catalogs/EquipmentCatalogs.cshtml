@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Tadb.ServerStudio.Models.CatalogModels.EquipmentCatalogModel>
 
 @{
-    ViewBag.Title = "EquipmentCatalogs";
+    ViewBag.Title = "Справочник оборудования";
 }
 
-<h2>EquipmentCatalogs</h2>
+<h2>Справочник оборудования</h2>
 
 <table class="table">
     <tr>
@@ -32,14 +32,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.description)
             </td>
-            @*<td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>*@
         </tr>
     }
-
 </table>
 
+@Html.ActionLink("Добавить", "EquipmentCatalog_Append", "Catalogs", null, new { @class = "btn btn-primary" })
 @Html.ActionLink("Назад", "Index", "Home", null, new { @class = "btn" })
