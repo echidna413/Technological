@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Tadb.ServerStudio.Models.CatalogModels.ProcessCatalogModel>
 
 @{
-    ViewBag.Title = "ProcessCatalogs";
+    ViewBag.Title = "Справочник технологических переходов";
 }
 
-<h2>ProcessCatalogs</h2>
+<h2>Справочник технологических переходов</h2>
 
 <table class="table">
     <tr>
@@ -36,4 +36,5 @@
 
 </table>
 
+@Html.ActionLink("Добавить", "ProcessCatalog_Append", "Catalogs", null, new { @class = "btn btn-primary" })
 @Html.ActionLink("Назад", "Index", "Home", null, new { @class = "btn" })

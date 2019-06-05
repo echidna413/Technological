@@ -59,7 +59,27 @@ namespace Tadb.ServerStudio.Controllers
             var data = Client.Get<List<ProcessCatalogModel>>(request).Data;
             return View(data);
         }
+        
+        [HttpGet]
+        public ActionResult ProcessCatalog_Append()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult ProcessCatalog_Append(ProcessCatalogModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return Json(false);
+            }
+
+            var request = new RestRequest("api/ProcessCatalogs", Method.POST);
+            request.AddJsonBody(model);
+
+            var data = Client.Post(request);
+            return RedirectToAction("ProcessCatalogs");
+        }
         [HttpGet]
         public ActionResult EquipmentCatalogs()
         {

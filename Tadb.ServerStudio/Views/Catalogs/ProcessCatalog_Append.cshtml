@@ -1,25 +1,24 @@
-﻿@model Tadb.ServerStudio.Models.CatalogModels.FixtureCatalogModel
+﻿@model Tadb.ServerStudio.Models.CatalogModels.ProcessCatalogModel
 
 @{
-    ViewBag.Title = "Новое приспособление";
+    ViewBag.Title = "Новый технологический переход";
 }
 
-<h2>Новое приспособление</h2>
+<h2>Новый технологический переход</h2>
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal catalog-form">
+    <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
         <div class="form-group">
-            @Html.LabelFor(model => model.fixture_value, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.process_code, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.fixture_value, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.fixture_value, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.process_code, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.process_code, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -34,7 +33,7 @@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Сохранить" class="btn btn-default" />
-                @Html.ActionLink("Отменить", "FixtureCatalogs", null, new { @class = "btn btn-secondary" })
+                @Html.ActionLink("Отменить", "ProcessCatalogs", null, new { @class = "btn btn-secondary" })
             </div>
         </div>
     </div>
