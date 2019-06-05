@@ -215,6 +215,7 @@
     <Content Include="Views\Catalogs\FixtureCatalogs.cshtml" />
     <Content Include="Views\Catalogs\ProcessCatalogs.cshtml" />
     <Content Include="Views\Catalogs\EquipmentCatalogs.cshtml" />
+    <Content Include="Views\Home\_DetailData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

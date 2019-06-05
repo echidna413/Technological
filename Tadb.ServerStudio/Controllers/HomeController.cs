@@ -50,14 +50,17 @@ namespace Tadb.ServerStudio.Controllers
             var request = new RestRequest("api/DDescriptions");
             var details = Client.Get<List<DetailModel>>(request).Data;
             var required_data = details.Where(r => r.id_company == id_company).ToList();
-
-            // нужна вьюшка, принимающая в качестве модели данных List<DetailModel>
             return PartialView("_GetDetails", required_data);
         }
 
         public ActionResult RecordData(RecordModel record)
         {
             return PartialView("_RecordData", record);
+        }
+
+        public ActionResult DetailData(DetailModel detail)
+        {
+            return PartialView("_DetailData", detail);
         }
     }
 }

@@ -5,13 +5,43 @@
 <div class="container-fluid">
     <h1>Отчет по базе технологических возможностей</h1>
 
-    @Html.Action("ChooseCompany")
+    @*@Html.Action("ChooseCompany")*@
 
     <section class="record-table"></section>
 </div>
 
-<script>
+@*<script>
     var urls = {
         getData : '@Url.Action("GetRecords", "Home")'
     };
-</script>
+</script>*@
+
+<table class="table table-bordered">
+    <tr>
+        <td>Сотрудник</td>
+        <td>Статус</td>
+        <td>Код оборудования</td>
+        <td>Код приспособления</td>
+        <td>Код технологического перехода</td>
+        <td>Код обрабатываемой поверхности</td>
+    </tr>
+
+    <tr>
+        <td>Павел Петров</td>
+        <td>Проверена</td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>Павел Петров</td>
+        <td>Отклонена</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+
+</table>

@@ -5,13 +5,46 @@
 <div class="container-fluid">
     <h1>Отчет по базе деталей</h1>
 
-    @Html.Action("ChooseCompany")
+    @*@Html.Action("ChooseCompany")*@
 
     <section class="detail-table"></section>
 </div>
 
-<script>
+@*<script>
     var urls = {
         getData : '@Url.Action("GetDetails", "Home")'
     };
-</script>
+</script>*@
+
+<table class="table table-bordered">
+    <tr>
+        <td>Сотрудник</td>
+        <td>Код детали</td>
+        <td>Наименование детали</td>
+        <td>Марка материала</td>
+        <td>Объем производственной партии</td>
+        <td>Объем передаточной партии</td>
+        <td>Масса детали</td>
+        <td>Возможность изготовления центровых отверстий</td>
+    </tr>
+    <tr>
+        <td>Павел Петров</td>
+        <td>1</td>
+        <td>Гайка с конической шестерней</td>
+        <td>38М</td>
+        <td>200</td>
+        <td>80</td>
+        <td>0</td>
+        <td>Да</td>
+    </tr>
+    <tr>
+        <td>Павел Петров</td>
+        <td>2</td>
+        <td>Цилиндр</td>
+        <td>38М</td>
+        <td>150</td>
+        <td>50</td>
+        <td>2</td>
+        <td>Нет</td>
+    </tr>
+</table>
