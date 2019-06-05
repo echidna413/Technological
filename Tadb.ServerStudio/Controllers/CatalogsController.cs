@@ -14,6 +14,7 @@ namespace Tadb.ServerStudio.Controllers
 
         public RestClient Client { get; set; }
 
+        [HttpGet]
         public ActionResult SurfaceCatalogs()
         {
             var request = new RestRequest("api/SurfaceCatalogs");
@@ -21,6 +22,7 @@ namespace Tadb.ServerStudio.Controllers
             return View(data);
         }
 
+        [HttpGet]
         public ActionResult FixtureCatalogs()
         {
             var request = new RestRequest("api/FixtureCatalogs");
@@ -28,6 +30,29 @@ namespace Tadb.ServerStudio.Controllers
             return View(data);
         }
 
+
+        [HttpGet]
+        public ActionResult FixtureCatalog_Append()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult FixtureCatalog_Append(FixtureCatalogModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return Json(false);
+            }
+
+            var request = new RestRequest("api/FixtureCatalogs", Method.POST);
+            request.AddJsonBody(model);
+
+            var data = Client.Post(request);
+            return RedirectToAction("FixtureCatalogs");
+        }
+
+        [HttpGet]
         public ActionResult ProcessCatalogs()
         {
             var request = new RestRequest("api/ProcessCatalogs");
@@ -35,6 +60,7 @@ namespace Tadb.ServerStudio.Controllers
             return View(data);
         }
 
+        [HttpGet]
         public ActionResult EquipmentCatalogs()
         {
             var request = new RestRequest("api/EquipmentCatalogs");

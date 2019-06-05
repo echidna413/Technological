@@ -1,7 +1,4 @@
-﻿using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Net;
+﻿using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Tadb.DAL;
@@ -31,41 +28,6 @@ namespace Tadb.WebApi.Controllers
             return Ok(processCatalog);
         }
 
-        // PUT: api/ProcessCatalogs/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult Put(int id, ProcessCatalog processCatalog)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != processCatalog.process_code)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(processCatalog).State = EntityState.Modified;
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProcessCatalogExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
-        }
-
         // POST: api/ProcessCatalogs
         [ResponseType(typeof(ProcessCatalog))]
         public IHttpActionResult Post(ProcessCatalog processCatalog)
@@ -79,22 +41,6 @@ namespace Tadb.WebApi.Controllers
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = processCatalog.process_code }, processCatalog);
-        }
-
-        // DELETE: api/ProcessCatalogs/5
-        [ResponseType(typeof(ProcessCatalog))]
-        public IHttpActionResult Delete(int id)
-        {
-            ProcessCatalog processCatalog = db.ProcessCatalogs.Find(id);
-            if (processCatalog == null)
-            {
-                return NotFound();
-            }
-
-            db.ProcessCatalogs.Remove(processCatalog);
-            db.SaveChanges();
-
-            return Ok(processCatalog);
         }
 
         protected override void Dispose(bool disposing)

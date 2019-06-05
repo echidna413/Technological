@@ -1,7 +1,5 @@
-﻿using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+﻿using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Net;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Tadb.DAL;
@@ -29,41 +27,6 @@ namespace Tadb.WebApi.Controllers
             }
 
             return Ok(surfaceCatalog);
-        }
-
-        // PUT: api/SurfaceCatalogs/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult Put(int id, SurfaceCatalog surfaceCatalog)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != surfaceCatalog.surface_code)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(surfaceCatalog).State = EntityState.Modified;
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!SurfaceCatalogExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
         }
 
         // POST: api/SurfaceCatalogs
@@ -94,22 +57,6 @@ namespace Tadb.WebApi.Controllers
             }
 
             return CreatedAtRoute("DefaultApi", new { id = surfaceCatalog.surface_code }, surfaceCatalog);
-        }
-
-        // DELETE: api/SurfaceCatalogs/5
-        [ResponseType(typeof(SurfaceCatalog))]
-        public IHttpActionResult Delete(int id)
-        {
-            SurfaceCatalog surfaceCatalog = db.CodesSurfaces.Find(id);
-            if (surfaceCatalog == null)
-            {
-                return NotFound();
-            }
-
-            db.CodesSurfaces.Remove(surfaceCatalog);
-            db.SaveChanges();
-
-            return Ok(surfaceCatalog);
         }
 
         protected override void Dispose(bool disposing)

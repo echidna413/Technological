@@ -1,7 +1,5 @@
-﻿using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+﻿using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Net;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Tadb.DAL;
@@ -27,41 +25,6 @@ namespace Tadb.WebApi.Controllers
             }
 
             return Ok(fixtureCatalog);
-        }
-
-        // PUT: api/SurfaceCatalogs/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult Put(int id, FixtureCatalog fixtureCatalog)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != fixtureCatalog.fixture_code)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(fixtureCatalog).State = EntityState.Modified;
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!FixtureCatalogExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
         }
 
         // POST: api/SurfaceCatalogs
@@ -92,22 +55,6 @@ namespace Tadb.WebApi.Controllers
             }
 
             return CreatedAtRoute("DefaultApi", new { id = fixtureCatalog.fixture_code }, fixtureCatalog);
-        }
-
-        // DELETE: api/SurfaceCatalogs/5
-        [ResponseType(typeof(FixtureCatalog))]
-        public IHttpActionResult Delete(int id)
-        {
-            FixtureCatalog fixtureCatalog = db.FixtureCatalogs.Find(id);
-            if (fixtureCatalog == null)
-            {
-                return NotFound();
-            }
-
-            db.FixtureCatalogs.Remove(fixtureCatalog);
-            db.SaveChanges();
-
-            return Ok(fixtureCatalog);
         }
 
         protected override void Dispose(bool disposing)
