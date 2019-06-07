@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+section.catalogs {
+    margin-top: 50px;
+}
+
+footer {
+    display: block;
+    bottom: 0px;
+    position: fixed;
+}

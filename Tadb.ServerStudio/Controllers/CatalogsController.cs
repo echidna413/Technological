@@ -29,16 +29,15 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpPost]
-        public ActionResult SurfaceCatalog_Append(FormCollection form, SurfaceCatalogModel model)
+        public ActionResult SurfaceCatalog_Append(SurfaceCatalogModel catalogItem)
         {
-            // TODO модель почему-то не строится
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return View(catalogItem);
             }
 
             var request = new RestRequest("api/SurfaceCatalogs", Method.POST);
-            request.AddJsonBody(model);
+            request.AddJsonBody(catalogItem);
 
             var data = Client.Post(request);
             return RedirectToAction("SurfaceCatalogs");
@@ -117,16 +116,15 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpPost]
-        public ActionResult EquipmentCatalog_Append(EquipmentCatalogModel model)
+        public ActionResult EquipmentCatalog_Append(EquipmentCatalogModel catalogItem)
         {
-            // TODO схожая проблема
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return View(catalogItem);
             }
 
             var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
-            request.AddJsonBody(model);
+            request.AddJsonBody(catalogItem);
 
             var data = Client.Post(request);
             return RedirectToAction("EquipmentCatalogs");
