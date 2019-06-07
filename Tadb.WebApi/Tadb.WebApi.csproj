@@ -138,7 +138,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Tadb.BL\Tadb.BL.csproj">
       <Project>{A255CA4F-DFE8-485C-894D-7B8332EE0C8D}</Project>
-      <Name>BL</Name>
+      <Name>Tadb.BL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tadb.DAL\Tadb.DAL.csproj">
       <Project>{ff956e03-f42b-4e05-baa8-cadc211da3d5}</Project>

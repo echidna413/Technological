@@ -5,6 +5,7 @@ using Tadb.ServerStudio.Models.CatalogModels;
 
 namespace Tadb.ServerStudio.Controllers
 {
+    [Authorize]
     public class CatalogsController : Controller
     {
         public CatalogsController()
@@ -29,6 +30,7 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult SurfaceCatalog_Append(SurfaceCatalogModel catalogItem)
         {
             if (!ModelState.IsValid)
@@ -58,6 +60,7 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult FixtureCatalog_Append(FixtureCatalogModel model)
         {
             if (!ModelState.IsValid)
@@ -87,6 +90,7 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult ProcessCatalog_Append(ProcessCatalogModel model)
         {
             if (!ModelState.IsValid)
@@ -116,6 +120,7 @@ namespace Tadb.ServerStudio.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult EquipmentCatalog_Append(EquipmentCatalogModel catalogItem)
         {
             if (!ModelState.IsValid)

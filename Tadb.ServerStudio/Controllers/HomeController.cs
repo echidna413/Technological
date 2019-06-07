@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using RestSharp;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using RestSharp;
 using Tadb.ServerStudio.Models;
 
 namespace Tadb.ServerStudio.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public HomeController()
@@ -15,6 +16,7 @@ namespace Tadb.ServerStudio.Controllers
 
         public RestClient Client { get; set; }
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();

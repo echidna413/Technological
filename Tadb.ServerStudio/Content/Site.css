@@ -32,3 +32,7 @@ footer {
     bottom: 0px;
     position: fixed;
 }
+
+.login-links {
+    margin-top: 8px;
+}
