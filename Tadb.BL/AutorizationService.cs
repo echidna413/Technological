@@ -51,8 +51,8 @@ namespace Tadb.BL
             return true;
         }
 
-        public void CreateNewUser(Role role,
-                                  Company company,
+        public void CreateNewUser(int id_role,
+                                  int id_company,
                                   string first_name,
                                   string second_name,
                                   string patronymic,
@@ -72,8 +72,8 @@ namespace Tadb.BL
 
                 Employee newUser = new Employee()
                 {
-                    Role = role,
-                    Company = company,
+                    id_role = id_role,
+                    id_company = id_company,
                     first_name = first_name,
                     second_name = second_name,
                     patronymic = patronymic,

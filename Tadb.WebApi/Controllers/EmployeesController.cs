@@ -80,8 +80,8 @@ namespace Tadb.WebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            service.CreateNewUser(employee.Role,
-                                  employee.Company,
+            service.CreateNewUser(employee.id_role,
+                                  employee.id_company,
                                   employee.first_name,
                                   employee.second_name,
                                   employee.patronymic,

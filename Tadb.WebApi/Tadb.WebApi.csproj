@@ -104,6 +104,7 @@
     <Compile Include="Controllers\DSizeSurfacesController.cs" />
     <Compile Include="Controllers\DSurfacesController.cs" />
     <Compile Include="Controllers\EBaseSchemesController.cs" />
+    <Compile Include="Controllers\EGroupsController.cs" />
     <Compile Include="Controllers\ELathesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\EquipmentCatalogsController.cs" />
