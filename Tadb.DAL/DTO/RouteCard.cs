@@ -19,6 +19,7 @@ namespace Tadb.DAL
         public string name_card { get; set; } //Название карты
         public int? detail_id { get; set; } //Деталь
         public int? billet_id { get; set; } //Заготовка
-        public int profile_sizes { get; set; } //Профиль и размеры
+        public int? profile_sizes { get; set; } //Профиль и размеры
+        public string link { get; set; } //путь расположения файла
     }
 }

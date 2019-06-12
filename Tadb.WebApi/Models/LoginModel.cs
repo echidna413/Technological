@@ -6,5 +6,7 @@ namespace Tadb.WebApi.Models
     {
         [Key]
         public int id_role { get; set; }
+        public string first_name { get; set; }
+        public string second_name { get; set; }
     }
 }

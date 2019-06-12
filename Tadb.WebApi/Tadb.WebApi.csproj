@@ -113,6 +113,8 @@
     <Compile Include="Controllers\RecordsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\FixtureCatalogsController.cs" />
+    <Compile Include="Controllers\RouteCardsController.cs" />
+    <Compile Include="Controllers\RoutesController.cs" />
     <Compile Include="Controllers\SurfaceCatalogsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

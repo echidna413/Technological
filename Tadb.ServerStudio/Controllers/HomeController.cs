@@ -24,27 +24,31 @@ namespace Tadb.ServerStudio.Controllers
 
         public ActionResult DetailReport()
         {
+            var request = new RestRequest("api/DDescriptions");
+            var details = Client.Get<List<DetailModel>>(request).Data;
             return View();
         }
 
         public ActionResult TechBaseReport()
         {
+            var request = new RestRequest("api/Records");
+            var records = Client.Get<List<RecordModel>>(request).Data;
             return View();
         }
 
-        public ActionResult ChooseCompany()
-        {
-            var request = new RestRequest("api/Companies");
-            var companies = Client.Get<List<CompanyModel>>(request).Data;
-            return PartialView("_ChooseCompany", companies);
-        }
+        //public ActionResult ChooseCompany()
+        //{
+        //    var request = new RestRequest("api/Companies");
+        //    var companies = Client.Get<List<CompanyModel>>(request).Data;
+        //    return PartialView("_ChooseCompany", companies);
+        //}
 
         public ActionResult GetRecords(int id_company)
         {
             var request = new RestRequest("api/Records");
             var records = Client.Get<List<RecordModel>>(request).Data;
-            var required_data = records.Where(r => r.id_company == id_company).ToList();
-            return PartialView("_GetRecords", required_data);
+            //var required_data = records.Where(r => r.id_company == id_company).ToList();
+            return PartialView("_GetRecords");
         }
 
         public ActionResult GetDetails(int id_company)
