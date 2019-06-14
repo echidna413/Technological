@@ -23,15 +23,18 @@
         <td>Масса детали</td>
         <td>Возможность изготовления центровых отверстий</td>
     </tr>
+    <tr>
     @try
     {
         foreach (var detail in Model)
         {
-            @Html.Action("DetailData", new { detail = detail })
+            @*@Html.Display("DetailData", new { detail = detail })*@
+            (detail);
         }
     }
     catch (NullReferenceException e)
     {
+        <tr>
         <td>null</td>
         <td>null</td>
         <td>null</td>
@@ -40,6 +43,7 @@
         <td>null</td>
         <td>null</td>
         <td>null</td>
+        </tr>
     }
 </table>
 

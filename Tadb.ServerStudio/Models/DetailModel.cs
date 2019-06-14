@@ -4,7 +4,7 @@
     {
         public int detail_id { get; set; }
         public int id_employee { get; set; }
-        public int id_company { get; set; }
+        //public int id_company { get; set; }
         public string code_detail { get; set; }
         public string name_detail { get; set; }
         public string mark_material { get; set; }

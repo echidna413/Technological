@@ -26,6 +26,7 @@ namespace Tadb.ServerStudio.Controllers
         {
             var request = new RestRequest("api/DDescriptions");
             var details = Client.Get<List<DetailModel>>(request).Data;
+            var required_data = details.ToList();
             return View();
         }
 
@@ -33,6 +34,7 @@ namespace Tadb.ServerStudio.Controllers
         {
             var request = new RestRequest("api/Records");
             var records = Client.Get<List<RecordModel>>(request).Data;
+            var required_data = records.ToList();
             return View();
         }
 
@@ -43,21 +45,21 @@ namespace Tadb.ServerStudio.Controllers
         //    return PartialView("_ChooseCompany", companies);
         //}
 
-        public ActionResult GetRecords(int id_company)
-        {
-            var request = new RestRequest("api/Records");
-            var records = Client.Get<List<RecordModel>>(request).Data;
-            //var required_data = records.Where(r => r.id_company == id_company).ToList();
-            return PartialView("_GetRecords");
-        }
+        //public ActionResult GetRecords(int id_company)
+        //{
+        //    var request = new RestRequest("api/Records");
+        //    var records = Client.Get<List<RecordModel>>(request).Data;
+        //    //var required_data = records.Where(r => r.id_company == id_company).ToList();
+        //    return PartialView("_GetRecords");
+        //}
 
-        public ActionResult GetDetails(int id_company)
-        {
-            var request = new RestRequest("api/DDescriptions");
-            var details = Client.Get<List<DetailModel>>(request).Data;
-            var required_data = details.Where(r => r.id_company == id_company).ToList();
-            return PartialView("_GetDetails", required_data);
-        }
+        //public ActionResult GetDetails(int id_company)
+        //{
+        //    var request = new RestRequest("api/DDescriptions");
+        //    var details = Client.Get<List<DetailModel>>(request).Data;
+        //    //var required_data = details.Where(r => r.id_company == id_company).ToList();
+        //    return PartialView("_GetDetails", required_data);
+        //}
 
         public ActionResult RecordData(RecordModel record)
         {
