@@ -10,7 +10,7 @@ namespace Tadb.DAL
         [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int equipment_code { get; set; }
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string model { get; set; } //Модель
         public string description { get; set; } //Описание
 

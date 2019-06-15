@@ -6,40 +6,83 @@
 <div class="container-fluid">
     <h1>Отчет по базе технологических возможностей</h1>
 
-    @*@Html.Action("ChooseCompany")*@
-
     <section class="record-table"></section>
 </div>
-
-<table class="table table-bordered">
-    <tr>
-        <td>Сотрудник</td>
-        <td>Статус</td>
-        <td>Код оборудования</td>
-        <td>Код приспособления</td>
-        <td>Код технологического перехода</td>
-        <td>Код обрабатываемой поверхности</td>
-    </tr>
-    @try
-    {
-        foreach (var record in Model)
-        {
-            @Html.Action("RecordData", new { record = record })
+Фильтры:
+<form id="axisForm">
+    <div class="form-row">
+        <div class="form-group row col-md-3">
+            <label class="col-sm-4 col-form-label">Сотрудник</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="employeeFilter"></select>
+            </div>
+        </div>
+        <div class="form-group row col-md-3">
+            <label class="col-sm-4 col-form-label">Статус</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="statusFilter"></select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-outline-success" onclick="SaveFilters()">Фильтровать</button>
+        </div>
+    </div>
+</form>
+<table class="table table-bordered" id="techBaseReportTable"></table>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        FillFilters();
+        var filter = GetFilter();
+        GetRecordData(filter);
+    });
+    function FillFilters() {
+        return null;
+    }
+    function GetFilter() {
+        console.log("employeeFilter:" + $("#employeeFilter").val());
+        console.log("statusFilter:" + $("#statusFilter").val());
+        if (!$("#employeeFilter").val() && !$("#employeeFilter").val()) {
+            return null;
         }
+        var recordFilter = {
+            EmployeeId: $("#employeeFilter").val(),
+            StatusId: $("#statusFilter").val()
+        }
+        return recordFilter;
     }
-    catch (NullReferenceException e)
-    {
-        <tr>
-            <td>null</td>
-            <td>null</td>
-            <td>null</td>
-            <td>null</td>
-            <td>null</td>
-            <td>null</td>
-        </tr>
-    }
-</table>
 
+    function GetRecordData(filter) {
+        $.ajax({
+            url: '/RecordController/Record',
+            type: 'POST',
+            data: JSON.stringify(filter),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                console.log("GetRecordData return:");
+                console.log(data);
+                FillTable(data, 'techBaseReportTable');
+            },
+            error: function (x, y, z) {
+                alert(x + '\n' + y + '\n' + z);
+            }
+        });
+    }
+    function FillTable(data, tableId) {
+        var tableStr = "<tr><td>Сотрудник</td><td>Статус</td><td>Код оборудования</td><td>Код приспособления</td><td>Код технологического перехода</td><td>Код обрабатываемой поверхности</td></tr>";
+        $.each(data, function (index, value) {
+            tableStr += "<tr>";
+            tableStr += "<td>" + value.Employee + "</td>";
+            tableStr += "<td>" + value.Status + "</td>";
+            tableStr += "<td>" + value.Status + "</td>";
+            tableStr += "<td>" + value.Status + "</td>";
+            tableStr += "<td>" + value.Status + "</td>";
+            tableStr += "<td>" + value.Status + "</td>";
+            tableStr += "</tr>";
+        });
+        $("#" + tableId).html(tableStr);
+    }
+</script>
 @*<script>
         var urls = {
             getData : '@Url.Action("GetRecords", "Home")'

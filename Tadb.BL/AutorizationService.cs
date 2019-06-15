@@ -88,29 +88,30 @@ namespace Tadb.BL
 
         public Employee GetEmployeeByLoginPassword(string login, string password)
         {
-            string hashedPassword = this.HashPassword(password);
-
-            Employee foundEmployee = null;
-            string role;
+            //TODO установить корректный ID
+            const int adminRoleId = 100500;
+            
             using (MachineDbContext context = new MachineDbContext())
             {
-                foundEmployee = context.Employees
-                    .Include("Role")
-                    .FirstOrDefault(x => x.login.Equals(login));
-                role = foundEmployee.Role.name;
-                if (foundEmployee is null)
+                Employee currEmployee = context.Employees.FirstOrDefault(x => x.login.Equals(login));
+                if (currEmployee == null)
                 {
                     throw new Exception("Пользователя с таким логином не существует");
                 }
+                if (!currEmployee.id_role.Equals(adminRoleId))
+                {
+                    throw new Exception("Данный пользователь не является адинистратором системы");
+                }
+                bool truePassword = currEmployee.passwordHash.ToUpper().Equals(HashPassword(password).ToUpper());
+                if (!truePassword)
+                {
+                    throw new Exception("Неверный пароль");
+                }
+
+                return currEmployee;
             }
 
-            bool isEqual = foundEmployee.passwordHash.ToUpper().Equals(hashedPassword.ToUpper());
-            if (!isEqual)
-            {
-                throw new Exception("Неверный пароль");
-            }
-
-            return foundEmployee;
+            
         }
     }
 }

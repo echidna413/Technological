@@ -98,6 +98,7 @@ namespace Tadb.DAL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.SetInitializer<MachineDbContext>(null);
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<SurfaceCatalog>()
                 .Property(p => p.surface_code)
@@ -162,7 +163,8 @@ namespace Tadb.DAL
                 .HasOptional<DDescription>(s => s.DDescription)
                 .WithMany()
                 .WillCascadeOnDelete(false);
-            ////TODO
+
+
             //modelBuilder.Entity<DSurface>()
             //    .HasRequired(s => s.DDescription)
             //    .WithMany(x => x.DSurfaces)

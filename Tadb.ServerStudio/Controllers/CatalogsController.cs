@@ -125,14 +125,19 @@ namespace Tadb.ServerStudio.Controllers
         {
             if (!ModelState.IsValid)
             {
+                ModelState.AddModelError("catalogItem", "Справочник уже содержит данную модель");
                 return View(catalogItem);
             }
+            //if(catalogItem.model )
+            else
+            {
 
-            var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
-            request.AddJsonBody(catalogItem);
-
-            var data = Client.Post(request);
-            return RedirectToAction("EquipmentCatalogs");
+                var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
+                request.AddJsonBody(catalogItem);
+                ViewBag.Message = "Запись добавлена";
+                var data = Client.Post(request);
+                return RedirectToAction("EquipmentCatalogs");
+            }
         }
 
     }

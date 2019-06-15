@@ -22,6 +22,11 @@ namespace Tadb.ServerStudio.Controllers
             return View();
         }
 
+        public ActionResult ExpertChecking()
+        {
+            return View();
+        }
+
         public ActionResult DetailReport()
         {
             var request = new RestRequest("api/DDescriptions");
@@ -32,9 +37,9 @@ namespace Tadb.ServerStudio.Controllers
 
         public ActionResult TechBaseReport()
         {
-            var request = new RestRequest("api/Records");
-            var records = Client.Get<List<RecordModel>>(request).Data;
-            var required_data = records.ToList();
+            //var request = new RestRequest("api/Records");
+            //var records = Client.Get<List<RecordModel>>(request).Data;
+            //var required_data = records.ToList();
             return View();
         }
 
