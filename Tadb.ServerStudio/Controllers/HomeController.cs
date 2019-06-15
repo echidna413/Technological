@@ -22,6 +22,11 @@ namespace Tadb.ServerStudio.Controllers
             return View();
         }
 
+        public ActionResult ExpertChecking()
+        {
+            return View();
+        }
+
         public ActionResult DetailReport()
         {
             var request = new RestRequest("api/DDescriptions");

@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Tadb.DAL;
@@ -32,13 +34,24 @@ namespace Tadb.WebApi.Controllers
         [ResponseType(typeof(EquipmentCatalog))]
         public IHttpActionResult Post(EquipmentCatalog equipmentCatalog)
         {
+            using (MachineDbContext context = new MachineDbContext())
+            {
+                if (context.EquipmentCatalogs
+                    .FirstOrDefault(x => x.model.Equals(equipmentCatalog.model)) != null)
+                {
+                    return BadRequest(ModelState);
+                }
+            }
+
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
             db.EquipmentCatalogs.Add(equipmentCatalog);
-            db.SaveChanges();
+
+                db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = equipmentCatalog.equipment_code }, equipmentCatalog);
         }

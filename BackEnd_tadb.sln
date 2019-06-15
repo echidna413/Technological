@@ -16,6 +16,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tadb.WebApi", "Tadb.WebApi\Tadb.WebApi.csproj", "{CAA21162-D0A2-4FE8-8FBD-9971E146F9DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tadb.ServerStudio", "Tadb.ServerStudio\Tadb.ServerStudio.csproj", "{596B9839-80B4-4173-ABB1-886C86F1DDF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF956E03-F42B-4E05-BAA8-CADC211DA3D5} = {FF956E03-F42B-4E05-BAA8-CADC211DA3D5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

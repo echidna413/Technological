@@ -29,7 +29,7 @@
         foreach (var detail in Model)
         {
             @*@Html.Display("DetailData", new { detail = detail })*@
-            (detail);
+            @*(detail);*@
         }
     }
     catch (NullReferenceException e)
