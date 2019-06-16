@@ -9,7 +9,7 @@ namespace Tadb.DAL.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Tadb.DAL.MachineDbContext context)

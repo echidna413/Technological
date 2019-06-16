@@ -133,6 +133,7 @@ namespace Tadb.ServerStudio.Controllers
             {
 
                 var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
+               
                 request.AddJsonBody(catalogItem);
                 ViewBag.Message = "Запись добавлена";
                 var data = Client.Post(request);

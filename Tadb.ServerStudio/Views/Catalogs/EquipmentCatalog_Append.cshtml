@@ -13,7 +13,7 @@
     
 <div class="form-horizontal">
     <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
     @*<div class="form-group">
             @Html.LabelFor(model => model.equipment_code, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -22,9 +22,9 @@
             </div>
         </div>*@
 
-    <div class="alert alert-danger" role="alert">
+    @*<div class="alert alert-danger" role="alert">
         @Html.ValidationMessageFor(m => m.model)
-        </div>
+        </div>*@
 
     <div class="form-group">
         @Html.LabelFor(model => model.model, htmlAttributes: new { @class = "control-label col-md-2" })
