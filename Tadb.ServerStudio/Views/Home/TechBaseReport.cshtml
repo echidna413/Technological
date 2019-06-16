@@ -1,9 +1,4 @@
-﻿@model List<RecordModel>
-@{
-    ViewBag.Title = "TechBase Report";
-}
-
-<div class="container-fluid">
+﻿<div class="container-fluid">
     <h1>Отчет по базе технологических возможностей</h1>
 
     <section class="record-table"></section>
@@ -24,114 +19,15 @@
             </div>
         </div>
         <div class="col-md-3">
-            <button type="button" class="btn btn-outline-success" onclick="SaveFilters()">Фильтровать</button>
+            <button type="button" class="btn btn-outline-success" onclick="SaveFilters()">Применить фильтры</button>
         </div>
     </div>
 </form>
 <table class="table table-bordered" id="techBaseReportTable"></table>
 <button typeof="button" class="btn btn-outline-success" onclick="ReportDownload()">Выгрузить данные</button>
 <script src="~/Scripts/jquery-3.3.1.js"></script>
-<script>
-    $(document).ready(function () {
-        FillFilters();
-        var filter = GetFilter();
-        GetRecordData(filter);
-    });
-    function SaveFilters() {
-        var filter = GetFilter();
-        GetRecordData(filter);
-    }
-    function ReportDownload() {
-        var iframe = document.createElement("iframe");
-        iframe.src = "/RecordController/Record/Download?employeeId=" + $("#employeeFilter").val()
-            + "&statusId=" + $("#statusFilter").val();
-        iframe.style.display = "none";
-        document.body.appendChild(iframe); 
-    }
-    function FillFilters() {
-        $.ajax({
-            url: '/EmployeeController/Get',
-            type: 'GET',
-            contentType: "application/json;charset=utf-8",
-            success: function (data) {
-                console.log("EmployeeGet return:");
-                console.log(data);
-                var employeeFieldStr = "<option value='null'></option>";
-                $.each(data, function (index, value) {
-                    employeeFieldStr += "<option value='" + value.id_employee + "'>" +
-                        value.first_name + " " + value.patronymic + " " + value.second_name + "</option>"; 
-                })
-                $("#employeeFilter").html(employeeFieldStr);
-            },
-            error: function (x, y, z) {
-                alert(x + '\n' + y + '\n' + z);
-            }
-        });
-        $.ajax({
-            url: '/StatusController/Get',
-            type: 'GET',
-            contentType: "application/json;charset=utf-8",
-            success: function (data) {
-                console.log("StatusGet return:");
-                console.log(data);
-                var statusFieldStr = "<option value='null'></option>";
-                $.each(data, function (index, value) {
-                    statusFieldStr += "<option value='" + value.id_status + "'>" +
-                        value.name + "</option>";
-                })
-                $("#statusFilter").html(statusFieldStr);
-            },
-            error: function (x, y, z) {
-                alert(x + '\n' + y + '\n' + z);
-            }
-        });
-    }
-
-    function GetFilter() {
-        console.log("employeeFilter:" + $("#employeeFilter").val());
-        console.log("statusFilter:" + $("#statusFilter").val());
-        if (!$("#employeeFilter").val() && !$("#employeeFilter").val()) {
-            return null;
-        }
-        var recordFilter = {
-            EmployeeId: $("#employeeFilter").val(),
-            StatusId: $("#statusFilter").val()
-        }
-        return recordFilter;
-    }
-
-    function GetRecordData(filter) {
-        $.ajax({
-            url: '/RecordController/Record',
-            type: 'POST',
-            data: JSON.stringify(filter),
-            contentType: "application/json;charset=utf-8",
-            success: function (data) {
-                console.log("GetRecordData return:");
-                console.log(data);
-                FillTable(data, 'techBaseReportTable');
-            },
-            error: function (x, y, z) {
-                alert(x + '\n' + y + '\n' + z);
-            }
-        });
-    }
-    function FillTable(data, tableId) {
-        var tableStr = "<tr><td>Сотрудник</td><td>Статус</td><td>Код оборудования</td><td>Код приспособления</td><td>Код технологического перехода</td><td>Код обрабатываемой поверхности</td></tr>";
-        $.each(data, function (index, value) {
-            //TODO добавить корректные валью по столбцам
-            tableStr += "<tr>";
-            tableStr += "<td>" + value.Employee + "</td>";
-            tableStr += "<td>" + value.Status + "</td>";
-            tableStr += "<td>" + value.Status + "</td>";
-            tableStr += "<td>" + value.Status + "</td>";
-            tableStr += "<td>" + value.Status + "</td>";
-            tableStr += "<td>" + value.Status + "</td>";
-            tableStr += "</tr>";
-        });
-        $("#" + tableId).html(tableStr);
-    }
-</script>
+<script src="~/Scripts/jquery.cookie.js"></script>
+<script src="~/Scripts/TechBaseReport.js"></script>
 @*<script>
         var urls = {
             getData : '@Url.Action("GetRecords", "Home")'
