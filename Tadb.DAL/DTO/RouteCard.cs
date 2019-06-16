@@ -13,10 +13,12 @@ namespace Tadb.DAL
         [ForeignKey("billet_id")]
         public BDescription BDescription { get; set; }
 
+
         [Key]
         public int id_card { get; set; }
 
         public string name_card { get; set; } //Название карты
+        public string employee { get; set; } //Имя сотрудника
         public int? detail_id { get; set; } //Деталь
         public int? billet_id { get; set; } //Заготовка
         public int? profile_sizes { get; set; } //Профиль и размеры
