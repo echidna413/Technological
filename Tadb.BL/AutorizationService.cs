@@ -90,7 +90,29 @@ namespace Tadb.BL
         {
             //TODO установить корректный ID
             const int adminRoleId = 100500;
-            
+
+            using (MachineDbContext context = new MachineDbContext())
+            {
+                Employee currEmployee = context.Employees.FirstOrDefault(x => x.login.Equals(login));
+                if (currEmployee == null)
+                {
+                    throw new Exception("Пользователя с таким логином не существует");
+                }
+                bool truePassword = currEmployee.passwordHash.ToUpper().Equals(HashPassword(password).ToUpper());
+                if (!truePassword)
+                {
+                    throw new Exception("Неверный пароль");
+                }
+
+                return currEmployee;
+            }
+        }
+
+        public Employee GetEmployeeForWeb(string login, string password)
+        {
+            //TODO установить корректный ID
+            const int adminRoleId = 100500;
+
             using (MachineDbContext context = new MachineDbContext())
             {
                 Employee currEmployee = context.Employees.FirstOrDefault(x => x.login.Equals(login));
@@ -111,7 +133,6 @@ namespace Tadb.BL
                 return currEmployee;
             }
 
-            
         }
     }
 }
