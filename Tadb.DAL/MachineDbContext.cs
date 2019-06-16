@@ -164,7 +164,6 @@ namespace Tadb.DAL
                 .WithMany()
                 .WillCascadeOnDelete(false);
 
-
             //modelBuilder.Entity<DSurface>()
             //    .HasRequired(s => s.DDescription)
             //    .WithMany(x => x.DSurfaces)

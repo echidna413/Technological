@@ -88,8 +88,6 @@ namespace Tadb.BL
 
         public Employee GetEmployeeByLoginPassword(string login, string password)
         {
-            //TODO установить корректный ID
-            const int adminRoleId = 100500;
             
             using (MachineDbContext context = new MachineDbContext())
             {
@@ -97,10 +95,6 @@ namespace Tadb.BL
                 if (currEmployee == null)
                 {
                     throw new Exception("Пользователя с таким логином не существует");
-                }
-                if (!currEmployee.id_role.Equals(adminRoleId))
-                {
-                    throw new Exception("Данный пользователь не является адинистратором системы");
                 }
                 bool truePassword = currEmployee.passwordHash.ToUpper().Equals(HashPassword(password).ToUpper());
                 if (!truePassword)

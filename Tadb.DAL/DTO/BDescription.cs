@@ -7,7 +7,7 @@ namespace Tadb.DAL
     public class BDescription
     {
         [ForeignKey("id_employee")]
-        public virtual Employee Employee { get; set; }
+        public Employee Employee { get; set; }
 
         [Key]
         public int billet_id { get; set; }
