@@ -29,9 +29,9 @@ namespace Tadb.ServerStudio.Controllers
 
         public ActionResult DetailReport()
         {
-            var request = new RestRequest("api/DDescriptions");
-            var details = Client.Get<List<DetailModel>>(request).Data;
-            var required_data = details.ToList();
+            //var request = new RestRequest("api/DDescriptions");
+            //var details = Client.Get<List<DetailModel>>(request).Data;
+            //var required_data = details.ToList();
             return View();
         }
 

@@ -1,56 +1,33 @@
-﻿@model List<DetailModel>
-@{
-    ViewBag.Title = "Detail Report";
-}
-
-<div class="container-fluid">
+﻿<div class="container-fluid">
     <h1>Отчет по базе деталей</h1>
-
-    @*@Html.Action("ChooseCompany")*@
 
     <section class="detail-table"></section>
 </div>
-
-
-<table class="table table-bordered">
-    <tr>
-        <td>Сотрудник</td>
-        <td>Код детали</td>
-        <td>Наименование детали</td>
-        <td>Марка материала</td>
-        <td>Объем производственной партии</td>
-        <td>Объем передаточной партии</td>
-        <td>Масса детали</td>
-        <td>Возможность изготовления центровых отверстий</td>
-    </tr>
-    <tr>
-    @try
-    {
-        foreach (var detail in Model)
-        {
-            @*@Html.Display("DetailData", new { detail = detail })*@
-            @*(detail);*@
-        }
-    }
-    catch (NullReferenceException e)
-    {
-        <tr>
-        <td>null</td>
-        <td>null</td>
-        <td>null</td>
-        <td>null</td>
-        <td>null</td>
-        <td>null</td>
-        <td>null</td>
-        <td>null</td>
-        </tr>
-    }
-</table>
-@*<script>
-        var urls = {
-            getData : '@Url.Action("GetDetails", "Home")'
-        };
-    </script>*@
+Фильтры:
+<form id="axisForm">
+    <div class="form-row">
+        <div class="form-group row col-md-3">
+            <label class="col-sm-4 col-form-label">Сотрудник</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="employeeFilter"></select>
+            </div>
+        </div>
+        <div class="form-group row col-md-3">
+            <label class="col-sm-4 col-form-label">Марка материала</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="materialFilter"></select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-outline-success" onclick="SaveFilters()">Применить фильтры</button>
+        </div>
+    </div>
+</form>
+<table class="table table-bordered" id="detailReportTable"></table>
+<button typeof="button" class="btn btn-outline-success" onclick="ReportDownload()">Выгрузить данные</button>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.cookie.js"></script>
+<script src="~/Scripts/DetailReport.js"></script>
 
 @*<table class="table table-bordered">
         <tr>
@@ -64,23 +41,63 @@
             <td>Возможность изготовления центровых отверстий</td>
         </tr>
         <tr>
-            <td>Павел Петров</td>
-            <td>1</td>
-            <td>Гайка с конической шестерней</td>
-            <td>38М</td>
-            <td>200</td>
-            <td>80</td>
-            <td>0</td>
-            <td>Да</td>
-        </tr>
-        <tr>
-            <td>Павел Петров</td>
-            <td>2</td>
-            <td>Цилиндр</td>
-            <td>38М</td>
-            <td>150</td>
-            <td>50</td>
-            <td>2</td>
-            <td>Нет</td>
-        </tr>
+        @try
+        {
+            foreach (var detail in Model)
+            {
+                @Html.Display("DetailData", new { detail = detail })*
+                @*(detail);
+            }
+        }
+        catch (NullReferenceException e)
+        {
+            <tr>
+            <td>null</td>
+            <td>null</td>
+            <td>null</td>
+            <td>null</td>
+            <td>null</td>
+            <td>null</td>
+            <td>null</td>
+            <td>null</td>
+            </tr>
+        }
     </table>*@
+@*<script>
+            var urls = {
+                getData : '@Url.Action("GetDetails", "Home")'
+            };
+        </script>
+
+    @*<table class="table table-bordered">
+            <tr>
+                <td>Сотрудник</td>
+                <td>Код детали</td>
+                <td>Наименование детали</td>
+                <td>Марка материала</td>
+                <td>Объем производственной партии</td>
+                <td>Объем передаточной партии</td>
+                <td>Масса детали</td>
+                <td>Возможность изготовления центровых отверстий</td>
+            </tr>
+            <tr>
+                <td>Павел Петров</td>
+                <td>1</td>
+                <td>Гайка с конической шестерней</td>
+                <td>38М</td>
+                <td>200</td>
+                <td>80</td>
+                <td>0</td>
+                <td>Да</td>
+            </tr>
+            <tr>
+                <td>Павел Петров</td>
+                <td>2</td>
+                <td>Цилиндр</td>
+                <td>38М</td>
+                <td>150</td>
+                <td>50</td>
+                <td>2</td>
+                <td>Нет</td>
+            </tr>
+        </table>*@

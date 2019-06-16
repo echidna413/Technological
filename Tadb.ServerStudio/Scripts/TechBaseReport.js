@@ -9,8 +9,6 @@ function FillFilters() {
         type: 'GET',
         contentType: "application/json;charset=utf-8",
         success: function (data) {
-            console.log("EmployeeGet return:");
-            console.log(data);
             var employeeFieldStr = "<option value='null'></option>";
             $.each(data, function (index, value) {
                 employeeFieldStr += "<option value='" + value.id_employee + "'>" +
@@ -18,7 +16,6 @@ function FillFilters() {
             })
             $("#employeeFilter").html(employeeFieldStr);
             var techReportEmployeeFilter = Cookies.get('techReportEmployeeFilter');
-            console.log("techReportEmployeeFilter:" + techReportEmployeeFilter)
             if (techReportEmployeeFilter) {
                 $("#employeeFilter").val(techReportEmployeeFilter);
             }
@@ -32,8 +29,6 @@ function FillFilters() {
         type: 'GET',
         contentType: "application/json;charset=utf-8",
         success: function (data) {
-            console.log("StatusGet return:");
-            console.log(data);
             var statusFieldStr = "<option value='null'></option>";
             $.each(data, function (index, value) {
                 statusFieldStr += "<option value='" + value.id_status + "'>" +
@@ -41,7 +36,6 @@ function FillFilters() {
             })
             $("#statusFilter").html(statusFieldStr);
             var techReportStatusFilter = Cookies.get('techReportStatusFilter');
-            console.log("techReportStatusFilter:" + techReportStatusFilter);
             if (techReportStatusFilter) {
                 $("#statusFilter").val(techReportStatusFilter);
             }
@@ -63,8 +57,6 @@ function GetRecordData() {
         data: JSON.stringify(recordFilter),
         contentType: "application/json;charset=utf-8",
         success: function (data) {
-            console.log("GetRecordData return:");
-            console.log(data);
             FillTable(data, 'techBaseReportTable');
         },
         error: function (x, y, z) {
@@ -75,7 +67,6 @@ function GetRecordData() {
 
 function FillTable(data, tableId) {
     $("#techBaseReportTable").find("tr:gt(0)").remove();;
-    console.log("table clear");
     var tableStr = "<tr><td>Сотрудник</td><td>Статус</td><td>Код оборудования</td><td>Код приспособления</td><td>Код технологического перехода</td><td>Код обрабатываемой поверхности</td></tr>";
     $.each(data, function (index, value) {
         //TODO добавить корректные валью по столбцам
@@ -89,7 +80,6 @@ function FillTable(data, tableId) {
         tableStr += "</tr>";
     });
     $("#" + tableId).html(tableStr);
-    console.log("table fill");
 }
 
 function SaveFilters() {

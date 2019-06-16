@@ -9,7 +9,7 @@ namespace Tadb.ServerStudio.Services
     {
         public static Stream CreatePdf(DataTable data)
         {
-            using(Document document = new Document(PageSize.A4, 10, 10, 10, 10))
+            using(Document document = new Document(PageSize.A4, 1, 1, 1, 1))
             {
                 var output = new MemoryStream();
 
@@ -31,7 +31,7 @@ namespace Tadb.ServerStudio.Services
                 {
                     foreach (DataColumn col in data.Columns)
                     {
-                        table.AddCell(row[col].ToString());
+                        table.AddCell(new Phrase(row[col].ToString(), f));
                     }
                 }
                 
