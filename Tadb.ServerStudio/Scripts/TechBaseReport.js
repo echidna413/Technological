@@ -67,16 +67,22 @@ function GetRecordData() {
 
 function FillTable(data, tableId) {
     $("#techBaseReportTable").find("tr:gt(0)").remove();;
-    var tableStr = "<tr><td>Сотрудник</td><td>Статус</td><td>Код оборудования</td><td>Код приспособления</td><td>Код технологического перехода</td><td>Код обрабатываемой поверхности</td></tr>";
+    var tableStr = "<tr>" +
+                        "<td>Сотрудник</td>" +
+                        "<td>Статус</td>" +
+                        "<td>Код оборудования</td>" +
+                        "<td>Код приспособления</td>" +
+                        "<td>Код технологического перехода</td>" +
+                        "<td>Код обрабатываемой поверхности</td>" +
+                    "</tr>";
     $.each(data, function (index, value) {
-        //TODO добавить корректные валью по столбцам
         tableStr += "<tr>";
         tableStr += "<td>" + value.Employee + "</td>";
         tableStr += "<td>" + value.Status + "</td>";
-        tableStr += "<td>" + value.Status + "</td>";
-        tableStr += "<td>" + value.Status + "</td>";
-        tableStr += "<td>" + value.Status + "</td>";
-        tableStr += "<td>" + value.Status + "</td>";
+        tableStr += "<td>" + value.equipment_code + "</td>";
+        tableStr += "<td>" + value.fixture_code + "</td>";
+        tableStr += "<td>" + value.process_code + "</td>";
+        tableStr += "<td>" + value.surface_code + "</td>";
         tableStr += "</tr>";
     });
     $("#" + tableId).html(tableStr);

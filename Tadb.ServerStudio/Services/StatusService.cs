@@ -14,5 +14,13 @@ namespace Tadb.ServerStudio.Services
                 return context.Statuses.ToList();
             }
         }
+
+        public static Status GetStatusById(int id)
+        {
+            using (MachineDbContext context = new MachineDbContext())
+            {
+                return context.Statuses.FirstOrDefault(x => x.id_status.Equals(id));
+            }
+        }
     }
 }

@@ -191,6 +191,7 @@
     <Compile Include="Models\DetailFilter.cs" />
     <Compile Include="Models\DetailModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\RecordDto.cs" />
     <Compile Include="Models\RecordFilter.cs" />
     <Compile Include="Models\RecordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

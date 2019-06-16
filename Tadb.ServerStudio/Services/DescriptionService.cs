@@ -68,7 +68,7 @@ namespace Tadb.ServerStudio.Services
                 var employee = EmployeeService.GetEmployeeById(x.id_employee);
                 return new DescriptionDto
                 {
-                    Employee = employee.first_name + " " + employee.patronymic + " " + employee.second_name,
+                    Employee = employee?.first_name + " " + employee?.patronymic + " " + employee?.second_name,
                     detail_id = x.detail_id,
                     id_employee = x.id_employee,
                     code_detail = x.code_detail,

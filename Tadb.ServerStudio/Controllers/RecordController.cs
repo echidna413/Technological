@@ -22,7 +22,7 @@ namespace Tadb.ServerStudio.Controllers
 
         [HttpPost]
         [Route("Record")]
-        public async Task<List<Record>> GetRecord(RecordFilter recordFilter)
+        public async Task<List<RecordDto>> GetRecord(RecordFilter recordFilter)
         {
             var result = await _recordService.GetRecordsByFilter(recordFilter);
             return result;
