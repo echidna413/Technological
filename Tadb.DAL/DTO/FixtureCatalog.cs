@@ -8,9 +8,9 @@ namespace Tadb.DAL
     {
         //Данный класс описывает сущность "Справочник приспособлений"
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int fixture_code { get; set; }
-
+        [Index(IsUnique = true)]
+        [StringLength(200)]
         public string fixture_value { get; set; } //Номер приспособления
         public string description { get; set; } //Описание
 

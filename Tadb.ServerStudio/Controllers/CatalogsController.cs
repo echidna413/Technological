@@ -1,5 +1,6 @@
 ﻿using RestSharp;
 using System.Collections.Generic;
+using System.Net;
 using System.Web.Mvc;
 using Tadb.ServerStudio.Models.CatalogModels;
 
@@ -42,7 +43,12 @@ namespace Tadb.ServerStudio.Controllers
             request.AddJsonBody(catalogItem);
 
             var data = Client.Post(request);
-            return RedirectToAction("SurfaceCatalogs");
+            if (data.StatusCode == HttpStatusCode.OK)
+            {
+                return RedirectToAction("SurfaceCatalogs");
+            }
+            ModelState.AddModelError("", "Запись с таким номером модели элементарной поверхности уже существует");
+            return View(catalogItem);
         }
 
         [HttpGet]
@@ -72,7 +78,12 @@ namespace Tadb.ServerStudio.Controllers
             request.AddJsonBody(model);
 
             var data = Client.Post(request);
-            return RedirectToAction("FixtureCatalogs");
+            if (data.StatusCode == HttpStatusCode.OK)
+            {
+                return RedirectToAction("FixtureCatalogs");
+            }
+            ModelState.AddModelError("", "Запись с таким номером приспособления уже существует");
+            return View(model);
         }
 
         [HttpGet]
@@ -121,23 +132,25 @@ namespace Tadb.ServerStudio.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EquipmentCatalog_Append(EquipmentCatalogModel catalogItem)
+        public ActionResult EquipmentCatalog_Append(EquipmentCatalogModel catalogItem, string returnUrl)
         {
             if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("catalogItem", "Справочник уже содержит данную модель");
+
                 return View(catalogItem);
             }
-            //if(catalogItem.model )
-            else
-            {
 
-                var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
-                request.AddJsonBody(catalogItem);
-                ViewBag.Message = "Запись добавлена";
-                var data = Client.Post(request);
+            var request = new RestRequest("api/EquipmentCatalogs", Method.POST);
+            request.AddJsonBody(catalogItem);
+
+            var data = Client.Post(request);
+
+            if (data.StatusCode == HttpStatusCode.OK)
+            {
                 return RedirectToAction("EquipmentCatalogs");
             }
+            ModelState.AddModelError("", "Запись с таким наименованием модели уже существует");
+            return View(catalogItem);
         }
 
     }

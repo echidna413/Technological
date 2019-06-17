@@ -1,115 +1,347 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "Проверка новых записей";
 }
 
-<!DOCTYPE html>
+<table border="1" cellpadding="5" width="100%">
+    <tr>
+        <td rowspan=5>Код оборудования</td>
+        <td rowspan=5>Код приспособления</td>
+        <td rowspan=5>Код технологического перехода</td>
+        <td colspan=44>Обрабатываемая поверхность</td>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>ExpertChecking</title>
-</head>
-<body>
-    <table border="1">
-        <tr>
-            <td rowspan=5>Код оборудования</td>
-            <td rowspan=5>Код приспособления</td>
-            <td rowspan=5>Код технологического перехода</td>
-            <td colspan=43>Обрабатываемая поверхность</td>
-        </tr>
-        <tr>
-            <td rowspan=4>Код обрабатываемой поверхности</td>
-            <td colspan=23>Предельные размеры обрабатываемой поверхности</td>
-            <td colspan=4>Предельно допустимые точностные характеристики и характеристики поверхностного слоя</td>
-            <td colspan=11>Геометрическая форма элементарной поверхности (количественное значение для кодов отклонений)</td>
-        </tr>
-        <tr>
-            <td colspan=2>1</td>
-            <td colspan=2>2</td>
-            <td colspan=2>3</td>
-            <td colspan=2>4</td>
-            <td colspan=2>5</td>
-            <td colspan=2>6</td>
-            <td colspan=2>7</td>
-            <td colspan=2>8</td>
-            <td colspan=2>9</td>
-            <td colspan=2>10</td>
-            <td colspan=2>11</td>
-            <td>12</td>
-            <td rowspan=3>Квалитет</td>
-            <td colspan=4>Показатели шероховатости</td>
-            <td rowspan=3>Твердость HRC</td>
-            <td colspan=3>Внутренние напряжения</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-        </tr>
-        <tr>
-            <td colspan=2>Диаметр меньший</td>
-            <td colspan=2>Диаметр больший</td>
-            <td colspan=2>Длина</td>
-            <td colspan=2>Ширина</td>
-            <td colspan=2>Высота</td>
-            <td colspan=2>Угол X</td>
-            <td colspan=2>Угол Y</td>
-            <td colspan=2>Угол Z</td>
-            <td colspan=2>Расстояние от плоскости X</td>
-            <td colspan=2>Расстояние от плоскости Y</td>
-            <td colspan=2>Расстояние от плоскости Z</td>
-            <td>Код сложной поверхности</td>
-            <td>Ra</td>
-            <td>Rmax</td>
-            <td>S</td>
-            <td>tp</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>от прямо-линейности</td>
-            <td>от плоскост-ности</td>
-            <td>от круглости</td>
-            <td>от цилиндри-чности</td>
-            <td>профиля продольного сечения</td>
-            <td>Радиальное биение</td>
-            <td>Торцевое биение</td>
-            <td>Полное радиальное биение</td>
-            <td>Полное торцевое биение</td>
-            <td>от формы заданного профиля</td>
-            <td>от формы заданной поверхности</td>
-        </tr>
-        <tr>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>min</td>
-            <td>max</td>
-            <td>код</td>
+        <td colspan=44>Характеристики заготовки поверхности</td>
+        <td colspan=26>Первая базовая поверхность</td>
+        <td colspan=28>Вторая базовая поверхность</td>
+        <td colspan=30>Третья базовая поверхность</td>
 
-        </tr>
-    </table>
-</body>
-</html>
+        <td rowspan=5>Проверка</td>
+
+    </tr>
+    <tr>
+        <td rowspan=4>Код обрабатываемой поверхности</td>
+        <td colspan=23>Предельные размеры обрабатываемой поверхности</td>
+        <td colspan=9>Предельно допустимые точностные характеристики и характеристики поверхностного слоя</td>
+        <td colspan=11>Геометрическая форма элементарной поверхности (количественное значение для кодов отклонений)</td>
+
+        <td rowspan=4>Код вида поверхности заготовки</td>
+        <td colspan=23>Предельные размеры поверхности заготовки</td>
+        <td colspan=9>Предельно допустимые точностные характеристики и характеристики поверхностного слоя</td>
+        <td colspan=11>Геометрическая форма элементарной поверхности заготовки (количественное значение для кодов отклонений)</td>
+
+
+        <td rowspan=4>Код поверхности</td>
+        <td colspan=23>Требования к размерным и точностным характеристикам</td>
+        <td colspan=2 rowspan=3>Требования к расположению 0 т.  базовой поверхности относительно 0 т. обрабатываемой поверхности</td>
+
+        <td rowspan=4>Код поверхности</td>
+        <td colspan=23>Требования к размерным и точностным характеристикам</td>
+        <td colspan=2 rowspan=3>Требования к расположению 0 т.  базовой поверхности относительно 0 т. обрабатываемой поверхности</td>
+        <td colspan=2 rowspan=3>Требования к расположению 0 т. базовой поверхности относительно 0 т. 1-й базовой поверхности</td>
+
+        <td rowspan=4>Код поверхности</td>
+        <td colspan=23>Требования к размерным и точностным характеристикам</td>
+        <td colspan=2 rowspan=3>Требования к расположению 0 т.  базовой поверхности относительно 0 т. обрабатываемой поверхности</td>
+        <td colspan=2 rowspan=3>Требования к расположению 0 т. базовой поверхности относительно 0 т. 1-й базовой поверхности</td>
+        <td colspan=2 rowspan=3>Требования к расположению 0 т. базовой поверхности относительно 0 т. 2-й базовой поверхности</td>
+    </tr>
+    <tr>
+        <td colspan=2>1</td>
+        <td colspan=2>2</td>
+        <td colspan=2>3</td>
+        <td colspan=2>4</td>
+        <td colspan=2>5</td>
+        <td colspan=2>6</td>
+        <td colspan=2>7</td>
+        <td colspan=2>8</td>
+        <td colspan=2>9</td>
+        <td colspan=2>10</td>
+        <td colspan=2>11</td>
+        <td>12</td>
+        <td rowspan=3>Квалитет</td>
+        <td colspan=4>Показатели шероховатости</td>
+        <td rowspan=3>Твердость HRC</td>
+        <td colspan=3>Внутренние напряжения</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+
+        <td colspan=2>1</td>
+        <td colspan=2>2</td>
+        <td colspan=2>3</td>
+        <td colspan=2>4</td>
+        <td colspan=2>5</td>
+        <td colspan=2>6</td>
+        <td colspan=2>7</td>
+        <td colspan=2>8</td>
+        <td colspan=2>9</td>
+        <td colspan=2>10</td>
+        <td colspan=2>11</td>
+        <td>12</td>
+        <td rowspan=3>Квалитет</td>
+        <td colspan=4>Показатели шероховатости</td>
+        <td rowspan=3>Твердость HRC</td>
+        <td colspan=3>Внутренние напряжения</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+
+        <td colspan=2 rowspan=2>Диаметр меньший</td>
+        <td colspan=2 rowspan=2>Диаметр больший</td>
+        <td colspan=2 rowspan=2>Длина</td>
+        <td colspan=2 rowspan=2>Ширина</td>
+        <td colspan=2 rowspan=2>Высота</td>
+        <td colspan=2 rowspan=2>Угол X</td>
+        <td colspan=2 rowspan=2>Угол Y</td>
+        <td colspan=2 rowspan=2>Угол Z</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости X</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости Y</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости Z</td>
+        <td rowspan=2>Код сложной поверхности</td>
+
+        <td colspan=2 rowspan=2>Диаметр меньший</td>
+        <td colspan=2 rowspan=2>Диаметр больший</td>
+        <td colspan=2 rowspan=2>Длина</td>
+        <td colspan=2 rowspan=2>Ширина</td>
+        <td colspan=2 rowspan=2>Высота</td>
+        <td colspan=2 rowspan=2>Угол X</td>
+        <td colspan=2 rowspan=2>Угол Y</td>
+        <td colspan=2 rowspan=2>Угол Z</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости X</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости Y</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости Z</td>
+        <td rowspan=2>Код сложной поверхности</td>
+
+
+        <td colspan=2 rowspan=2>Диаметр меньший</td>
+        <td colspan=2 rowspan=2>Диаметр больший</td>
+        <td colspan=2 rowspan=2>Длина</td>
+        <td colspan=2 rowspan=2>Ширина</td>
+        <td colspan=2 rowspan=2>Высота</td>
+        <td colspan=2 rowspan=2>Угол X</td>
+        <td colspan=2 rowspan=2>Угол Y</td>
+        <td colspan=2 rowspan=2>Угол Z</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости X</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости Y</td>
+        <td colspan=2 rowspan=2>Расстояние от плоскости Z</td>
+        <td rowspan=2>Код сложной поверхности</td>
+    </tr>
+    <tr>
+        <td colspan=2>Диаметр меньший</td>
+        <td colspan=2>Диаметр больший</td>
+        <td colspan=2>Длина</td>
+        <td colspan=2>Ширина</td>
+        <td colspan=2>Высота</td>
+        <td colspan=2>Угол X</td>
+        <td colspan=2>Угол Y</td>
+        <td colspan=2>Угол Z</td>
+        <td colspan=2>Расстояние от плоскости X</td>
+        <td colspan=2>Расстояние от плоскости Y</td>
+        <td colspan=2>Расстояние от плоскости Z</td>
+        <td>Код сложной поверхности</td>
+        <td rowspan=2>Ra</td>
+        <td rowspan=2>Rmax</td>
+        <td rowspan=2>S</td>
+        <td rowspan=2>tp</td>
+        <td rowspan=2>1</td>
+        <td rowspan=2>2</td>
+        <td rowspan=2>3</td>
+        <td rowspan=2>от прямо-линейности</td>
+        <td rowspan=2>от плоскост-ности</td>
+        <td rowspan=2>от круглости</td>
+        <td rowspan=2>от цилиндри-чности</td>
+        <td rowspan=2>профиля продольного сечения</td>
+        <td rowspan=2>Радиальное биение</td>
+        <td rowspan=2>Торцевое биение</td>
+        <td rowspan=2>Полное радиальное биение</td>
+        <td rowspan=2>Полное торцевое биение</td>
+        <td rowspan=2>от формы заданного профиля</td>
+        <td rowspan=2>от формы заданной поверхности</td>
+
+        <td colspan=2>Диаметр меньший</td>
+        <td colspan=2>Диаметр больший</td>
+        <td colspan=2>Длина</td>
+        <td colspan=2>Ширина</td>
+        <td colspan=2>Высота</td>
+        <td colspan=2>Угол X</td>
+        <td colspan=2>Угол Y</td>
+        <td colspan=2>Угол Z</td>
+        <td colspan=2>Расстояние от плоскости X</td>
+        <td colspan=2>Расстояние от плоскости Y</td>
+        <td colspan=2>Расстояние от плоскости Z</td>
+        <td>Код сложной поверхности</td>
+        <td rowspan=2>Ra</td>
+        <td rowspan=2>Rmax</td>
+        <td rowspan=2>S</td>
+        <td rowspan=2>tp</td>
+        <td rowspan=2>1</td>
+        <td rowspan=2>2</td>
+        <td rowspan=2>3</td>
+        <td rowspan=2>от прямо-линейности</td>
+        <td rowspan=2>от плоскост-ности</td>
+        <td rowspan=2>от круглости</td>
+        <td rowspan=2>от цилиндри-чности</td>
+        <td rowspan=2>профиля продольного сечения</td>
+        <td rowspan=2>Радиальное биение</td>
+        <td rowspan=2>Торцевое биение</td>
+        <td rowspan=2>Полное радиальное биение</td>
+        <td rowspan=2>Полное торцевое биение</td>
+        <td rowspan=2>от формы заданного профиля</td>
+        <td rowspan=2>от формы заданной поверхности</td>
+
+
+    </tr>
+    <tr>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>код</td>
+
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>код</td>
+
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>код</td>
+        <td>min</td>
+        <td>max</td>
+
+
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>код</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>код</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+        <td>min</td>
+        <td>max</td>
+    </tr>
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

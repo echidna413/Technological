@@ -109,6 +109,7 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\EquipmentCatalogsController.cs" />
     <Compile Include="Controllers\LoginModelsController.cs" />
+    <Compile Include="Controllers\OperationsController.cs" />
     <Compile Include="Controllers\ProcessCatalogsController.cs" />
     <Compile Include="Controllers\RecordsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />

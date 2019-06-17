@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -164,6 +166,16 @@
     <Compile Include="DTO\Operation.cs" />
     <Compile Include="DTO\ProcessCatalog.cs" />
     <Compile Include="DTO\Record.cs" />
+    <Compile Include="Models\TiraggoEdmx_v2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiraggoEdmx_v2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TiraggoEdmx_v3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiraggoEdmx_v3.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DTO\Role.cs" />
     <Compile Include="DTO\Route.cs" />
@@ -171,6 +183,15 @@
     <Compile Include="DTO\Status.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Models\TiraggoEdmx_v2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TiraggoEdmx_v2.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\TiraggoEdmx_v3.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TiraggoEdmx_v3.cs</LastGenOutput>
+    </Content>
+    <Content Include="TiraggoEdmx\TiraggoEdmx.EF.dll" />
     <None Include="App.config" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -255,4 +276,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\EdmxToEfCore.0.1.0\build\EdmxToEfCore.targets" Condition="Exists('..\packages\EdmxToEfCore.0.1.0\build\EdmxToEfCore.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EdmxToEfCore.0.1.0\build\EdmxToEfCore.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EdmxToEfCore.0.1.0\build\EdmxToEfCore.targets'))" />
+  </Target>
 </Project>

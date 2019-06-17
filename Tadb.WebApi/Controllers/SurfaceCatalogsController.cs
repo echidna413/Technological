@@ -52,7 +52,7 @@ namespace Tadb.WebApi.Controllers
                 }
                 else
                 {
-                    throw;
+                    return BadRequest(ModelState);
                 }
             }
 

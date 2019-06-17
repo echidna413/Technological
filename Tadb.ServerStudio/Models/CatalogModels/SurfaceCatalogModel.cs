@@ -10,9 +10,9 @@ namespace Tadb.ServerStudio.Models.CatalogModels
         public string model { get; set; } //Код элементарной поверхности
         [Display(Name = "Название вида элементарной поверхности")]
         public string name { get; set; } //Название вида элементарной поверхности
-        [Display(Name = "Малое изображение")]
+        //[Display(Name = "Малое изображение")]
         public string view_small { get; set; } //Малое изображение
-        [Display(Name = "Большое изображение")]
+        //[Display(Name = "Большое изображение")]
         public string view_big { get; set; } //Большое изображение
     }
 }
