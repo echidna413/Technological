@@ -24,6 +24,9 @@ namespace Tadb.ServerStudio.Controllers
 
         public ActionResult ExpertChecking()
         {
+            var request = new RestRequest("api/Record");
+            var data = Client.Get<List<ExpertModel>>(request).Data;
+            var required_data = data.ToList();
             return View();
         }
 
