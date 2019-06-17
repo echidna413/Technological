@@ -90,7 +90,7 @@ namespace Tadb.ServerStudio.Services
                 descriptions = descriptions.Where(x => x.id_employee.Equals(detailFilter.EmployeeId)).ToList();
             }
 
-            if (!string.IsNullOrEmpty(detailFilter.Material))
+            if (!string.IsNullOrEmpty(detailFilter.Material) && !detailFilter.Material.Equals("null"))
             {
                 descriptions = descriptions.Where(x => x.mark_material.Equals(detailFilter.Material)).ToList();
             }
