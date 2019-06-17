@@ -10,19 +10,19 @@ namespace Tadb.DAL
         {
         }
 
-        public Employee(int id_employee, int id_role, int id_company, string first_name, string second_name, string patronymic, string login, string password, Role role, Company company)
-        {
-            this.id_employee = id_employee;
-            this.id_role = id_role;
-            this.id_company = id_company;
-            this.first_name = first_name;
-            this.second_name = second_name;
-            this.patronymic = patronymic;
-            this.login = login;
-            this.passwordHash = password;
-            Role = role;
-            Company = company;
-        }
+        //public Employee(int id_employee, int id_role, int id_company, string first_name, string second_name, string patronymic, string login, string password, Role role, Company company)
+        //{
+        //    this.id_employee = id_employee;
+        //    this.id_role = id_role;
+        //    this.id_company = id_company;
+        //    this.first_name = first_name;
+        //    this.second_name = second_name;
+        //    this.patronymic = patronymic;
+        //    this.login = login;
+        //    this.passwordHash = password;
+        //    Role = role;
+        //    Company = company;
+        //}
 
         [Key]
         public int id_employee { get; set; }

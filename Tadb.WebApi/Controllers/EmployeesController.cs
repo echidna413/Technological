@@ -23,9 +23,9 @@ namespace Tadb.WebApi.Controllers
 
         // GET: api/Employees/5
         [ResponseType(typeof(Employee))]
-        public IHttpActionResult Get(int id_employee)
+        public IHttpActionResult Get(int id)
         {
-            Employee employee = db.Employees.Find(id_employee);
+            Employee employee = db.Employees.Find(id);
             if (employee == null)
             {
                 return NotFound();
