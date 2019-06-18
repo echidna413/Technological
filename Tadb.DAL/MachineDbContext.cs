@@ -100,9 +100,10 @@ namespace Tadb.DAL
         {
             Database.SetInitializer<MachineDbContext>(null);
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<SurfaceCatalog>()
-                .Property(p => p.surface_code)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+
+            //modelBuilder.Entity<SurfaceCatalog>()
+            //    .Property(p => p.surface_code)
+            //    .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
 
             modelBuilder.Entity<Employee>()
                 .HasRequired(x => x.Role)

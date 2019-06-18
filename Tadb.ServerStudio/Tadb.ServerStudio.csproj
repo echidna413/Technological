@@ -190,10 +190,13 @@
     <Compile Include="Models\DescriptionDto.cs" />
     <Compile Include="Models\DetailFilter.cs" />
     <Compile Include="Models\DetailModel.cs" />
+    <Compile Include="Models\ExpertModel.cs" />
+    <Compile Include="Models\FullRecordModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\RecordDto.cs" />
     <Compile Include="Models\RecordFilter.cs" />
     <Compile Include="Models\RecordModel.cs" />
+    <Compile Include="Models\StatusChecker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CreatePdfService.cs" />
     <Compile Include="Services\DescriptionService.cs" />
@@ -276,6 +279,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ExpertChecking\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
