@@ -162,10 +162,15 @@
     <Compile Include="Migrations\201906040845405_AddPasswordHashField.Designer.cs">
       <DependentUpon>201906040845405_AddPasswordHashField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906180232596_Inc.cs" />
+    <Compile Include="Migrations\201906180232596_Inc.Designer.cs">
+      <DependentUpon>201906180232596_Inc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DTO\Operation.cs" />
     <Compile Include="DTO\ProcessCatalog.cs" />
     <Compile Include="DTO\Record.cs" />
+    <Compile Include="Migrations\DataInitializator\DataSeeder.cs" />
     <Compile Include="Models\TiraggoEdmx_v2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -270,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906040845405_AddPasswordHashField.resx">
       <DependentUpon>201906040845405_AddPasswordHashField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906180232596_Inc.resx">
+      <DependentUpon>201906180232596_Inc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

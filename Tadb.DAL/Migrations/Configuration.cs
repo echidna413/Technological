@@ -4,6 +4,7 @@ namespace Tadb.DAL.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using Tadb.DAL.Migrations.DataInitializator;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Tadb.DAL.MachineDbContext>
     {
@@ -14,10 +15,7 @@ namespace Tadb.DAL.Migrations
 
         protected override void Seed(Tadb.DAL.MachineDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data.
+            DataSeeder.Instance.Init(context);
         }
     }
 }

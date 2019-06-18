@@ -1,0 +1,1089 @@
+﻿@model IEnumerable<Tadb.ServerStudio.Models.ExpertModel>
+
+@{
+    ViewBag.Title = "RecordCheck";
+}
+
+<h2>RecordCheck</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_record)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.equipment_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fixture_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.process_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_min_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_max_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_complexSurface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_Ra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_Rmax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_S)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_tp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_hardnessHRC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_voltage1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_voltage2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_voltage3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_straightness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_flatness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_roundness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_cylindricity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_longitudinalSectionProfile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_radialBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_faceBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_fullRadialBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_fullFaceBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_formProfile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surf_formSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_surfaceCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_min_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_max_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_complexSurface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_Ra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_Rmax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_S)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_tp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_hardnessHRC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_voltage1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_voltage2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_voltage3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_straightness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_flatness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_roundness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_cylindricity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_longitudinalSectionProfile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_radialBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_faceBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_fullRadialBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_fullFaceBeat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_formProfile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bil_formSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_surfaceCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_complexSurface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_min_toSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fbs_max_toSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_surfaceCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_complexSurface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_toSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_toSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_min_toFbs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sbs_max_toFbs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_surfaceCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_ld)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_angleX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_angleY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_angleZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_distPlaneX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_distPlaneY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_distPlaneZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_complexSurface_code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_toSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_toSurface)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_toFbs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_toFbs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_min_toSbs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbs_max_toSbs)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_record)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.equipment_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fixture_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.process_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surface_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_min_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_max_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_complexSurface_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_qualification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_Ra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_Rmax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_S)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_tp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_hardnessHRC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_voltage1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_voltage2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_voltage3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_straightness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_flatness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_roundness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_cylindricity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_longitudinalSectionProfile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_radialBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_faceBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_fullRadialBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_fullFaceBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_formProfile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surf_formSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_surfaceCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_min_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_max_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_complexSurface_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_qualification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_Ra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_Rmax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_S)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_tp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_hardnessHRC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_voltage1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_voltage2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_voltage3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_straightness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_flatness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_roundness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_cylindricity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_longitudinalSectionProfile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_radialBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_faceBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_fullRadialBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_fullFaceBeat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_formProfile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bil_formSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_surfaceCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_complexSurface_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_min_toSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fbs_max_toSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_surfaceCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_complexSurface_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_toSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_toSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_min_toFbs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sbs_max_toFbs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_surfaceCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_ld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_angleX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_angleY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_angleZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_distPlaneX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_distPlaneY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_distPlaneZ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_complexSurface_code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_toSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_toSurface)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_toFbs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_toFbs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_min_toSbs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbs_max_toSbs)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

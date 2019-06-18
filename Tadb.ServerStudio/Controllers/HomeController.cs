@@ -1,11 +1,20 @@
 ﻿using RestSharp;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 using Tadb.ServerStudio.Models;
 
 namespace Tadb.ServerStudio.Controllers
 {
+    internal enum Statuses : int
+    {
+        ReadyForCheck = 1,
+        Accepted = 2,
+        Declined = 3,
+        Outdated = 4,
+    }
+
     [Authorize]
     public class HomeController : Controller
     {
@@ -24,10 +33,41 @@ namespace Tadb.ServerStudio.Controllers
 
         public ActionResult ExpertChecking()
         {
-            var request = new RestRequest("api/Record");
+            var request = new RestRequest("api/Records");
             var data = Client.Get<List<ExpertModel>>(request).Data;
-            var required_data = data.ToList();
-            return View();
+            var required_data = data.Where(x => x.id_status == (int)Statuses.ReadyForCheck).ToList();
+            return View(required_data);
+        }
+
+        public ActionResult ApproveRecord(int id)
+        {
+            var fetchRequest = new RestRequest($"api/Records/{id}");
+            var recordData = Client.Get<ExpertModel>(fetchRequest).Data;
+            recordData.id_status = (int)Statuses.Accepted;
+
+            var updateRequest = new RestRequest($"api/Records/{id}", Method.PUT);
+            updateRequest.AddJsonBody(recordData);
+
+            var data = Client.Put(updateRequest);
+            //if (data.StatusCode == HttpStatusCode.OK)
+            //{
+            //    return Json(true);
+            //}
+
+            return RedirectToAction("ExpertChecking");
+        }
+
+        public ActionResult DeclineRecord(int id)
+        {
+            var fetchRequest = new RestRequest($"api/Records/{id}");
+            var recordData = Client.Get<ExpertModel>(fetchRequest).Data;
+            recordData.id_status = (int)Statuses.Declined;
+
+            var updateRequest = new RestRequest($"api/Records/{id}", Method.PUT);
+            updateRequest.AddJsonBody(recordData);
+
+            var data = Client.Put(updateRequest);
+            return RedirectToAction("ExpertChecking");
         }
 
         public ActionResult DetailReport()

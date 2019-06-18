@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Tadb.ServerStudio.Models
+﻿namespace Tadb.ServerStudio.Models
 {
     public class ExpertModel
     {
-        //public int id_record { get; set; }
+        public int id_company { get; set; }
 
-        //public int id_status { get; set; }
+        public int id_employee { get; set; }
+
+        public int id_record { get; set; }
+
+        public int id_status { get; set; }
 
         public int equipment_code { get; set; }
 
